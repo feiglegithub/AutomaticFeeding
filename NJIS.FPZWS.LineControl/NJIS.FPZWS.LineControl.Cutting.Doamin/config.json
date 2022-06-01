@@ -1,0 +1,103 @@
+[
+  {
+    "CleanerRules": [
+      {
+        "Enabled": false,
+        "Name": "清除日志文件",
+        "Properties": [
+          {
+            "Key": "rootPath",
+            "Value": ""
+          },
+          {
+            "Key": "searchOption",
+            "Value": "1"
+          },
+          {
+            "Key": "pattern",
+            "Value": "*.log"
+          },
+          {
+            "Key": "patternRegular",
+            "Value": ""
+          },
+          {
+            "Key": "rule",
+            "Value": "LastWriteTime < DateTime.Now.AddDays(-7)"
+          }
+        ]
+      }
+    ],
+    "Enabled": true,
+    "Interval": 360000,
+    "Name": "文件清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.FileCleaner,Cleaner"
+  },
+  {
+    "CleanerRules": [
+      {
+        "Enabled": false,
+        "Name": "清除文件夹",
+        "Properties": [
+          {
+            "Key": "rootPath",
+            "Value": ""
+          },
+          {
+            "Key": "searchOption",
+            "Value": "1"
+          },
+          {
+            "Key": "pattern",
+            "Value": ""
+          },
+          {
+            "Key": "patternRegular",
+            "Value": ""
+          },
+          {
+            "Key": "rule",
+            "Value": "LastWriteTime  < DateTime.Now.AddDays(-7)"
+          },
+          {
+            "Key": "recusive",
+            "Value": "true"
+          }
+        ]
+      }
+    ],
+    "Enabled": true,
+    "Interval": 360000,
+    "Name": "目录清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.DirectoryCleaner,Cleaner"
+  },
+  {
+    "CleanerRules": [
+      {
+        "Enabled": true,
+        "Name": "数据库删除数据测试",
+        "Properties": [
+          {
+            "Key": "connectString",
+            "Value": "Password=!Q@W#E$R5t6y7u8i;Persist Security Info=True;User ID=sa;Initial Catalog=NJIS.FPZWS.LineControl.Drilling;Data Source=10.30.14.239"
+          },
+          {
+            "Key": "script",
+            "Value": "delete drilling where partid='7115846901018'"
+          }
+        ]
+      }
+    ],
+    "Enabled": true,
+    "Interval": 360000,
+    "Name": "数据清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.MsSqlDataCleaner,Cleaner"
+  },
+  {
+    "CleanerRules": [],
+    "Enabled": true,
+    "Interval": 3600000,
+    "Name": "目录清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.DirectoryCleaner"
+  }
+]

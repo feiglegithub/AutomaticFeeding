@@ -1,0 +1,81 @@
+[
+  {
+    "CleanerRules": [
+      {
+        "Enabled": false,
+        "Name": "清除日志文件",
+        "Properties": [
+          {
+            "Key": "rootPath",
+            "Value": ""
+          },
+          {
+            "Key": "searchOption",
+            "Value": "1"
+          },
+          {
+            "Key": "pattern",
+            "Value": "*.log"
+          },
+          {
+            "Key": "patternRegular",
+            "Value": ""
+          },
+          {
+            "Key": "rule",
+            "Value": "LastWriteTime < DateTime.Now.AddDays(-7)"
+          }
+        ]
+      }
+    ],
+    "Enabled": true,
+    "Interval": 360000,
+    "Name": "文件清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.FileCleaner,Cleaner"
+  },
+  {
+    "CleanerRules": [
+      {
+        "Enabled": false,
+        "Name": "清除文件夹",
+        "Properties": [
+          {
+            "Key": "rootPath",
+            "Value": ""
+          },
+          {
+            "Key": "searchOption",
+            "Value": "1"
+          },
+          {
+            "Key": "pattern",
+            "Value": ""
+          },
+          {
+            "Key": "patternRegular",
+            "Value": ""
+          },
+          {
+            "Key": "rule",
+            "Value": "LastWriteTime  < DateTime.Now.AddDays(-7)"
+          },
+          {
+            "Key": "recusive",
+            "Value": "true"
+          }
+        ]
+      }
+    ],
+    "Enabled": true,
+    "Interval": 360000,
+    "Name": "目录清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.DirectoryCleaner,Cleaner"
+  },
+  {
+    "CleanerRules": [],
+    "Enabled": true,
+    "Interval": 3600000,
+    "Name": "目录清除器",
+    "Type": "NJIS.FPZWS.Cleaner.Cleaner.DirectoryCleaner"
+  }
+]

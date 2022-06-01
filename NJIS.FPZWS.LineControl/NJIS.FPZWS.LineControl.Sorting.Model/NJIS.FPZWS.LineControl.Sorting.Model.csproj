@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A236811-E49F-47A7-B9FB-E412B5BA8FED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.LineControl.Sorting.Model</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.LineControl.Sorting.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmConfig.cs" />
+    <Compile Include="Converger.cs" />
+    <Compile Include="DrillingFeedBack.cs" />
+    <Compile Include="EnterAgainList.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="InspectionResult.cs" />
+    <Compile Include="LabelQueue.cs" />
+    <Compile Include="Lattice.cs" />
+    <Compile Include="LoadingSortPackage.cs" />
+    <Compile Include="OperationLog.cs" />
+    <Compile Include="OrderData.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="PackageDetail.cs" />
+    <Compile Include="PartQueue.cs" />
+    <Compile Include="PlanningTask.cs" />
+    <Compile Include="ProductionNG.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportInfo.cs" />
+    <Compile Include="RoBot.cs" />
+    <Compile Include="RobotConvergeQueue.cs" />
+    <Compile Include="RoBotGroup.cs" />
+    <Compile Include="RobotGroupConvergeQueue.cs" />
+    <Compile Include="RobotInQueue.cs" />
+    <Compile Include="RobotOutQueue.cs" />
+    <Compile Include="RollerInfo.cs" />
+    <Compile Include="RunningFeedBack.cs" />
+    <Compile Include="ScanBarCode.cs" />
+    <Compile Include="SortingFeedBack.cs" />
+    <Compile Include="SortingMachineFeedback.cs" />
+    <Compile Include="SortingPart.cs" />
+    <Compile Include="SortPackage.cs" />
+    <Compile Include="SortPackageDetail.cs" />
+    <Compile Include="SortSpotCheckDetail.cs" />
+    <Compile Include="SortSpotCheckTask.cs" />
+    <Compile Include="UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\NJIS.Model.Attributes\NJIS.Model.Attributes.csproj">
+      <Project>{14d7e205-150c-4df7-9ce8-b5f8e6d6635e}</Project>
+      <Name>NJIS.Model.Attributes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

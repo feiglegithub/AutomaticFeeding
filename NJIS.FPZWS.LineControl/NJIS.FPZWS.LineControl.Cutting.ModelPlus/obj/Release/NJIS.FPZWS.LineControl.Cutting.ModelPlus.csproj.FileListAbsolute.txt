@@ -1,0 +1,15 @@
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.dll.config
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.pdb
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\EntityFramework.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\EntityFramework.SqlServer.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\NJIS.Ini.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\EntityFramework.xml
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\EntityFramework.SqlServer.xml
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\obj\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.csproj.CoreCompileInputs.cache
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\obj\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.csproj.CopyComplete
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\obj\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.dll
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\obj\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.pdb
+D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Cutting.ModelPlus\obj\Release\NJIS.FPZWS.LineControl.Cutting.ModelPlus.csprojAssemblyReference.cache

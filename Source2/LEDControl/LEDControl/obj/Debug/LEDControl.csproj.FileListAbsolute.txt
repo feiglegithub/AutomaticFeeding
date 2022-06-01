@@ -1,0 +1,11 @@
+E:\VSProject\LEDControl\LEDControl\bin\Debug\LEDControl.dll
+E:\VSProject\LEDControl\LEDControl\bin\Debug\LEDControl.pdb
+E:\VSProject\LEDControl\LEDControl\obj\Debug\LEDControl.dll
+E:\VSProject\LEDControl\LEDControl\obj\Debug\LEDControl.pdb
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\LEDControl\bin\Debug\LEDControl.dll
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\LEDControl\bin\Debug\LEDControl.pdb
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\DebugLIB\LEDControl.dll
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\DebugLIB\LEDControl.pdb
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\LEDControl\obj\Debug\LEDControl.dll
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\LEDControl\obj\Debug\LEDControl.pdb
+F:\学习资料\LED屏控制卡\励研\CL-3000\测试demo\LEDControl\LEDControl\obj\Debug\LEDControl.csprojResolveAssemblyReference.cache

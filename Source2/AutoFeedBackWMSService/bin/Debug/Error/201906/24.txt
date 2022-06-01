@@ -1,0 +1,2 @@
+【2019/6/24 10:31:57】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+【2019/6/24 10:32:00】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。

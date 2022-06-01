@@ -1,0 +1,11 @@
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\RFIDApp20022.exe.config
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\RFIDApp20022.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\RFIDApp20022.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\obj\Debug\RFIDApp20022.Form1.resources
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\obj\Debug\RFIDApp20022.Properties.Resources.resources
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\obj\Debug\RFIDApp20022.csproj.GenerateResource.Cache
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\obj\Debug\RFIDApp20022.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\obj\Debug\RFIDApp20022.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\RFIDControl.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\RFIDControl.pdb

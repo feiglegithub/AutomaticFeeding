@@ -1,0 +1,11 @@
+E:\Project\Source2\RFIDApp2016\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\RFIDApp2016\obj\Debug\RFIDApp2015.csproj.GenerateResource.Cache
+E:\Project\Source2\RFIDApp2016\bin\Debug\RFIDApp2015.exe.config
+E:\Project\Source2\RFIDApp2016\bin\Debug\RFIDApp2015.exe
+E:\Project\Source2\RFIDApp2016\bin\Debug\RFIDApp2015.pdb
+E:\Project\Source2\RFIDApp2016\obj\Debug\RFIDApp2016.Form1.resources
+E:\Project\Source2\RFIDApp2016\obj\Debug\RFIDApp2015.Properties.Resources.resources
+E:\Project\Source2\RFIDApp2016\obj\Debug\RFIDApp2015.exe
+E:\Project\Source2\RFIDApp2016\obj\Debug\RFIDApp2015.pdb
+E:\Project\Source2\RFIDApp2016\bin\Debug\RFIDControl.exe
+E:\Project\Source2\RFIDApp2016\bin\Debug\RFIDControl.pdb

@@ -1,0 +1,14 @@
+﻿正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.vshost.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RFIDControl.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ExecPath2001" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp2001\bin\Debug\RFIDApp2001.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath2002" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp2002\bin\Debug\RFIDApp2002.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath2007" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp2007\bin\Debug\RFIDApp2007.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath2019" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\RFIDApp2019.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath20012" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp20012\bin\Debug\RFIDApp20012.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath20022" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp20022\bin\Debug\RFIDApp20022.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath2015" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\RFIDApp2016\bin\Debug\RFIDApp2015.exe</Value>
+    </Setting>
+    <Setting Name="ExecPath2017" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Project\Source2\黄冈二期立库WCS\RFIDApp2017\bin\Debug\RFIDApp2017.exe</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

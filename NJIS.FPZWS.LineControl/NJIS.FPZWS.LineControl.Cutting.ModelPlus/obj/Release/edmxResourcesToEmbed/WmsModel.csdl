@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NJIS.FPZWS.LineControl.CuttingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CuttingStackProductionList">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StackName" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="PlaceNo" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+    <Property Name="ProductionLine" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="PilerNo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="WMSCuttingStackList">
+    <Key>
+      <PropertyRef Name="LineID" />
+    </Key>
+    <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StackName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StackIndex" Type="Int32" Nullable="false" />
+    <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BatchIndex" Type="Int32" />
+    <Property Name="RawMaterialID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RawMaterialName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SupplierInfo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RawLength" Type="Double" Nullable="false" />
+    <Property Name="RawWidth" Type="Double" Nullable="false" />
+    <Property Name="RawThickness" Type="Double" Nullable="false" />
+    <Property Name="RawColor" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RawOrientation" Type="Int32" Nullable="false" />
+    <Property Name="Information" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PatternName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OptimizationRun" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StackType" Type="Int32" Nullable="false" />
+    <Property Name="ImportToMesStatus" Type="Int32" Nullable="false" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastUpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TaskId" Type="Guid" Nullable="false" />
+    <Property Name="BatchId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="TaskDistributeId" Type="Guid" />
+    <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="WMSStatus" Type="Int32" />
+    <Property Name="PlanDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="WMSStacktFeedBack">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StackName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsSuccess" Type="Boolean" Nullable="false" />
+    <Property Name="FailReason" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+    <Property Name="FeedbackStatus" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CuttingStackProductionList" EntityType="Self.CuttingStackProductionList" />
+    <EntitySet Name="WMSCuttingStackList" EntityType="Self.WMSCuttingStackList" />
+    <EntitySet Name="WMSStacktFeedBack" EntityType="Self.WMSStacktFeedBack" />
+    <EntitySet Name="CuttingCheckRule" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingCheckRule" />
+    <EntitySet Name="CuttingPartReenter" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartReenter" />
+    <EntitySet Name="CuttingCheckPart" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingCheckPart" />
+    <EntitySet Name="ChainBuffer" EntityType="NJIS.FPZWS.LineControl.CuttingModel.ChainBuffer" />
+    <EntitySet Name="CuttingStackList" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackList" />
+    <EntitySet Name="BatchGroup" EntityType="NJIS.FPZWS.LineControl.CuttingModel.BatchGroup" />
+    <EntitySet Name="CuttingSawFileRelation" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingSawFileRelation" />
+  </EntityContainer>
+  <EntityType Name="CuttingCheckRule">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CheckObject" Type="Int32" Nullable="false" />
+    <Property Name="CheckOperatorArgs" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CheckWay" Type="Int32" Nullable="false" />
+    <Property Name="Args" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StartCheckTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndCheckTime" Type="DateTime" Precision="3" />
+    <Property Name="CurrentCheckCount" Type="Int32" Nullable="false" />
+    <Property Name="CurrentIntervalCount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CuttingPartReenter">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PartId" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ReenterType" Type="Int32" Nullable="false" />
+    <Property Name="TaskDistributeId" Type="Guid" />
+    <Property Name="ProductionLine" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="OperationResult" Type="Boolean" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Length" Type="Double" Nullable="false" />
+    <Property Name="Width" Type="Double" Nullable="false" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="CuttingCheckPart">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaskDistributeId" Type="Guid" Nullable="false" />
+    <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PartId" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ItemName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+    <Property Name="CheckStatus" Type="Int32" Nullable="false" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ChainBuffer">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Size" Type="Int32" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CuttingStackList">
+    <Key>
+      <PropertyRef Name="LineID" />
+      <PropertyRef Name="WorkshopCode" />
+      <PropertyRef Name="StackName" />
+      <PropertyRef Name="StackIndex" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="DeviceGroup" />
+      <PropertyRef Name="RawMaterialID" />
+      <PropertyRef Name="RawMaterialName" />
+      <PropertyRef Name="RawLength" />
+      <PropertyRef Name="RawWidth" />
+      <PropertyRef Name="RawThickness" />
+      <PropertyRef Name="RawColor" />
+      <PropertyRef Name="PatternName" />
+      <PropertyRef Name="StackType" />
+      <PropertyRef Name="CreatedTime" />
+      <PropertyRef Name="PlanDate" />
+    </Key>
+    <Property Name="LineID" Type="Int64" Nullable="false" />
+    <Property Name="WorkshopCode" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="StackName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="StackIndex" Type="Int32" Nullable="false" />
+    <Property Name="BatchName" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="true" />
+    <Property Name="DeviceGroup" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="RawMaterialID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="RawMaterialName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SupplierInfo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RawLength" Type="Double" Nullable="false" />
+    <Property Name="RawWidth" Type="Double" Nullable="false" />
+    <Property Name="RawThickness" Type="Double" Nullable="false" />
+    <Property Name="RawColor" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="RawOrientation" Type="Int32" />
+    <Property Name="Information" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PatternName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="OptimizationRun" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="StackType" Type="Int32" Nullable="false" />
+    <Property Name="ImportToMesStatus" Type="Int32" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+    <Property Name="TaskId" Type="Guid" />
+    <Property Name="BatchId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="TaskDistributeId" Type="Guid" />
+    <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="WMSStatus" Type="Int32" />
+    <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BatchProductIndex" Type="Int32" />
+    <Property Name="StackProductIndex" Type="Int32" />
+    <Property Name="BatchType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OptimizationBatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+    <Property Name="NcFilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LabelFilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="BatchGroup">
+    <Key>
+      <PropertyRef Name="LineId" />
+      <PropertyRef Name="PlanDate" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="BatchIndex" />
+      <PropertyRef Name="CreatedTime" />
+      <PropertyRef Name="UpdatedTime" />
+    </Key>
+    <Property Name="LineId" Type="Int64" Nullable="false" />
+    <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BatchIndex" Type="Int32" Nullable="false" />
+    <Property Name="StartLoadingTime" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="CuttingSawFileRelation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PlanDate" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="StackName" />
+      <PropertyRef Name="StackIndex" />
+      <PropertyRef Name="BoardCount" />
+      <PropertyRef Name="SawFileName" />
+      <PropertyRef Name="SawType" />
+      <PropertyRef Name="SawFile" />
+      <PropertyRef Name="TaskId" />
+      <PropertyRef Name="TaskDistributeId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BatchName" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="true" />
+    <Property Name="StackName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="StackIndex" Type="Int32" Nullable="false" />
+    <Property Name="BoardCount" Type="Int32" Nullable="false" />
+    <Property Name="SawFileName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SawType" Type="Int32" Nullable="false" />
+    <Property Name="SawFile" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+    <Property Name="TaskId" Type="Guid" Nullable="false" />
+    <Property Name="TaskDistributeId" Type="Guid" Nullable="false" />
+  </EntityType>
+</Schema>

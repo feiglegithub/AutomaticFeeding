@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C60462E5-88B8-42D1-B47D-ECCFDEA2DB57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WcsService</RootNamespace>
+    <AssemblyName>WcsService</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>C:\Users\11018790\.nuget\packages\dapper\1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="NJIS.Ini, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.Ini.1.0.1\lib\NJIS.Ini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmptyBoardRequestService.cs" />
+    <Compile Include="GroupLinkTaskService.cs" />
+    <Compile Include="MachineHandTaskLogService.cs" />
+    <Compile Include="OffBoardRequestService.cs" />
+    <Compile Include="RgvService.cs" />
+    <Compile Include="SortingBindingPilerNoService.cs" />
+    <Compile Include="SortingDetailService.cs" />
+    <Compile Include="SortingInStockRequestService.cs" />
+    <Compile Include="SortingRequestGroupService.cs" />
+    <Compile Include="SortingService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceBase.cs" />
+    <Compile Include="SortingStationInfoService.cs" />
+    <Compile Include="SortingTaskStatusService.cs" />
+    <Compile Include="TmpSolutionService.cs" />
+    <Compile Include="VRequestMaterialService.cs" />
+    <Compile Include="WcsLogSevice.cs" />
+    <Compile Include="WmsService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\NJIS.Common\NJIS.Common.csproj">
+      <Project>{BB925A8A-29AE-4ABD-8F28-76B977AE36BA}</Project>
+      <Name>NJIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\NJIS.Dapper.Repositories\NJIS.Dapper.Repositories.csproj">
+      <Project>{212a95af-5870-47e0-95ca-7a888091ea8e}</Project>
+      <Name>NJIS.Dapper.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WcsConfig\WcsConfig.csproj">
+      <Project>{87EDE5F3-1E69-400B-853B-A510CF9E1A5C}</Project>
+      <Name>WcsConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WcsContract\WcsContract.csproj">
+      <Project>{4857047A-10E7-4E27-82B8-7C3BD5B66F1D}</Project>
+      <Name>WcsContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsModel\WcsModel.csproj">
+      <Project>{e6e2d214-6cc1-4eb8-8860-46704a9323be}</Project>
+      <Name>WcsModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NJIS.FPZWS.LineControl.EdgebandingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Edgebanding">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="80" />
+          <Property Name="OrderNumber" Type="nvarchar" MaxLength="80" />
+          <Property Name="BarCode" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="Width" Type="decimal" Precision="5" Scale="1" />
+          <Property Name="Length" Type="decimal" Precision="5" Scale="1" />
+          <Property Name="Thickness" Type="decimal" Precision="3" Scale="1" />
+          <Property Name="L1_OFFCUT" Type="decimal" Precision="3" Scale="1" />
+          <Property Name="L1_FORMAT" Type="nvarchar" MaxLength="80" />
+          <Property Name="L1_EDGE" Type="nvarchar" MaxLength="80" />
+          <Property Name="L1_CORNER" Type="nvarchar" MaxLength="80" />
+          <Property Name="L1_GROOVE" Type="nvarchar" MaxLength="80" />
+          <Property Name="L1_EDGECODE" Type="nvarchar" MaxLength="80" />
+          <Property Name="L2_FORMAT" Type="nvarchar" MaxLength="80" />
+          <Property Name="L2_EDGE" Type="nvarchar" MaxLength="80" />
+          <Property Name="L2_CORNER" Type="nvarchar" MaxLength="80" />
+          <Property Name="L2_EDGECODE" Type="nvarchar" MaxLength="80" />
+          <Property Name="C1_OFFCUT" Type="decimal" Precision="3" Scale="1" />
+          <Property Name="C1_FORMAT" Type="nvarchar" MaxLength="80" />
+          <Property Name="C1_EDGE" Type="nvarchar" MaxLength="80" />
+          <Property Name="C1_CORNER" Type="nvarchar" MaxLength="80" />
+          <Property Name="C1_EDGECODE" Type="nvarchar" MaxLength="80" />
+          <Property Name="C1_GROOVE" Type="nvarchar" MaxLength="80" />
+          <Property Name="C2_FORMAT" Type="nvarchar" MaxLength="80" />
+          <Property Name="C2_EDGE" Type="nvarchar" MaxLength="80" />
+          <Property Name="C2_CORNER" Type="nvarchar" MaxLength="80" />
+          <Property Name="C2_EDGECODE" Type="nvarchar" MaxLength="80" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+          <Property Name="Status1" Type="int" />
+          <Property Name="Status2" Type="int" />
+        </EntityType>
+        <EntityType Name="PcsEdgebandQueue">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartId" Type="nvarchar" MaxLength="80" />
+          <Property Name="TriggerIn" Type="bigint" />
+          <Property Name="TriggerOut" Type="bigint" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="NJISFPZWSLineControlEdgebandingModelStoreContainer">
+          <EntitySet Name="Edgebanding" EntityType="Self.Edgebanding" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PcsEdgebandQueue" EntityType="Self.PcsEdgebandQueue" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NJIS.FPZWS.LineControl.EdgebandingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Edgebanding">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BatchName" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="OrderNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="BarCode" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Width" Type="Decimal" Precision="5" Scale="1" />
+          <Property Name="Length" Type="Decimal" Precision="5" Scale="1" />
+          <Property Name="Thickness" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="L1_OFFCUT" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="L1_FORMAT" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L1_EDGE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L1_CORNER" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L1_GROOVE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L1_EDGECODE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L2_FORMAT" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L2_EDGE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L2_CORNER" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="L2_EDGECODE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C1_OFFCUT" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="C1_FORMAT" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C1_EDGE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C1_CORNER" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C1_EDGECODE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C1_GROOVE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C2_FORMAT" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C2_EDGE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C2_CORNER" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="C2_EDGECODE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="TaskId" Type="Guid" Nullable="false" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="Status1" Type="Int32" />
+          <Property Name="Status2" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PcsEdgebandQueue">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="TriggerIn" Type="Int64" />
+          <Property Name="TriggerOut" Type="Int64" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Edgebanding" EntityType="Self.Edgebanding" />
+          <EntitySet Name="PcsEdgebandQueue" EntityType="Self.PcsEdgebandQueue" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NJISFPZWSLineControlEdgebandingModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Edgebanding">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.EdgebandingModel.Edgebanding">
+              <MappingFragment StoreEntitySet="Edgebanding">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Thickness" ColumnName="Thickness" />
+                <ScalarProperty Name="L1_OFFCUT" ColumnName="L1_OFFCUT" />
+                <ScalarProperty Name="L1_FORMAT" ColumnName="L1_FORMAT" />
+                <ScalarProperty Name="L1_EDGE" ColumnName="L1_EDGE" />
+                <ScalarProperty Name="L1_CORNER" ColumnName="L1_CORNER" />
+                <ScalarProperty Name="L1_GROOVE" ColumnName="L1_GROOVE" />
+                <ScalarProperty Name="L1_EDGECODE" ColumnName="L1_EDGECODE" />
+                <ScalarProperty Name="L2_FORMAT" ColumnName="L2_FORMAT" />
+                <ScalarProperty Name="L2_EDGE" ColumnName="L2_EDGE" />
+                <ScalarProperty Name="L2_CORNER" ColumnName="L2_CORNER" />
+                <ScalarProperty Name="L2_EDGECODE" ColumnName="L2_EDGECODE" />
+                <ScalarProperty Name="C1_OFFCUT" ColumnName="C1_OFFCUT" />
+                <ScalarProperty Name="C1_FORMAT" ColumnName="C1_FORMAT" />
+                <ScalarProperty Name="C1_EDGE" ColumnName="C1_EDGE" />
+                <ScalarProperty Name="C1_CORNER" ColumnName="C1_CORNER" />
+                <ScalarProperty Name="C1_EDGECODE" ColumnName="C1_EDGECODE" />
+                <ScalarProperty Name="C1_GROOVE" ColumnName="C1_GROOVE" />
+                <ScalarProperty Name="C2_FORMAT" ColumnName="C2_FORMAT" />
+                <ScalarProperty Name="C2_EDGE" ColumnName="C2_EDGE" />
+                <ScalarProperty Name="C2_CORNER" ColumnName="C2_CORNER" />
+                <ScalarProperty Name="C2_EDGECODE" ColumnName="C2_EDGECODE" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="Status1" ColumnName="Status1" />
+                <ScalarProperty Name="Status2" ColumnName="Status2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PcsEdgebandQueue">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.EdgebandingModel.PcsEdgebandQueue">
+              <MappingFragment StoreEntitySet="PcsEdgebandQueue">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="PartId" ColumnName="PartId" />
+                <ScalarProperty Name="TriggerIn" ColumnName="TriggerIn" />
+                <ScalarProperty Name="TriggerOut" ColumnName="TriggerOut" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,34 @@
+﻿{
+  "endpoints": [
+    {
+      "name": "drilling",
+      "contract": "NJIS.FPZWS.Drilling.Contract.IDrillingContract",
+      "bindingConfiguration": "defaultTpcBinding",
+      "binding": "netTcpBinding",
+      "address": "net.tcp://127.0.0.1:9997/sfy/lc/drilling"
+    },
+    {
+      "name": "drillingTest",
+      "contract": "NJIS.FPZWS.Drilling.Contract.IDrillingTest",
+      "bindingConfiguration": "defaultTpcBinding",
+      "binding": "netTcpBinding",
+      "address": "net.tcp://127.0.0.1:9997/sfy/lc/drillingTest"
+    }
+  ],
+  "Bindings": [
+    {
+      "name": "defaultTpcBinding",
+      "sendTimeout": 600,
+      "listenBacklog": 200,
+      "maxBufferSize": 2147483647,
+      "maxConnections": 1000,
+      "maxReceivedMessageSize": 2147483647,
+      "readerQuotasMaxDepth": 64,
+      "readerQuotasMaxStringContentLength": 2147483647,
+      "readerQuotasMaxArrayLength": 2147483647,
+      "readerQuotasMaxBytesPerRead": 2147483647,
+      "readerQuotasMaxNameTableCharCount": 2147483647,
+      "securityMode": "None"
+    }
+  ]
+}

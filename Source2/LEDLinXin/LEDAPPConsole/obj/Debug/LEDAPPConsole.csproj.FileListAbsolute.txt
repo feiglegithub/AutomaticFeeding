@@ -1,0 +1,9 @@
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\bin\Debug\LEDAPPConsole.exe.config
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\bin\Debug\LEDAPPConsole.exe
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\bin\Debug\LEDAPPConsole.pdb
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\bin\Debug\LXLedControl.dll
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\bin\Debug\LXLedControl.pdb
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\obj\Debug\LEDAPPConsole.exe
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\obj\Debug\LEDAPPConsole.pdb
+E:\Project\Source2\LEDLinXin\LEDAPPConsole\obj\Debug\LEDAPPConsole.csprojResolveAssemblyReference.cache

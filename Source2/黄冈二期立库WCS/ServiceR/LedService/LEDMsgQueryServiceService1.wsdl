@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:nns="http://www.primeton.com/LEDMsgQueryService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://ledMsg.autowarehouse.wms.sfy.com" name="LEDMsgQueryServiceService" targetNamespace="http://www.primeton.com/LEDMsgQueryService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://ledMsg.autowarehouse.wms.sfy.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="OutsideTaskInfoRows">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="act_plate_number" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="area" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="noptstation" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="responser" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="telephone" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfOutsideTaskInfoRows">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="OutsideTaskInfoRows" nillable="true" type="ns2:OutsideTaskInfoRows" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="OutsideTaskInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="count" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="rows_2" nillable="true" type="ns2:ArrayOfOutsideTaskInfoRows" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TaskInfoRows">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="alltasks" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="area" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="customer" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="customer_number" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="delivery_number" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="downtasks" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="notsubmit" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="pendingtasks" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="platnumber" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="responser" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="stage" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="totalpacks" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="warehousekeeper" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTaskInfoRows">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TaskInfoRows" nillable="true" type="ns2:TaskInfoRows" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TaskInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="count" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="rows" nillable="true" type="ns2:ArrayOfTaskInfoRows" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="StageInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="invcode" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="station" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.primeton.com/LEDMsgQueryService" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="queryHBZNCStationTasks">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="in0" nillable="true" type="ns2:StageInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryHBZNCStationTasksResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="out1" nillable="true" type="ns2:TaskInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryOutsideHBZNCStationTasks">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="in0" nillable="true" type="ns2:StageInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryOutsideHBZNCStationTasksResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="out1" nillable="true" type="ns2:OutsideTaskInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="queryHBZNCStationTasksResponse">
+    <wsdl:part name="queryHBZNCStationTasksResponse" element="nns:queryHBZNCStationTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryHBZNCStationTasks">
+    <wsdl:part name="queryHBZNCStationTasks" element="nns:queryHBZNCStationTasks" />
+  </wsdl:message>
+  <wsdl:message name="queryOutsideHBZNCStationTasks">
+    <wsdl:part name="queryOutsideHBZNCStationTasks" element="nns:queryOutsideHBZNCStationTasks" />
+  </wsdl:message>
+  <wsdl:message name="queryOutsideHBZNCStationTasksResponse">
+    <wsdl:part name="queryOutsideHBZNCStationTasksResponse" element="nns:queryOutsideHBZNCStationTasksResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LEDMsgQueryService">
+    <wsdl:operation name="queryHBZNCStationTasks">
+      <wsdl:input name="queryHBZNCStationTasks" message="nns:queryHBZNCStationTasks" />
+      <wsdl:output name="queryHBZNCStationTasksResponse" message="nns:queryHBZNCStationTasksResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryOutsideHBZNCStationTasks">
+      <wsdl:input name="queryOutsideHBZNCStationTasks" message="nns:queryOutsideHBZNCStationTasks" />
+      <wsdl:output name="queryOutsideHBZNCStationTasksResponse" message="nns:queryOutsideHBZNCStationTasksResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LEDMsgQueryServiceBinding" type="nns:LEDMsgQueryService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="queryHBZNCStationTasks">
+      <soap:operation soapAction="" />
+      <wsdl:input name="queryHBZNCStationTasks">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryHBZNCStationTasksResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryOutsideHBZNCStationTasks">
+      <soap:operation soapAction="" />
+      <wsdl:input name="queryOutsideHBZNCStationTasks">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryOutsideHBZNCStationTasksResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LEDMsgQueryServiceService">
+    <wsdl:port name="LEDMsgQueryServicePort" binding="nns:LEDMsgQueryServiceBinding">
+      <soap:address location="http://10.30.3.112:7080/default/LEDMsgQueryService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

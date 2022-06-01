@@ -1,0 +1,11 @@
+D:\99_信息化\source\trunk\Publish\NJIS.FPZWS.LineControl.PLC.Config\NJIS.FPZWS.LineControl.PLC.Config.exe
+D:\99_信息化\source\trunk\Publish\NJIS.FPZWS.LineControl.PLC.Config\NJIS.FPZWS.LineControl.PLC.Config.pdb
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.csprojAssemblyReference.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.BaseForm.resources
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.ConnectorForm.resources
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.MainForm.resources
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.csproj.GenerateResource.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.csproj.CoreCompileInputs.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.csproj.CopyComplete
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.exe
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC.Config\obj\Debug\NJIS.FPZWS.LineControl.PLC.Config.pdb

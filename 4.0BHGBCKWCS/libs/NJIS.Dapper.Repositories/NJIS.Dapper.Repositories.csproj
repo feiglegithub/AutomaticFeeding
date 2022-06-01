@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{212A95AF-5870-47E0-95CA-7A888091EA8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.Dapper.Repositories</RootNamespace>
+    <AssemblyName>NJIS.Dapper.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SonarQubeExclude>True</SonarQubeExclude>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DapperRepository.BulkInsert.cs" />
+    <Compile Include="DapperRepository.BulkUpdate.cs" />
+    <Compile Include="DapperRepository.Count.cs" />
+    <Compile Include="DapperRepository.cs" />
+    <Compile Include="DapperRepository.Delete.cs" />
+    <Compile Include="DapperRepository.ExecuteJoinQuery.cs" />
+    <Compile Include="DapperRepository.Find.cs" />
+    <Compile Include="DapperRepository.Find.Join.cs" />
+    <Compile Include="DapperRepository.FindAll.cs" />
+    <Compile Include="DapperRepository.FindAll.Join.cs" />
+    <Compile Include="DapperRepository.FindAllBetween.cs" />
+    <Compile Include="DapperRepository.FindById.cs" />
+    <Compile Include="DapperRepository.FindById.Join.cs" />
+    <Compile Include="DapperRepository.Insert.cs" />
+    <Compile Include="DapperRepository.Update.cs" />
+    <Compile Include="DbContext\DapperDbContext.cs" />
+    <Compile Include="DbContext\IDapperDbContext.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\TableSchema.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="IDapperRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlGenerator\SqlProvider.cs" />
+    <Compile Include="SqlGenerator\ExpressionHelper.cs" />
+    <Compile Include="SqlGenerator\ISqlGenerator.cs" />
+    <Compile Include="SqlGenerator\QueryExpressions\QueryBinaryExpression.cs" />
+    <Compile Include="SqlGenerator\QueryExpressions\QueryExpression.cs" />
+    <Compile Include="SqlGenerator\QueryExpressions\QueryExpressionType.cs" />
+    <Compile Include="SqlGenerator\QueryExpressions\QueryParameterExpression.cs" />
+    <Compile Include="SqlGenerator\QueryParameter.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.GetCount.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.GetDelete.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.GetSelect.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.GetUpdate.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.InitConfig.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.InitLogicalDeleted.cs" />
+    <Compile Include="SqlGenerator\SqlGenerator.InitProperties.cs" />
+    <Compile Include="SqlGenerator\SqlGeneratorConfig.cs" />
+    <Compile Include="SqlGenerator\SqlJoinPropertyMetadata.cs" />
+    <Compile Include="SqlGenerator\SqlPropertyMetadata.cs" />
+    <Compile Include="SqlGenerator\SqlQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NJIS.Model.Attributes\NJIS.Model.Attributes.csproj">
+      <Project>{14d7e205-150c-4df7-9ce8-b5f8e6d6635e}</Project>
+      <Name>NJIS.Model.Attributes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper">
+      <Version>1.50.2</Version>
+    </PackageReference>
+    <PackageReference Include="protobuf-net">
+      <Version>2.0.0.668</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlGenerator\SqlGenerator.AppendWherePredicateQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlGenerator\SqlGenerator.GetQueryProperties.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

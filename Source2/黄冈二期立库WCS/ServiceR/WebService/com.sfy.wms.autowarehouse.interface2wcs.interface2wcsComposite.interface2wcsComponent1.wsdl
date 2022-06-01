@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://www.primeton.com/interface2wcsService" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns0="http://www.primeton.com/interface2wcsService" name="com.sfy.wms.autowarehouse.interface2wcs.interface2wcsComposite.interface2wcsComponent.interface2wcsService" targetNamespace="http://www.primeton.com/interface2wcsService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://www.primeton.com/interface2wcsService" location="/default/interface2wcsService?wsdl=com/sfy/wms/autowarehouse/interface2wcs/interface2wcs.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="interface2wcsServiceBinding" type="ns0:interface2wcsService">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="appleReworkLocator">
+      <soap11:operation soapAction="" />
+      <wsdl:input name="appleReworkLocator">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="appleReworkLocatorResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyTask">
+      <soap11:operation soapAction="" />
+      <wsdl:input name="applyTask">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="applyTaskResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createTask">
+      <soap11:operation soapAction="" />
+      <wsdl:input name="createTask">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createTaskResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateScStatus">
+      <soap11:operation soapAction="" />
+      <wsdl:input name="updateScStatus">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateScStatusResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateStationStatus">
+      <soap11:operation soapAction="" />
+      <wsdl:input name="updateStationStatus">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateStationStatusResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTaskStatus">
+      <soap11:operation soapAction="" />
+      <wsdl:input name="updateTaskStatus">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateTaskStatusResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="interface2wcsServiceService">
+    <wsdl:port name="interface2wcsServicePort" binding="ns0:interface2wcsServiceBinding">
+      <soap11:address location="http://10.30.3.112:7080/default/interface2wcsService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

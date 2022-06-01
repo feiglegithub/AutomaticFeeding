@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HuangGangBWMSModelStoreContainer" CdmEntityContainer="HuangGangBWMSEntities">
+    <EntitySetMapping Name="WMS_Task">
+      <EntityTypeMapping TypeName="HuangGangBWMSModel.WMS_Task">
+        <MappingFragment StoreEntitySet="WMS_Task">
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+          <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+          <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+          <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+          <ScalarProperty Name="DdjNo" ColumnName="DdjNo" />
+          <ScalarProperty Name="HasUpProtect" ColumnName="HasUpProtect" />
+          <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="DdjTime" ColumnName="DdjTime" />
+          <ScalarProperty Name="FinishTime" ColumnName="FinishTime" />
+          <ScalarProperty Name="ErrorMsg" ColumnName="ErrorMsg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

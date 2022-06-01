@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="com.sfy.wms.autowarehouse.interface2wcs.wcsInterfaceParam" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="com.sfy.wms.autowarehouse.interface2wcs.wcsInterfaceParam" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TaskInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SEQID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NWORKID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NORDID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SOURCETYPE" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CSYSTYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NPALLETID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOPTTYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOPTSTATION" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ORGANIZATION_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FROM_SUBINVENTORY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TO_SUBINVENTORY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FROM_LOCATOR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TO_LOCATOR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FROM_LOCATOR_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TO_LOCATOR_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FROM_LOCATOR_RACK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FROM_LOCATOR_COLUMN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FROM_LOCATOR_LAYER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TO_LOCATOR_RACK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TO_LOCATOR_COLUMN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TO_LOCATOR_LAYER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUSERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NWKSTATUS" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NLOTID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NPRI" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DOPTDATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="COMP_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CREATION_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ERROR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERROR_MSG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DELIVERY_HEADER_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CUSTOMER_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUSTOMER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPACKTYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NPACKORDER" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CFINISHMODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BISALLOWRETURNBACK" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="QUANTITY" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LEDMSG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESERVE1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESERVE2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESERVE3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESERVE4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESERVE5" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

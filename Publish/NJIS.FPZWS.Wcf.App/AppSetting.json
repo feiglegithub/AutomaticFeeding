@@ -1,0 +1,11 @@
+﻿{
+	"App": "NJIS.FPZWS.Wcf.App.WcfApp,NJIS.FPZWS.Wcf.App",
+	"Service": "NJIS.FPZWS.Wcf",
+	"ServiceName": "NJIS.FPZWS.Wcf",
+	"InstanceName": "",
+	"Description": "",
+	"DisplayName": "NJIS.FPZWS.Wcf",
+	"StartTimeout": 10,
+	"StopTimeout": 10,
+	"HelpTextPrefix": "dg"
+}

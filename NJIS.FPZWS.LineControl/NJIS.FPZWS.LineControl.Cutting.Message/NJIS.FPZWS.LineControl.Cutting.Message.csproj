@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CA2FD0C-7F3F-47A0-872F-F600529F68A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.LineControl.Cutting.Message</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.LineControl.Cutting.Message</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NJIS.Ini, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.Ini.1.0.1\lib\NJIS.Ini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmArgs\AlarmArgsBase.cs" />
+    <Compile Include="AlarmArgs\PcsAlarmArgs.cs" />
+    <Compile Include="AlarmArgs\PcsErrorAlarmArgs.cs" />
+    <Compile Include="AlarmArgs\PcsLogicAlarmArgs.cs" />
+    <Compile Include="AlarmArgs\PlcAlarmArgs.cs" />
+    <Compile Include="ChainBufferArgs.cs" />
+    <Compile Include="CommandArgs.cs" />
+    <Compile Include="EmqttSettings.cs" />
+    <Compile Include="MqttMessageArgsBase.cs" />
+    <Compile Include="MsgArgs.cs" />
+    <Compile Include="PartInfoArgs.cs" />
+    <Compile Include="PartInfoPositionArgs.cs" />
+    <Compile Include="PartInfoQueueArgs.cs" />
+    <Compile Include="PositionArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EmqttSettings.ini" />
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Core\NJIS.FPZWS.LineControl.Cutting.Core.csproj">
+      <Project>{7287C0B9-FC16-4C01-87EE-8D2F1BB4DB5B}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Model\NJIS.FPZWS.LineControl.Cutting.Model.csproj">
+      <Project>{2fa3ed16-7be7-4ff8-971c-6810f31f7078}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

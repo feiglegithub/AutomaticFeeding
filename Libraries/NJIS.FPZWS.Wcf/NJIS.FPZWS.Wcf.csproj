@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54DB5DA6-22DC-42B0-AFDC-644893ACAD4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.Wcf</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.Wcf</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\NJIS.FPZWS.LineControl\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\SerializeBehavior\BinaryFormatterBehavior.cs" />
+    <Compile Include="Client\WcfCacheData.cs" />
+    <Compile Include="Client\WcfClentBinding.cs" />
+    <Compile Include="Client\WcfClient.cs" />
+    <Compile Include="Client\WcfCommunicationObj.cs" />
+    <Compile Include="Client\WcfPool.cs" />
+    <Compile Include="Client\WcfPoolCache.cs" />
+    <Compile Include="Client\WcfStandardProxy.cs" />
+    <Compile Include="Config\Behavior.cs" />
+    <Compile Include="Config\Binding.cs" />
+    <Compile Include="Config\ClientConfig.cs" />
+    <Compile Include="Client\DefaultClientBuilder.cs" />
+    <Compile Include="Client\IClientBuilder.cs" />
+    <Compile Include="Config\ServiceConfig.cs" />
+    <Compile Include="Config\Service.cs" />
+    <Compile Include="Config\Endpoint.cs" />
+    <Compile Include="Service\DefaultServiceConfigBuilder.cs" />
+    <Compile Include="Service\IServiceBuilder.cs" />
+    <Compile Include="Service\IWcfServer.cs" />
+    <Compile Include="Service\IWcfServiceContract.cs" />
+    <Compile Include="MessageHeader\ClientMessageInspector.cs" />
+    <Compile Include="MessageHeader\HeaderContext.cs" />
+    <Compile Include="MessageHeader\HeaderOperater.cs" />
+    <Compile Include="Monitor\IMonitorControl.cs" />
+    <Compile Include="Monitor\LinkModel.cs" />
+    <Compile Include="Monitor\MonitorControl.cs" />
+    <Compile Include="Monitor\MonitorData.cs" />
+    <Compile Include="Monitor\PCData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ServiceAttribute.cs" />
+    <Compile Include="Service\SerializeBehavior\BinaryFormatterBehavior.cs" />
+    <Compile Include="Service\Servers\MonitorControlServer.cs" />
+    <Compile Include="Service\WcfParameterInspector.cs" />
+    <Compile Include="Service\WcfServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="client.json" />
+    <None Include="packages.config" />
+    <None Include="service.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

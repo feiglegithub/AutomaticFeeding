@@ -1,0 +1,34 @@
+﻿<RadLayoutControl DrawBorder="False" Text="radLayoutControl1" TabIndex="0">
+  <Items>
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="名称" Bounds="0, 0, 81, 26" Name="layoutControlLabelItem1" />
+    <Telerik.WinControls.UI.LayoutControlGroupItem Text="板件规格范围" Bounds="0, 52, 547, 109" Name="layoutControlGroupItem1">
+      <Items>
+        <Telerik.WinControls.UI.LayoutControlLabelItem Text="最小长" Bounds="0, 0, 116, 26" Name="layoutControlLabelItem3" />
+        <Telerik.WinControls.UI.LayoutControlLabelItem Text="最大长" Bounds="256, 0, 135, 26" Name="layoutControlLabelItem5" />
+        <Telerik.WinControls.UI.LayoutControlLabelItem Text="最小宽" Bounds="0, 26, 116, 26" Name="layoutControlLabelItem7" />
+        <Telerik.WinControls.UI.LayoutControlLabelItem Text="最大宽" Bounds="256, 26, 135, 26" Name="layoutControlLabelItem9" />
+        <Telerik.WinControls.UI.LayoutControlLabelItem Text="最小厚" Bounds="0, 52, 116, 26" Name="layoutControlLabelItem11" />
+        <Telerik.WinControls.UI.LayoutControlLabelItem Text="最大厚" Bounds="256, 52, 135, 26" Name="layoutControlLabelItem13" />
+        <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radSpinEditor1" DrawText="False" Text="layoutControlItem3" Bounds="391, 0, 148, 26" Name="layoutControlItem3" />
+        <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radSpinEditor2" DrawText="False" Text="0" Bounds="116, 0, 140, 26" Name="layoutControlItem4" />
+        <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radSpinEditor3" DrawText="False" Text="layoutControlItem5" Bounds="116, 26, 140, 26" Name="layoutControlItem5" />
+        <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radSpinEditor4" DrawText="False" Text="layoutControlItem6" Bounds="391, 26, 148, 26" Name="layoutControlItem6" />
+        <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radSpinEditor5" DrawText="False" Text="layoutControlItem7" Bounds="116, 52, 140, 26" Name="layoutControlItem7" />
+        <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radSpinEditor6" DrawText="False" Text="layoutControlItem8" Bounds="391, 52, 148, 26" Name="layoutControlItem8" />
+      </Items>
+    </Telerik.WinControls.UI.LayoutControlGroupItem>
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="状态" Bounds="0, 26, 81, 26" Name="layoutControlLabelItem15" />
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="描述" Bounds="0, 161, 81, 132" Name="layoutControlLabelItem17" />
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="创建时间" Bounds="0, 293, 81, 26" Name="lcCreatedTime" />
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="修改时间" Bounds="0, 345, 81, 26" Name="lcModifieTime" />
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="创建者" Bounds="0, 319, 81, 26" Name="lcCreatedBy" />
+    <Telerik.WinControls.UI.LayoutControlLabelItem Text="修改者" Bounds="0, 371, 81, 26" Name="lcModifiedBy" />
+    <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radTextBox1" DrawText="False" Text="layoutControlItem1" Bounds="81, 0, 466, 26" Name="layoutControlItem1" />
+    <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radCheckBox1" DrawText="False" Text="layoutControlItem2" Bounds="81, 26, 466, 26" Name="layoutControlItem2" />
+    <Telerik.WinControls.UI.LayoutControlItem AssociatedControlName="radTextBox2" DrawText="False" Text="layoutControlItem9" Bounds="81, 161, 466, 132" Name="layoutControlItem9" />
+    <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radTextBox3" DrawText="False" Text="layoutControlItem10" Bounds="81, 293, 466, 26" Name="lcCreatedTimeValue" />
+    <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radTextBox4" DrawText="False" Text="layoutControlItem11" Bounds="81, 319, 466, 26" Name="lcCreatedByValue" />
+    <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radTextBox5" DrawText="False" Text="layoutControlItem12" Bounds="81, 345, 466, 26" Name="lcModifiedTimeValue" />
+    <Telerik.WinControls.UI.LayoutControlItem ControlVerticalAlignment="Center" AssociatedControlName="radTextBox6" DrawText="False" Text="layoutControlItem13" Bounds="81, 371, 466, 26" Name="lcModifiedByValue" />
+  </Items>
+</RadLayoutControl>

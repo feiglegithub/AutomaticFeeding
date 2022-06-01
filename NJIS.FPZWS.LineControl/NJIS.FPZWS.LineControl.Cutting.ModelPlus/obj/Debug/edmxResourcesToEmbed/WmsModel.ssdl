@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NJIS.FPZWS.LineControl.CuttingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.Cutting.dbo.BatchGroup”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BatchGroup">
+    <Key>
+      <PropertyRef Name="LineId" />
+      <PropertyRef Name="PlanDate" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="BatchIndex" />
+      <PropertyRef Name="CreatedTime" />
+      <PropertyRef Name="UpdatedTime" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="BatchIndex" Type="int" Nullable="false" />
+    <Property Name="StartLoadingTime" Type="datetime" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.Cutting.dbo.CuttingSawFileRelation”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CuttingSawFileRelation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PlanDate" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="StackName" />
+      <PropertyRef Name="StackIndex" />
+      <PropertyRef Name="BoardCount" />
+      <PropertyRef Name="SawFileName" />
+      <PropertyRef Name="SawType" />
+      <PropertyRef Name="SawFile" />
+      <PropertyRef Name="TaskId" />
+      <PropertyRef Name="TaskDistributeId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackIndex" Type="int" Nullable="false" />
+    <Property Name="BoardCount" Type="int" Nullable="false" />
+    <Property Name="SawFileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="SawType" Type="int" Nullable="false" />
+    <Property Name="SawFile" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" />
+    <Property Name="UpdatedTime" Type="datetime" />
+    <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TaskDistributeId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.Cutting.dbo.CuttingStackList”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CuttingStackList">
+    <Key>
+      <PropertyRef Name="LineID" />
+      <PropertyRef Name="WorkshopCode" />
+      <PropertyRef Name="StackName" />
+      <PropertyRef Name="StackIndex" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="DeviceGroup" />
+      <PropertyRef Name="RawMaterialID" />
+      <PropertyRef Name="RawMaterialName" />
+      <PropertyRef Name="RawLength" />
+      <PropertyRef Name="RawWidth" />
+      <PropertyRef Name="RawThickness" />
+      <PropertyRef Name="RawColor" />
+      <PropertyRef Name="PatternName" />
+      <PropertyRef Name="StackType" />
+      <PropertyRef Name="CreatedTime" />
+      <PropertyRef Name="PlanDate" />
+    </Key>
+    <Property Name="LineID" Type="bigint" Nullable="false" />
+    <Property Name="WorkshopCode" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackIndex" Type="int" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+    <Property Name="DeviceGroup" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="RawMaterialID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="RawMaterialName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="SupplierInfo" Type="nvarchar" MaxLength="255" />
+    <Property Name="RawLength" Type="float" Nullable="false" />
+    <Property Name="RawWidth" Type="float" Nullable="false" />
+    <Property Name="RawThickness" Type="float" Nullable="false" />
+    <Property Name="RawColor" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="RawOrientation" Type="int" />
+    <Property Name="Information" Type="nvarchar(max)" />
+    <Property Name="PatternName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="OptimizationRun" Type="nvarchar" MaxLength="255" />
+    <Property Name="StackType" Type="int" Nullable="false" />
+    <Property Name="ImportToMesStatus" Type="int" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdatedTime" Type="datetime" />
+    <Property Name="TaskId" Type="uniqueidentifier" />
+    <Property Name="BatchId" Type="nvarchar" MaxLength="64" />
+    <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+    <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+    <Property Name="WMSStatus" Type="int" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchProductIndex" Type="int" />
+    <Property Name="StackProductIndex" Type="int" />
+    <Property Name="BatchType" Type="nvarchar" MaxLength="100" />
+    <Property Name="OptimizationBatchName" Type="nvarchar" MaxLength="160" />
+    <Property Name="NcFilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="LabelFilePath" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.Cutting.dbo.CuttingStackProductionList”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CuttingStackProductionList">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="80" />
+    <Property Name="Status" Type="int" />
+    <Property Name="PlaceNo" Type="nvarchar" MaxLength="80" />
+    <Property Name="LastUpdatedTime" Type="datetime" />
+    <Property Name="ProductionLine" Type="nvarchar" MaxLength="80" />
+    <Property Name="PilerNo" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.Cutting.dbo.WMSCuttingStackList”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="WMSCuttingStackList">
+    <Key>
+      <PropertyRef Name="LineID" />
+    </Key>
+    <Property Name="LineID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WorkshopCode" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackIndex" Type="int" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+    <Property Name="BatchIndex" Type="int" />
+    <Property Name="RawMaterialID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="RawMaterialName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="SupplierInfo" Type="nvarchar" MaxLength="255" />
+    <Property Name="RawLength" Type="float" Nullable="false" />
+    <Property Name="RawWidth" Type="float" Nullable="false" />
+    <Property Name="RawThickness" Type="float" Nullable="false" />
+    <Property Name="RawColor" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="RawOrientation" Type="int" Nullable="false" />
+    <Property Name="Information" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PatternName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="OptimizationRun" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackType" Type="int" Nullable="false" />
+    <Property Name="ImportToMesStatus" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BatchId" Type="nvarchar" MaxLength="64" />
+    <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+    <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+    <Property Name="WMSStatus" Type="int" />
+    <Property Name="PlanDate" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.Cutting.dbo.WMSStacktFeedBack”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="WMSStacktFeedBack">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="IsSuccess" Type="bit" Nullable="false" />
+    <Property Name="FailReason" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedTime" Type="datetime" />
+    <Property Name="UpdatedTime" Type="datetime" />
+    <Property Name="FeedbackStatus" Type="int" />
+  </EntityType>
+  <EntityContainer Name="NJISFPZWSLineControlCuttingModelStoreContainer">
+    <EntitySet Name="BatchGroup" EntityType="Self.BatchGroup" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BatchGroup].[LineId] AS [LineId], 
+    [BatchGroup].[PlanDate] AS [PlanDate], 
+    [BatchGroup].[BatchName] AS [BatchName], 
+    [BatchGroup].[BatchIndex] AS [BatchIndex], 
+    [BatchGroup].[StartLoadingTime] AS [StartLoadingTime], 
+    [BatchGroup].[Status] AS [Status], 
+    [BatchGroup].[CreatedTime] AS [CreatedTime], 
+    [BatchGroup].[UpdatedTime] AS [UpdatedTime]
+    FROM [dbo].[BatchGroup] AS [BatchGroup]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CuttingSawFileRelation" EntityType="Self.CuttingSawFileRelation" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CuttingSawFileRelation].[Id] AS [Id], 
+    [CuttingSawFileRelation].[PlanDate] AS [PlanDate], 
+    [CuttingSawFileRelation].[BatchName] AS [BatchName], 
+    [CuttingSawFileRelation].[StackName] AS [StackName], 
+    [CuttingSawFileRelation].[StackIndex] AS [StackIndex], 
+    [CuttingSawFileRelation].[BoardCount] AS [BoardCount], 
+    [CuttingSawFileRelation].[SawFileName] AS [SawFileName], 
+    [CuttingSawFileRelation].[SawType] AS [SawType], 
+    [CuttingSawFileRelation].[SawFile] AS [SawFile], 
+    [CuttingSawFileRelation].[CreatedTime] AS [CreatedTime], 
+    [CuttingSawFileRelation].[UpdatedTime] AS [UpdatedTime], 
+    [CuttingSawFileRelation].[TaskId] AS [TaskId], 
+    [CuttingSawFileRelation].[TaskDistributeId] AS [TaskDistributeId]
+    FROM [dbo].[CuttingSawFileRelation] AS [CuttingSawFileRelation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CuttingStackList" EntityType="Self.CuttingStackList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CuttingStackList].[LineID] AS [LineID], 
+    [CuttingStackList].[WorkshopCode] AS [WorkshopCode], 
+    [CuttingStackList].[StackName] AS [StackName], 
+    [CuttingStackList].[StackIndex] AS [StackIndex], 
+    [CuttingStackList].[BatchName] AS [BatchName], 
+    [CuttingStackList].[DeviceGroup] AS [DeviceGroup], 
+    [CuttingStackList].[RawMaterialID] AS [RawMaterialID], 
+    [CuttingStackList].[RawMaterialName] AS [RawMaterialName], 
+    [CuttingStackList].[SupplierInfo] AS [SupplierInfo], 
+    [CuttingStackList].[RawLength] AS [RawLength], 
+    [CuttingStackList].[RawWidth] AS [RawWidth], 
+    [CuttingStackList].[RawThickness] AS [RawThickness], 
+    [CuttingStackList].[RawColor] AS [RawColor], 
+    [CuttingStackList].[RawOrientation] AS [RawOrientation], 
+    [CuttingStackList].[Information] AS [Information], 
+    [CuttingStackList].[PatternName] AS [PatternName], 
+    [CuttingStackList].[OptimizationRun] AS [OptimizationRun], 
+    [CuttingStackList].[StackType] AS [StackType], 
+    [CuttingStackList].[ImportToMesStatus] AS [ImportToMesStatus], 
+    [CuttingStackList].[CreatedTime] AS [CreatedTime], 
+    [CuttingStackList].[LastUpdatedTime] AS [LastUpdatedTime], 
+    [CuttingStackList].[TaskId] AS [TaskId], 
+    [CuttingStackList].[BatchId] AS [BatchId], 
+    [CuttingStackList].[TaskDistributeId] AS [TaskDistributeId], 
+    [CuttingStackList].[ProductionLine] AS [ProductionLine], 
+    [CuttingStackList].[WMSStatus] AS [WMSStatus], 
+    [CuttingStackList].[PlanDate] AS [PlanDate], 
+    [CuttingStackList].[BatchProductIndex] AS [BatchProductIndex], 
+    [CuttingStackList].[StackProductIndex] AS [StackProductIndex], 
+    [CuttingStackList].[BatchType] AS [BatchType], 
+    [CuttingStackList].[OptimizationBatchName] AS [OptimizationBatchName], 
+    [CuttingStackList].[NcFilePath] AS [NcFilePath], 
+    [CuttingStackList].[LabelFilePath] AS [LabelFilePath]
+    FROM [dbo].[CuttingStackList] AS [CuttingStackList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CuttingStackProductionList" EntityType="Self.CuttingStackProductionList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CuttingStackProductionList].[LineId] AS [LineId], 
+    [CuttingStackProductionList].[StackName] AS [StackName], 
+    [CuttingStackProductionList].[Status] AS [Status], 
+    [CuttingStackProductionList].[PlaceNo] AS [PlaceNo], 
+    [CuttingStackProductionList].[LastUpdatedTime] AS [LastUpdatedTime], 
+    [CuttingStackProductionList].[ProductionLine] AS [ProductionLine], 
+    [CuttingStackProductionList].[PilerNo] AS [PilerNo]
+    FROM [dbo].[CuttingStackProductionList] AS [CuttingStackProductionList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="WMSCuttingStackList" EntityType="Self.WMSCuttingStackList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [WMSCuttingStackList].[LineID] AS [LineID], 
+    [WMSCuttingStackList].[WorkshopCode] AS [WorkshopCode], 
+    [WMSCuttingStackList].[StackName] AS [StackName], 
+    [WMSCuttingStackList].[StackIndex] AS [StackIndex], 
+    [WMSCuttingStackList].[BatchName] AS [BatchName], 
+    [WMSCuttingStackList].[BatchIndex] AS [BatchIndex], 
+    [WMSCuttingStackList].[RawMaterialID] AS [RawMaterialID], 
+    [WMSCuttingStackList].[RawMaterialName] AS [RawMaterialName], 
+    [WMSCuttingStackList].[SupplierInfo] AS [SupplierInfo], 
+    [WMSCuttingStackList].[RawLength] AS [RawLength], 
+    [WMSCuttingStackList].[RawWidth] AS [RawWidth], 
+    [WMSCuttingStackList].[RawThickness] AS [RawThickness], 
+    [WMSCuttingStackList].[RawColor] AS [RawColor], 
+    [WMSCuttingStackList].[RawOrientation] AS [RawOrientation], 
+    [WMSCuttingStackList].[Information] AS [Information], 
+    [WMSCuttingStackList].[PatternName] AS [PatternName], 
+    [WMSCuttingStackList].[OptimizationRun] AS [OptimizationRun], 
+    [WMSCuttingStackList].[StackType] AS [StackType], 
+    [WMSCuttingStackList].[ImportToMesStatus] AS [ImportToMesStatus], 
+    [WMSCuttingStackList].[CreatedTime] AS [CreatedTime], 
+    [WMSCuttingStackList].[LastUpdatedTime] AS [LastUpdatedTime], 
+    [WMSCuttingStackList].[TaskId] AS [TaskId], 
+    [WMSCuttingStackList].[BatchId] AS [BatchId], 
+    [WMSCuttingStackList].[TaskDistributeId] AS [TaskDistributeId], 
+    [WMSCuttingStackList].[ProductionLine] AS [ProductionLine], 
+    [WMSCuttingStackList].[WMSStatus] AS [WMSStatus], 
+    [WMSCuttingStackList].[PlanDate] AS [PlanDate]
+    FROM [dbo].[WMSCuttingStackList] AS [WMSCuttingStackList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="WMSStacktFeedBack" EntityType="Self.WMSStacktFeedBack" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [WMSStacktFeedBack].[LineId] AS [LineId], 
+    [WMSStacktFeedBack].[StackName] AS [StackName], 
+    [WMSStacktFeedBack].[IsSuccess] AS [IsSuccess], 
+    [WMSStacktFeedBack].[FailReason] AS [FailReason], 
+    [WMSStacktFeedBack].[CreatedTime] AS [CreatedTime], 
+    [WMSStacktFeedBack].[UpdatedTime] AS [UpdatedTime], 
+    [WMSStacktFeedBack].[FeedbackStatus] AS [FeedbackStatus]
+    FROM [dbo].[WMSStacktFeedBack] AS [WMSStacktFeedBack]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FA3ED16-7BE7-4FF8-971C-6810F31F7078}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.LineControl.Cutting.Model</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.LineControl.Cutting.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllTask.cs" />
+    <Compile Include="BatchGroup.cs" />
+    <Compile Include="BatchGroupStatus.cs" />
+    <Compile Include="BookStatus.cs" />
+    <Compile Include="ChainBuffer.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CheckObject.cs" />
+    <Compile Include="CheckWay.cs" />
+    <Compile Include="CommandMsg.cs" />
+    <Compile Include="CutPartInfoCollector.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingCheckPart.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingCheckRule.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingFeedBack.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingMachineFeedback.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingManualLabelPrinter.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingNgPart.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingPartBackToLine.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingPartFeedBack.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingPartReenter.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingPartScanLog.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingPattern.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingRawBoardFeedback.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingSawFile.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingSawFileRelation.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingStackList.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingStackProductionList.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingStackShift.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingTaskDetail.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingTaskInfos.cs" />
+    <Compile Include="CuttingTaskLog.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceInfos.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMsg.cs" />
+    <Compile Include="ExecuteMsg.cs" />
+    <Compile Include="FeedbackLog.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FinishedStatus.cs" />
+    <Compile Include="LineControl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LineControl.Cutting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LineControl.Cutting.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadMaterialStatus.cs" />
+    <Compile Include="MdbParse.cs" />
+    <Compile Include="MdbParseStatus.cs" />
+    <Compile Include="Mdb_Parts_Udi.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MesDataCenter.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MesDataCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MesDataCenter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MesDataCenter.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NotCuttingData.cs" />
+    <Compile Include="PartFeedBack.cs" />
+    <Compile Include="PartFeedBackStatus.cs" />
+    <Compile Include="PatternDetail.cs" />
+    <Compile Include="Pattern.cs" />
+    <Compile Include="PatternStatus.cs" />
+    <Compile Include="PcsCuttingDevices.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PcsPartInfoPosition.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PcsPartPosition.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PartInfo.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequestLoadingStatus.cs" />
+    <Compile Include="SpiltMDBResult.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stack.cs" />
+    <Compile Include="StackDetail.cs" />
+    <Compile Include="StackStatus.cs" />
+    <Compile Include="TaskDistribute.cs">
+      <DependentUpon>MesDataCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_dt_mi.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSCuttingStackList.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WMSStacktFeedBack.cs">
+      <DependentUpon>LineControl.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="LineControl.Cutting.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LineControl.Cutting.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="MesDataCenter.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MesDataCenter.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LineControl.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LineControl.Cutting.edmx</DependentUpon>
+      <LastGenOutput>LineControl.cs</LastGenOutput>
+    </Content>
+    <Content Include="MesDataCenter.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MesDataCenter.edmx</DependentUpon>
+      <LastGenOutput>MesDataCenter.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\TaskCenterSetting.ini
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\MqttClient.exe
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\MqttClient.pdb
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\M2Mqtt.Net.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\Newtonsoft.Json.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\NJIS.Ini.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\M2Mqtt.Net.pdb
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\bin\Debug\Newtonsoft.Json.xml
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\NJIS.FPZWS.MqttClient.csprojAssemblyReference.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\NJIS.FPZWS.MqttClient.MainForm.resources
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\NJIS.FPZWS.MqttClient.csproj.GenerateResource.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\NJIS.FPZWS.MqttClient.csproj.CoreCompileInputs.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\NJIS.FPZWS.MqttClient.csproj.CopyComplete
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\MqttClient.exe
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.MqttClient\obj\Debug\MqttClient.pdb

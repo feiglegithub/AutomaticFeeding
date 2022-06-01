@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFB92635-52E7-44EF-A3C7-0B13EA009CDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.LineControl.Cutting.ServicePlus</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.LineControl.Cutting.ServicePlus</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileService.cs" />
+    <Compile Include="LineControlCuttingServicePlus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\NJIS.Dapper.Repositories\NJIS.Dapper.Repositories.csproj">
+      <Project>{212A95AF-5870-47E0-95CA-7A888091EA8E}</Project>
+      <Name>NJIS.Dapper.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.Wcf\NJIS.FPZWS.Wcf.csproj">
+      <Project>{54DB5DA6-22DC-42B0-AFDC-644893ACAD4B}</Project>
+      <Name>NJIS.FPZWS.Wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ContractPlus\NJIS.FPZWS.LineControl.Cutting.ContractPlus.csproj">
+      <Project>{22F6A4EF-A93B-4E0F-99AB-F65FDB62E5C9}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ContractPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ModelPlus\NJIS.FPZWS.LineControl.Cutting.ModelPlus.csproj">
+      <Project>{F2FAD384-8989-41A6-8A67-58DADEECCD20}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ModelPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.RepositoryPlus\NJIS.FPZWS.LineControl.Cutting.RepositoryPlus.csproj">
+      <Project>{3DB4F84C-9CD1-4CBB-9EE3-925B6EC74DD7}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.RepositoryPlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+   <ItemGroup>
+    <PackageReference Include="Dapper">
+      <Version>1.50.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy *.* ..\..\..\..\Publish\NJIS.FPZwS.Wcf.AppPlus\ /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

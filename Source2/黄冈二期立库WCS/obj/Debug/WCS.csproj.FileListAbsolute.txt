@@ -1,0 +1,882 @@
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.Main.resources
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.Properties.Resources.resources
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.csproj.GenerateResource.Cache
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn1.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn2.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn3.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn4.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn5.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn6.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn7.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn8.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Config\Cn9.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.S7Label.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.Siemens_S7WCVB_Button.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.SITOPCIBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.SITOPCNBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\Interop.S7Label.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\Interop.Siemens_S7WCVB_Button.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\Interop.SITOPCIBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\Interop.SITOPCNBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Dll\MdiTabControl.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\WCS.exe.config
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\WCS.exe.manifest
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\WCS.application
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\WCS.exe
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\WCS.pdb
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\AxInterop.S7Label.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\AxInterop.Siemens_S7WCVB_Button.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\AxInterop.SITOPCIBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\AxInterop.SITOPCNBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Interop.S7Label.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Interop.Siemens_S7WCVB_Button.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Interop.SITOPCIBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\Interop.SITOPCNBLib.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\MdiTabControl.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.exe.manifest
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.application
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.exe
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.3\obj\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\WCS.exe.config
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\WCS.exe
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\WCS.Main.resources
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\WCS.Properties.Resources.resources
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn1.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn2.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn3.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn4.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn5.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn6.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn7.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn8.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Cn9.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\AxInterop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\Interop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\Interop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\Interop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\Interop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Dll\MdiTabControl.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\WCS.exe.manifest
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\WCS.application
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\WCS.exe
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\AxInterop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\AxInterop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\AxInterop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\AxInterop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Interop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Interop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Interop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Interop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\MdiTabControl.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\UnifiedAutomation.UaBase.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\UnifiedAutomation.UaClient.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\WCS.exe.manifest
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\obj\Debug\WCS.application
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Config0.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Config1.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Config2.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Config3.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.3\bin\Debug\Config\Config_CPU.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\WCS.exe.config
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\WCS.exe
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Config0.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Config1.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Config2.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Config3.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Config_CPU.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn1.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn2.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn3.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn4.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn5.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn6.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn7.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn8.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Config\Cn9.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\AxInterop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\AxInterop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\AxInterop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\AxInterop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\Interop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\Interop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\Interop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\Interop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Dll\MdiTabControl.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\WCS.exe.manifest
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\WCS.application
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\WCS.exe
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\AxInterop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\AxInterop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\AxInterop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\AxInterop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Interop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Interop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Interop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\Interop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\MdiTabControl.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\UnifiedAutomation.UaBase.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\bin\Debug\UnifiedAutomation.UaClient.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\WCS.Main.resources
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\WCS.Properties.Resources.resources
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\WCS.exe.manifest
+C:\Users\Administrator\Desktop\嘉善WCS 5.4\obj\Debug\WCS.application
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\WCS.exe.config
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\WCS.exe
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Config0.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Config1.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Config2.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Config3.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Config_CPU.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn1.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn2.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn3.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn4.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn5.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn6.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn7.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn8.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Config\Cn9.ini
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\Interop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\Interop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\Interop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\Interop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Dll\MdiTabControl.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\WCS.exe.manifest
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\WCS.application
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\WCS.exe
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\WCS.pdb
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\AxInterop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\AxInterop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\AxInterop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\AxInterop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Interop.S7Label.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Interop.Siemens_S7WCVB_Button.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Interop.SITOPCIBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\Interop.SITOPCNBLib.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\MdiTabControl.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\UnifiedAutomation.UaBase.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\bin\Debug\UnifiedAutomation.UaClient.dll
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\WCS.Main.resources
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\WCS.Properties.Resources.resources
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\WCS.exe.manifest
+C:\Users\Administrator\Desktop\嘉善WCS 5.5\obj\Debug\WCS.application
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\License.lic
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Config0.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Config1.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Config2.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Config3.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Config_CPU.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn1.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn2.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn3.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn4.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn5.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn6.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn7.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn8.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Config\Cn9.ini
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.S7Label.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.Siemens_S7WCVB_Button.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.SITOPCIBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\AxInterop.SITOPCNBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\Interop.S7Label.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\Interop.Siemens_S7WCVB_Button.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\Interop.SITOPCIBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\Interop.SITOPCNBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Dll\MdiTabControl.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\WCS.exe.config
+D:\项目\嘉善WCS 5.5\bin\Debug\WCS.exe.manifest
+D:\项目\嘉善WCS 5.5\bin\Debug\WCS.application
+D:\项目\嘉善WCS 5.5\bin\Debug\WCS.exe
+D:\项目\嘉善WCS 5.5\bin\Debug\WCS.pdb
+D:\项目\嘉善WCS 5.5\bin\Debug\AxInterop.S7Label.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\AxInterop.Siemens_S7WCVB_Button.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\AxInterop.SITOPCIBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\AxInterop.SITOPCNBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Interop.S7Label.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Interop.Siemens_S7WCVB_Button.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Interop.SITOPCIBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\Interop.SITOPCNBLib.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\MdiTabControl.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\项目\嘉善WCS 5.5\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\项目\嘉善WCS 5.5\obj\Debug\ResolveAssemblyReference.cache
+D:\项目\嘉善WCS 5.5\obj\Debug\WCS.Main.resources
+D:\项目\嘉善WCS 5.5\obj\Debug\WCS.Properties.Resources.resources
+D:\项目\嘉善WCS 5.5\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\项目\嘉善WCS 5.5\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\项目\嘉善WCS 5.5\obj\Debug\WCS.exe.manifest
+D:\项目\嘉善WCS 5.5\obj\Debug\WCS.application
+D:\项目\嘉善WCS 5.5\obj\Debug\WCS.exe
+D:\项目\嘉善WCS 5.5\obj\Debug\WCS.pdb
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\WCS.exe.config
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.exe
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.pdb
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\License.lic
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Config_CPU.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn1.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn2.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn3.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn4.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn5.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn6.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn7.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn8.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Config\Cn9.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\WCS.exe.manifest
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\WCS.application
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\WCS.exe
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\WCS.pdb
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.Main.resources
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.Properties.Resources.resources
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.csproj.GenerateResource.Cache
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.exe.manifest
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.application
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.9\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+D:\嘉善WCS 5.23\bin\Debug\WCS.exe.config
+D:\嘉善WCS 5.23\obj\Debug\WCS.exe
+D:\嘉善WCS 5.23\obj\Debug\WCS.pdb
+D:\嘉善WCS 5.23\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\嘉善WCS 5.23\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\嘉善WCS 5.23\bin\Debug\Config\License.lic
+D:\嘉善WCS 5.23\bin\Debug\Config\Config_CPU.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn1.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn2.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn3.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn4.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn5.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn6.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn7.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn8.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Cn9.ini
+D:\嘉善WCS 5.23\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\嘉善WCS 5.23\bin\Debug\WCS.exe.manifest
+D:\嘉善WCS 5.23\bin\Debug\WCS.application
+D:\嘉善WCS 5.23\bin\Debug\WCS.exe
+D:\嘉善WCS 5.23\bin\Debug\WCS.pdb
+D:\嘉善WCS 5.23\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\嘉善WCS 5.23\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\嘉善WCS 5.23\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\嘉善WCS 5.23\obj\Debug\ResolveAssemblyReference.cache
+D:\嘉善WCS 5.23\obj\Debug\WCS.Main.resources
+D:\嘉善WCS 5.23\obj\Debug\WCS.Properties.Resources.resources
+D:\嘉善WCS 5.23\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\嘉善WCS 5.23\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\嘉善WCS 5.23\obj\Debug\WCS.exe.manifest
+D:\嘉善WCS 5.23\obj\Debug\WCS.application
+D:\嘉善WCS 5.23\bin\Debug\Config\Config3.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Config0.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Config1.ini
+D:\嘉善WCS 5.23\bin\Debug\Config\Config2.ini
+D:\嘉善WCS 5.25\bin\Debug\WCS.exe.config
+D:\嘉善WCS 5.25\obj\Debug\WCS.exe
+D:\嘉善WCS 5.25\obj\Debug\WCS.pdb
+D:\嘉善WCS 5.25\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\嘉善WCS 5.25\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\嘉善WCS 5.25\bin\Debug\Config\License.lic
+D:\嘉善WCS 5.25\bin\Debug\Config\Config3.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Config0.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Config1.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Config2.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Config_CPU.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn1.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn2.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn3.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn4.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn5.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn6.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn7.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn8.ini
+D:\嘉善WCS 5.25\bin\Debug\Config\Cn9.ini
+D:\嘉善WCS 5.25\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\嘉善WCS 5.25\bin\Debug\WCS.exe.manifest
+D:\嘉善WCS 5.25\bin\Debug\WCS.application
+D:\嘉善WCS 5.25\bin\Debug\WCS.exe
+D:\嘉善WCS 5.25\bin\Debug\WCS.pdb
+D:\嘉善WCS 5.25\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\嘉善WCS 5.25\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\嘉善WCS 5.25\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\嘉善WCS 5.25\obj\Debug\ResolveAssemblyReference.cache
+D:\嘉善WCS 5.25\obj\Debug\WCS.Main.resources
+D:\嘉善WCS 5.25\obj\Debug\WCS.Properties.Resources.resources
+D:\嘉善WCS 5.25\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\嘉善WCS 5.25\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\嘉善WCS 5.25\obj\Debug\WCS.exe.manifest
+D:\嘉善WCS 5.25\obj\Debug\WCS.application
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\WCS.exe.config
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.exe
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.pdb
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\License.lic
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Config3.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Config0.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Config1.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Config2.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Config_CPU.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn1.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn2.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn3.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn4.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn5.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn6.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn7.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn8.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Config\Cn9.ini
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\WCS.exe.manifest
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\WCS.application
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\WCS.exe
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\WCS.pdb
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.Main.resources
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.Properties.Resources.resources
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.csproj.GenerateResource.Cache
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.exe.manifest
+D:\宁基项目\嘉善\WCS\嘉善WCS 5.29\obj\Debug\WCS.application
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\WCS.exe.config
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\WCS.exe
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\WCS.pdb
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\License.lic
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Config3.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Config0.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Config1.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Config2.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Config_CPU.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn4.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn5.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn6.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn7.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn8.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn9.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn1.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn2.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Config\Cn3.ini
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\WCS.exe.manifest
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\WCS.application
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\WCS.exe
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\WCS.pdb
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\UnifiedAutomation.UaBase.dll
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\bin\Debug\UnifiedAutomation.UaClient.dll
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\WCS.Main.resources
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\WCS.Properties.Resources.resources
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\WCS.exe.manifest
+C:\Users\Wcs\Desktop\嘉善WCS 5.30\obj\Debug\WCS.application
+E:\Probject\嘉善WCS 5.30\bin\Debug\WCS.exe.config
+E:\Probject\嘉善WCS 5.30\obj\Debug\WCS.exe
+E:\Probject\嘉善WCS 5.30\obj\Debug\WCS.pdb
+E:\Probject\嘉善WCS 5.30\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS 5.30\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\License.lic
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Config3.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Config0.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Config1.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Config2.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Config_CPU.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn1.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn2.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn3.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn4.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn5.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn6.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn7.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn8.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Config\Cn9.ini
+E:\Probject\嘉善WCS 5.30\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS 5.30\bin\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS 5.30\bin\Debug\WCS.application
+E:\Probject\嘉善WCS 5.30\bin\Debug\WCS.exe
+E:\Probject\嘉善WCS 5.30\bin\Debug\WCS.pdb
+E:\Probject\嘉善WCS 5.30\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS 5.30\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS 5.30\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS 5.30\obj\Debug\ResolveAssemblyReference.cache
+E:\Probject\嘉善WCS 5.30\obj\Debug\WCS.Main.resources
+E:\Probject\嘉善WCS 5.30\obj\Debug\WCS.Properties.Resources.resources
+E:\Probject\嘉善WCS 5.30\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Probject\嘉善WCS 5.30\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Probject\嘉善WCS 5.30\obj\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS 5.30\obj\Debug\WCS.application
+E:\Probject\嘉善WCS\bin\Debug\WCS.exe.config
+E:\Probject\嘉善WCS\obj\Debug\WCS.exe
+E:\Probject\嘉善WCS\obj\Debug\WCS.pdb
+E:\Probject\嘉善WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS\bin\Debug\Config\License.lic
+E:\Probject\嘉善WCS\bin\Debug\Config\Config3.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Config0.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Config1.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Config2.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Config_CPU.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn1.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn2.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn3.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn4.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn5.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn6.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn7.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn8.ini
+E:\Probject\嘉善WCS\bin\Debug\Config\Cn9.ini
+E:\Probject\嘉善WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS\bin\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS\bin\Debug\WCS.application
+E:\Probject\嘉善WCS\bin\Debug\WCS.exe
+E:\Probject\嘉善WCS\bin\Debug\WCS.pdb
+E:\Probject\嘉善WCS\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS\obj\Debug\ResolveAssemblyReference.cache
+E:\Probject\嘉善WCS\obj\Debug\WCS.Main.resources
+E:\Probject\嘉善WCS\obj\Debug\WCS.Properties.Resources.resources
+E:\Probject\嘉善WCS\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Probject\嘉善WCS\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Probject\嘉善WCS\obj\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS\obj\Debug\WCS.application
+E:\Probject\liyuan\嘉善WCS\bin\Debug\WCS.exe.config
+E:\Probject\liyuan\嘉善WCS\obj\Debug\WCS.exe
+E:\Probject\liyuan\嘉善WCS\obj\Debug\WCS.pdb
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\License.lic
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Config3.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Config0.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Config1.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Config2.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Config_CPU.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn1.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn2.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn3.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn4.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn5.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn6.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn7.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn8.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Config\Cn9.ini
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\liyuan\嘉善WCS\bin\Debug\WCS.exe.manifest
+E:\Probject\liyuan\嘉善WCS\bin\Debug\WCS.application
+E:\Probject\liyuan\嘉善WCS\bin\Debug\WCS.exe
+E:\Probject\liyuan\嘉善WCS\bin\Debug\WCS.pdb
+E:\Probject\liyuan\嘉善WCS\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\liyuan\嘉善WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Probject\liyuan\嘉善WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Probject\liyuan\嘉善WCS\obj\Debug\ResolveAssemblyReference.cache
+E:\Probject\liyuan\嘉善WCS\obj\Debug\WCS.Main.resources
+E:\Probject\liyuan\嘉善WCS\obj\Debug\WCS.Properties.Resources.resources
+E:\Probject\liyuan\嘉善WCS\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Probject\liyuan\嘉善WCS\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Probject\liyuan\嘉善WCS\obj\Debug\WCS.exe.manifest
+E:\Probject\liyuan\嘉善WCS\obj\Debug\WCS.application
+E:\Probject\嘉善WCS2\bin\Debug\WCS.exe.config
+E:\Probject\嘉善WCS2\obj\Debug\WCS.exe
+E:\Probject\嘉善WCS2\obj\Debug\WCS.pdb
+E:\Probject\嘉善WCS2\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS2\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS2\bin\Debug\Config\License.lic
+E:\Probject\嘉善WCS2\bin\Debug\Config\Config0.ini
+E:\Probject\嘉善WCS2\bin\Debug\Config\Config_CPU.ini
+E:\Probject\嘉善WCS2\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS2\bin\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS2\bin\Debug\WCS.application
+E:\Probject\嘉善WCS2\bin\Debug\WCS.exe
+E:\Probject\嘉善WCS2\bin\Debug\WCS.pdb
+E:\Probject\嘉善WCS2\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS2\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS2\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS2\obj\Debug\ResolveAssemblyReference.cache
+E:\Probject\嘉善WCS2\obj\Debug\WCS.Main.resources
+E:\Probject\嘉善WCS2\obj\Debug\WCS.Properties.Resources.resources
+E:\Probject\嘉善WCS2\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Probject\嘉善WCS2\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Probject\嘉善WCS2\obj\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS2\obj\Debug\WCS.application
+E:\Probject\嘉善WCS2\bin\Debug\Config\Config1.ini
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\WCS.exe.config
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\WCS.exe
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\WCS.pdb
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Config\License.lic
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Config\Config0.ini
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Config\Config_CPU.ini
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Config\Config1.ini
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\WCS.application
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\WCS.exe
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\WCS.pdb
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Probject\嘉善WCS(长连廊)\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\ResolveAssemblyReference.cache
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\WCS.Main.resources
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\WCS.Properties.Resources.resources
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\WCS.exe.manifest
+E:\Probject\嘉善WCS(长连廊)\obj\Debug\WCS.application
+C:\D\李元\嘉善WCS(长连廊)\bin\Debug\WCS.exe.config
+C:\D\李元\嘉善WCS(长连廊)\obj\Debug\WCS.exe
+C:\D\李元\嘉善WCS(长连廊)\obj\Debug\WCS.pdb
+D:\Project\嘉善WCS(长连廊)\bin\Debug\WCS.exe.config
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.exe
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.pdb
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Config\License.lic
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Config\Config0.ini
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Config\Config_CPU.ini
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\Project\嘉善WCS(长连廊)\bin\Debug\WCS.exe.manifest
+D:\Project\嘉善WCS(长连廊)\bin\Debug\WCS.application
+D:\Project\嘉善WCS(长连廊)\bin\Debug\WCS.exe
+D:\Project\嘉善WCS(长连廊)\bin\Debug\WCS.pdb
+D:\Project\嘉善WCS(长连廊)\bin\Debug\Interop.OPCSiemensDAAutomation.dll
+D:\Project\嘉善WCS(长连廊)\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\Project\嘉善WCS(长连廊)\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.Main.resources
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.Properties.Resources.resources
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.csproj.GenerateResource.Cache
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.exe.manifest
+D:\Project\嘉善WCS(长连廊)\obj\Debug\WCS.application
+D:\Project\黄冈板材库WCSdemo\bin\Debug\WCS.exe.config
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.exe
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.pdb
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\License.lic
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\Cn1.ini
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\Cn2.ini
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\Cn3.ini
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\Cn4.ini
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\Config0.ini
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Config\Config_CPU.ini
+D:\Project\黄冈板材库WCSdemo\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\Project\黄冈板材库WCSdemo\bin\Debug\WCS.exe.manifest
+D:\Project\黄冈板材库WCSdemo\bin\Debug\WCS.application
+D:\Project\黄冈板材库WCSdemo\bin\Debug\WCS.exe
+D:\Project\黄冈板材库WCSdemo\bin\Debug\WCS.pdb
+D:\Project\黄冈板材库WCSdemo\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\Project\黄冈板材库WCSdemo\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.DdjDemo.resources
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.Main.resources
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.Properties.Resources.resources
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.csproj.GenerateResource.Cache
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.exe.manifest
+D:\Project\黄冈板材库WCSdemo\obj\Debug\WCS.application
+D:\Project\黄冈板材库WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\Project\黄冈板材库WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\Project\黄冈板材库WCS\bin\Debug\Config\License.lic
+D:\Project\黄冈板材库WCS\bin\Debug\Config\Cn1.ini
+D:\Project\黄冈板材库WCS\bin\Debug\Config\Cn2.ini
+D:\Project\黄冈板材库WCS\bin\Debug\Config\Cn3.ini
+D:\Project\黄冈板材库WCS\bin\Debug\Config\Cn4.ini
+D:\Project\黄冈板材库WCS\bin\Debug\Config\Config0.ini
+D:\Project\黄冈板材库WCS\bin\Debug\Config\Config_CPU.ini
+D:\Project\黄冈板材库WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\Project\黄冈板材库WCS\bin\Debug\WCS.exe.config
+D:\Project\黄冈板材库WCS\bin\Debug\WCS.exe.manifest
+D:\Project\黄冈板材库WCS\bin\Debug\WCS.application
+D:\Project\黄冈板材库WCS\bin\Debug\WCS.exe
+D:\Project\黄冈板材库WCS\bin\Debug\WCS.pdb
+D:\Project\黄冈板材库WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\Project\黄冈板材库WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.DdjDemo.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Forms.DeviceMonitor.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Forms.HomeFrm.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.MainFrm.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Forms.SortFrm.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Forms.TaskFrm.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Forms.WriteDataFrm.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Main.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Properties.Resources.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.csproj.GenerateResource.Cache
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.exe.manifest
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.application
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.exe
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.pdb
+D:\Project\黄冈板材库WCS\bin\Debug\app.config
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.Forms.RGVTaskFrm.resources
+D:\Project\黄冈板材库WCS\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Config\License.lic
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\app.config
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Config\Cn1.ini
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Config\Config0.ini
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Config\Config_CPU.ini
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\WCS.exe.config
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\WCS.exe.manifest
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\WCS.application
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\WCS.exe
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\WCS.pdb
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.DdjDemo.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Forms.HomeFrm.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.MainFrm.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Forms.TaskFrm.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Forms.WriteDataFrm.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Properties.Resources.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.csproj.GenerateResource.Cache
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.exe.manifest
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.application
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.exe
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.pdb
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor2.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor3.resources
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\bin\Debug\CommomLY1.0.dll
+C:\D\黄冈立库B\Code\黄冈二期立库WCS\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\WCS.exe.config
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.exe
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.pdb
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Config\License.lic
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\app.config
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Config\Config0.ini
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Config\Config_CPU.ini
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\WCS.exe.manifest
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\WCS.application
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\WCS.exe
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\WCS.pdb
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\CommomLY1.0.dll
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.DdjDemo.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor2.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor3.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.HomeFrm.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.MainFrm.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.TaskFrm.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.WriteDataFrm.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.Properties.Resources.resources
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.csproj.GenerateResource.Cache
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.exe.manifest
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.application
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Config\Cn4.ini
+E:\Project\Source\黄冈二期立库WCS\bin\Debug\Config\Cn5.ini
+E:\Project\Source\黄冈二期立库WCS\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\bin\Debug\WCS.exe.config
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.exe
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.pdb
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.DdjDemo.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor2.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor3.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.HomeFrm.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.MainFrm.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.TaskFrm.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Forms.WriteDataFrm.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.Properties.Resources.resources
+C:\D\黄冈立库B\Code\Source\黄冈二期立库WCS\obj\Debug\WCS.csproj.GenerateResource.Cache
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\License.lic
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\app.config
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn1.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn10.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn11.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn12.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn13.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn14.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn15.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn16.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn17.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn2.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn3.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\Cn4.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\Cn5.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn6.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn7.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn8.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\cn9.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\Config0.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Config\Config_CPU.ini
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\WCS.exe.config
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\WCS.exe.manifest
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\WCS.application
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\WCS.exe
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\WCS.pdb
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\LYLedControl.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+E:\Project\Source2\黄冈二期立库WCS\bin\Debug\LYLedControl.pdb
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.DdjDemo.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor2.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor3.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.FRIDControl.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.HomeFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.LogFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.MainFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.SCControlFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.StationManaFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.TaskFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.WriteDataFrm.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Properties.Resources.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.csproj.GenerateResource.Cache
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.exe.manifest
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.application
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.exe
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.pdb
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.FrmCheckIn.resources
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\Interop.SpeechLib.dll
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.csproj.ResolveComReference.cache
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.LedInfoFrm.resources
+D:\WcsClient\WCS.exe.config
+D:\WcsClient\Dll\UnifiedAutomation.UaBase.dll
+D:\WcsClient\Dll\UnifiedAutomation.UaClient.dll
+D:\WcsClient\Config\License.lic
+D:\WcsClient\app.config
+D:\WcsClient\Config\cn1.ini
+D:\WcsClient\Config\cn10.ini
+D:\WcsClient\Config\cn11.ini
+D:\WcsClient\Config\cn12.ini
+D:\WcsClient\Config\cn13.ini
+D:\WcsClient\Config\cn14.ini
+D:\WcsClient\Config\cn15.ini
+D:\WcsClient\Config\cn16.ini
+D:\WcsClient\Config\cn17.ini
+D:\WcsClient\Config\cn2.ini
+D:\WcsClient\Config\cn3.ini
+D:\WcsClient\Config\Cn4.ini
+D:\WcsClient\Config\Cn5.ini
+D:\WcsClient\Config\cn6.ini
+D:\WcsClient\Config\cn7.ini
+D:\WcsClient\Config\cn8.ini
+D:\WcsClient\Config\cn9.ini
+D:\WcsClient\Config\Config0.ini
+D:\WcsClient\Config\Config_CPU.ini
+D:\WcsClient\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\WcsClient\WCS.exe.manifest
+D:\WcsClient\WCS.application
+D:\WcsClient\WCS.exe
+D:\WcsClient\WCS.pdb
+E:\Project\Source2\黄冈二期立库WCS\obj\Debug\WCS.csprojResolveAssemblyReference.cache
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaBase.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Dll\UnifiedAutomation.UaClient.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\License.lic
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\app.config
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn1.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn10.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn11.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn12.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn13.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn14.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn15.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn16.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn17.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn2.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn3.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\Cn4.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\Cn5.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn6.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn7.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn8.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\cn9.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\Config0.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Config\Config_CPU.ini
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\Dll\Interop.OPCSiemensDAAutomation.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\WCS.exe.config
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\WCS.exe.manifest
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\WCS.application
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\WCS.exe
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\WCS.pdb
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\CommomLY1.0.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\LYLedControl.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaBase.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\UnifiedAutomation.UaClient.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\bin\Debug\LYLedControl.pdb
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\Interop.SpeechLib.dll
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.csproj.ResolveComReference.cache
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.DdjDemo.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor2.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.DeviceMonitor3.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.FRIDControl.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.FrmCheckIn.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.HomeFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.LedInfoFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.LogFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.MainFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.SCControlFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.StationManaFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.TaskFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Forms.WriteDataFrm.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.Properties.Resources.resources
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.csproj.GenerateResource.cache
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.csproj.CoreCompileInputs.cache
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.exe.manifest
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.application
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.csproj.CopyComplete
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.exe
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.pdb
+D:\NJ_Future_Factory_Projects\立库B\黄冈工业4.0车间B项目\99_信息化\source\trunk\Source2\黄冈二期立库WCS\obj\Debug\WCS.csprojAssemblyReference.cache

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6E82191-713C-4668-BABD-1C3A3C437C50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NJIS.PLC.Communication</RootNamespace>
+    <AssemblyName>NJIS.PLC.Communication</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicFramework\SoftBasic.cs" />
+    <Compile Include="BasicFramework\SoftZipped.cs" />
+    <Compile Include="Core\Address\DeviceAddressBase.cs" />
+    <Compile Include="Core\Address\DeviceAddressDataBase.cs" />
+    <Compile Include="Core\Address\S7AddressData.cs" />
+    <Compile Include="Core\IMessage\AlienMessage.cs" />
+    <Compile Include="Core\IMessage\AllenBradleyMessage.cs" />
+    <Compile Include="Core\IMessage\EFORTMessage.cs" />
+    <Compile Include="Core\IMessage\FetchWriteMessage.cs" />
+    <Compile Include="Core\IMessage\FinsMessage.cs" />
+    <Compile Include="Core\IMessage\INetMessage.cs" />
+    <Compile Include="Core\IMessage\MelsecA1EBinaryMessage.cs" />
+    <Compile Include="Core\IMessage\MelsecQnA3EAsciiMessage.cs" />
+    <Compile Include="Core\IMessage\MelsecQnA3EBinaryMessage.cs" />
+    <Compile Include="Core\IMessage\ModbusTcpMessage.cs" />
+    <Compile Include="Core\IMessage\S7Message.cs" />
+    <Compile Include="Core\Net\CommunicationProtocol.cs" />
+    <Compile Include="Core\Net\IReadWriteNet.cs" />
+    <Compile Include="Core\Net\NetSupport.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkAlienClient.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkDeviceBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkDoubleBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkFileServerBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkServerBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkXBase.cs" />
+    <Compile Include="Core\Net\StateOne\AlienSession.cs" />
+    <Compile Include="Core\Net\StateOne\AppSession.cs" />
+    <Compile Include="Core\Net\StateOne\AsyncStateSend.cs" />
+    <Compile Include="Core\Net\StateOne\FileStateObject.cs" />
+    <Compile Include="Core\Net\StateOne\StateObject.cs" />
+    <Compile Include="Core\Net\StateOne\StateOneBase.cs" />
+    <Compile Include="Core\Reflection\DeviceAddressAttribute .cs" />
+    <Compile Include="Core\Reflection\ReflectionHelper.cs" />
+    <Compile Include="Core\Security\Security.cs" />
+    <Compile Include="Core\Thread\ThreadLock.cs" />
+    <Compile Include="Core\Transfer\ByteTransformBase.cs" />
+    <Compile Include="Core\Transfer\ByteTransformHelper.cs" />
+    <Compile Include="Core\Transfer\DataFormat.cs" />
+    <Compile Include="Core\Transfer\IByteTransform.cs" />
+    <Compile Include="Core\Transfer\RegularByteTransform.cs" />
+    <Compile Include="Core\Transfer\ReverseBytesTransformStringDeviation.cs" />
+    <Compile Include="Core\Transfer\ReverseBytesTransform.cs" />
+    <Compile Include="Core\Transfer\ReverseWordTransform.cs" />
+    <Compile Include="Core\Types\NjisTimeOut.cs" />
+    <Compile Include="Core\Types\IDataTransfer.cs" />
+    <Compile Include="Core\Types\OperateResult.cs" />
+    <Compile Include="Language\DefaultLanguage.cs" />
+    <Compile Include="Language\English.cs" />
+    <Compile Include="LogNet\Core\ILogNet.cs" />
+    <Compile Include="LogNet\Core\LogBase.cs" />
+    <Compile Include="LogNet\Core\Types.cs" />
+    <Compile Include="LogNet\LogNetManagment.cs" />
+    <Compile Include="LogNet\Logs\LogNetDateTime.cs" />
+    <Compile Include="LogNet\Logs\LogNetFileSize.cs" />
+    <Compile Include="LogNet\Logs\LogNetSingle.cs" />
+    <Compile Include="Profinet\Siemens\SiemensFetchWriteNet.cs" />
+    <Compile Include="Profinet\Siemens\SiemensPLCS.cs" />
+    <Compile Include="Profinet\Siemens\SiemensPPI.cs" />
+    <Compile Include="Profinet\Siemens\SiemensS7NetStringDeviation.cs" />
+    <Compile Include="Profinet\Siemens\SiemensS7Net.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serial\SerialBase.cs" />
+    <Compile Include="Serial\SerialDeviceBase.cs" />
+    <Compile Include="StringResources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

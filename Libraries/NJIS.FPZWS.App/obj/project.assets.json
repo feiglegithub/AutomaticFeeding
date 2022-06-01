@@ -1,0 +1,490 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "Autofac/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "log4net/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "NJIS.ConfigurationCenter.Client/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "build": {
+          "build/net46/_._": {}
+        }
+      },
+      "NJIS.FPZWS.Log/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.5"
+        },
+        "compile": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "Topshelf/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/Topshelf.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/Topshelf.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "Autofac/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "log4net/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "NJIS.ConfigurationCenter.Client/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "build": {
+          "build/net46/_._": {}
+        }
+      },
+      "NJIS.FPZWS.Log/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.5"
+        },
+        "compile": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "Topshelf/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/Topshelf.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/Topshelf.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x64": {
+      "Autofac/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "log4net/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "NJIS.ConfigurationCenter.Client/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "build": {
+          "build/net46/_._": {}
+        }
+      },
+      "NJIS.FPZWS.Log/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.5"
+        },
+        "compile": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "Topshelf/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/Topshelf.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/Topshelf.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x86": {
+      "Autofac/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "log4net/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "NJIS.ConfigurationCenter.Client/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.ConfigurationCenter.Client.dll": {}
+        },
+        "build": {
+          "build/net46/_._": {}
+        }
+      },
+      "NJIS.FPZWS.Log/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.5"
+        },
+        "compile": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        },
+        "runtime": {
+          "lib/net46/NJIS.FPZWS.Log.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "Topshelf/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/Topshelf.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/Topshelf.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/4.1.1": {
+      "sha512": "C0O06dJ1/WAYr4CZzBu3RCs2GZuR3G8PQFqgxa3PP4jDMUb9//jgL2ONvF06qxPsC0UflkBS55wmd7C5oaEsEg==",
+      "type": "package",
+      "path": "autofac/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.4.1.1.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "log4net/2.0.5": {
+      "sha512": "J6WOp52tqZOfiNrWTulE4AcuhDTSNErlN73/9WGKh6I86+RW3k4ibb+jeCAnxTDpnXIM95HLKGpwM/W76/pHDA==",
+      "type": "package",
+      "path": "log4net/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net10-full/log4net.dll",
+        "lib/net10-full/log4net.xml",
+        "lib/net11-full/log4net.dll",
+        "lib/net11-full/log4net.xml",
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "lib/net45-full/log4net.dll",
+        "lib/net45-full/log4net.xml",
+        "log4net.2.0.5.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    },
+    "NJIS.ConfigurationCenter.Client/1.2.4": {
+      "sha512": "btlDWTBt1c7kx3sPwON+2Rnwc22sE0zMhSLVfe/pWDNIOL4mXPTG2VUr7YM76gOq1gLCgGv1yNayMIqDIwTmSQ==",
+      "type": "package",
+      "path": "njis.configurationcenter.client/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        "build/net40/_._",
+        "build/net45/_._",
+        "build/net46/_._",
+        "content/ConfigurationReadme.md",
+        "content/ConfigurationReadme.pdf",
+        "lib/net40/NJIS.ConfigurationCenter.Client.dll",
+        "lib/net40/NJIS.ConfigurationCenter.Client.xml",
+        "lib/net45/NJIS.ConfigurationCenter.Client.dll",
+        "lib/net45/NJIS.ConfigurationCenter.Client.xml",
+        "lib/net46/NJIS.ConfigurationCenter.Client.dll",
+        "lib/net46/NJIS.ConfigurationCenter.Client.xml",
+        "njis.configurationcenter.client.1.2.4.nupkg.sha512",
+        "njis.configurationcenter.client.nuspec"
+      ]
+    },
+    "NJIS.FPZWS.Log/1.1.0": {
+      "sha512": "dG99P0ajYPCBV4/0DeHSe4zGCm1HMwTU3zWr0KJaxw/IQlRAQOXjxkEg5ao8LpPRn/xfOsBIMZMgdKN5WiHahw==",
+      "type": "package",
+      "path": "njis.fpzws.log/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net46/NJIS.FPZWS.Log.dll",
+        "njis.fpzws.log.1.1.0.nupkg.sha512",
+        "njis.fpzws.log.nuspec"
+      ]
+    },
+    "SharpZipLib/0.86.0": {
+      "sha512": "gRn1KM/GK2tm4ig4zr8HQlTO+6nlxKEmoz03jyjwmKPmnpieQOtUCNwGYadfoeLLpYxhBK8joomOJoO+BVYliw==",
+      "type": "package",
+      "path": "sharpziplib/0.86.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/11/ICSharpCode.SharpZipLib.dll",
+        "lib/20/ICSharpCode.SharpZipLib.dll",
+        "lib/SL3/SharpZipLib.Silverlight3.dll",
+        "lib/SL4/SharpZipLib.Silverlight4.dll",
+        "sharpziplib.0.86.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "Topshelf/3.3.1": {
+      "sha512": "HcBcgYHICNnMSzFcVPjz1J6nQFA7dooPam6vDbrjXJGD8rXPQ+xABGZ6PqAWvoc5s8pnsYPafumNjvymGE/ulA==",
+      "type": "package",
+      "path": "topshelf/3.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Topshelf.dll",
+        "lib/net40-full/Topshelf.dll",
+        "topshelf.3.3.1.nupkg.sha512",
+        "topshelf.nuspec"
+      ]
+    },
+    "NJIS.FPZWS.Common/1.0.0": {
+      "type": "project",
+      "path": "../NJIS.FPZWS.Common/NJIS.FPZWS.Common.csproj",
+      "msbuildProject": "../NJIS.FPZWS.Common/NJIS.FPZWS.Common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6": [
+      "Autofac >= 4.1.1",
+      "NJIS.ConfigurationCenter.Client >= 1.2.4",
+      "NJIS.FPZWS.Common >= 1.0.0",
+      "NJIS.FPZWS.Log >= 1.1.0",
+      "Topshelf >= 3.3.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\11019622\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.App\\NJIS.FPZWS.App.csproj",
+      "projectName": "NJIS.FPZWS.App",
+      "projectPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.App\\NJIS.FPZWS.App.csproj",
+      "packagesPath": "C:\\Users\\11019622\\.nuget\\packages\\",
+      "outputPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.App\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\11019622\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net46"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://10.10.14.46:8070/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net46": {
+          "projectReferences": {
+            "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.Common\\NJIS.FPZWS.Common.csproj": {
+              "projectPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.Common\\NJIS.FPZWS.Common.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[4.1.1, )"
+          },
+          "NJIS.ConfigurationCenter.Client": {
+            "target": "Package",
+            "version": "[1.2.4, )"
+          },
+          "NJIS.FPZWS.Log": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "Topshelf": {
+            "target": "Package",
+            "version": "[3.3.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+﻿<#@ template language="C#" debug="false" hostspecific="true"  #>
+<#@ output extension=".cs"#>
+ 
+<#@ assembly name="EnvDTE" #>
+<#
+const string inputFile = @"../NJIS.FPZWS.LineControl.Drilling.Model/DrillingModel.edmx";
+
+#>
+<#@ include file="..\..\doc\DbFirstRepositor.ttinclude"  #>

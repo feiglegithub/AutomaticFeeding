@@ -1,0 +1,20 @@
+﻿{
+  "endpoints": [],
+  "BaseAddresses": [ "net.tcp://10.30.40.230:9999", "http://10.30.40.230:9998" ],
+  "Bindings": [
+    {
+      "name": "defaultTpcBinding",
+      "sendTimeout": 600,
+      "listenBacklog": 200,
+      "maxBufferSize": 2147483647,
+      "maxConnections": 1000,
+      "maxReceivedMessageSize": 2147483647,
+      "readerQuotasMaxDepth": 64,
+      "readerQuotasMaxStringContentLength": 2147483647,
+      "readerQuotasMaxArrayLength": 2147483647,
+      "readerQuotasMaxBytesPerRead": 2147483647,
+      "readerQuotasMaxNameTableCharCount": 2147483647,
+      "securityMode": "None"
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NJISFPZWSLineControlCuttingPlusModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="CuttingPartReenter">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.CuttingPartReenter">
+        <MappingFragment StoreEntitySet="CuttingPartReenter">
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="PartId" ColumnName="PartId" />
+          <ScalarProperty Name="ReenterType" ColumnName="ReenterType" />
+          <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+          <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+          <ScalarProperty Name="OperationResult" ColumnName="OperationResult" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuttingPartScanLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.CuttingPartScanLog">
+        <MappingFragment StoreEntitySet="CuttingPartScanLog">
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="PartId" ColumnName="PartId" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="InteractionPoints" ColumnName="InteractionPoints" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="PartType" ColumnName="PartType" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Thickness" ColumnName="Thickness" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeviceInfos">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.DeviceInfos">
+        <MappingFragment StoreEntitySet="DeviceInfos">
+          <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="DeviceDescription" ColumnName="DeviceDescription" />
+          <ScalarProperty Name="PlaceNo" ColumnName="PlaceNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MdbParse">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.MdbParse">
+        <MappingFragment StoreEntitySet="MdbParse">
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartFeedBack">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.PartFeedBack">
+        <MappingFragment StoreEntitySet="PartFeedBack">
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="PATTERN" ColumnName="PATTERN" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="PartId" ColumnName="PartId" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="DevicePPCD_ID" ColumnName="DevicePPCD_ID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Thickness" ColumnName="Thickness" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pattern">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.Pattern">
+        <MappingFragment StoreEntitySet="Pattern">
+          <ScalarProperty Name="ActuallyTotalTime" ColumnName="ActuallyTotalTime" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="MdbName" ColumnName="MdbName" />
+          <ScalarProperty Name="PatternId" ColumnName="PatternId" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+          <ScalarProperty Name="TotallyTime" ColumnName="TotallyTime" />
+          <ScalarProperty Name="PartCount" ColumnName="PartCount" />
+          <ScalarProperty Name="OffPartCount" ColumnName="OffPartCount" />
+          <ScalarProperty Name="IsNodePattern" ColumnName="IsNodePattern" />
+          <ScalarProperty Name="OldPatternId" ColumnName="OldPatternId" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="FileFullPath" ColumnName="FileFullPath" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+          <ScalarProperty Name="PlanStackName" ColumnName="PlanStackName" />
+          <ScalarProperty Name="ActuallyStackName" ColumnName="ActuallyStackName" />
+          <ScalarProperty Name="PlanDeviceName" ColumnName="PlanDeviceName" />
+          <ScalarProperty Name="ActualDeviceName" ColumnName="ActualDeviceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatternDetail">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.PatternDetail">
+        <MappingFragment StoreEntitySet="PatternDetail">
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="PatternId" ColumnName="PatternId" />
+          <ScalarProperty Name="OldPatternId" ColumnName="OldPatternId" />
+          <ScalarProperty Name="PartId" ColumnName="PartId" />
+          <ScalarProperty Name="IsOffPart" ColumnName="IsOffPart" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Thickness" ColumnName="Thickness" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+          <ScalarProperty Name="PartCount" ColumnName="PartCount" />
+          <ScalarProperty Name="FinishedPartCount" ColumnName="FinishedPartCount" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stack">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.Stack">
+        <MappingFragment StoreEntitySet="Stack">
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="StackName" ColumnName="StackName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PlanDeviceName" ColumnName="PlanDeviceName" />
+          <ScalarProperty Name="ActualDeviceName" ColumnName="ActualDeviceName" />
+          <ScalarProperty Name="FirstBatchName" ColumnName="FirstBatchName" />
+          <ScalarProperty Name="SecondBatchName" ColumnName="SecondBatchName" />
+          <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+          <ScalarProperty Name="FirstBatchBookCount" ColumnName="FirstBatchBookCount" />
+          <ScalarProperty Name="SecondBatchBookCount" ColumnName="SecondBatchBookCount" />
+          <ScalarProperty Name="MainColor" ColumnName="MainColor" />
+          <ScalarProperty Name="StackListId" ColumnName="StackListId" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+          <ScalarProperty Name="LastStackName" ColumnName="LastStackName" />
+          <ScalarProperty Name="NextStackName" ColumnName="NextStackName" />
+          <ScalarProperty Name="ConnectColor" ColumnName="ConnectColor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StackDetail">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.StackDetail">
+        <MappingFragment StoreEntitySet="StackDetail">
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+          <ScalarProperty Name="StackName" ColumnName="StackName" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="StackIndex" ColumnName="StackIndex" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PatternId" ColumnName="PatternId" />
+          <ScalarProperty Name="PlanBatchName" ColumnName="PlanBatchName" />
+          <ScalarProperty Name="ActualBatchName" ColumnName="ActualBatchName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatternFeedBack">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.PatternFeedBack">
+        <MappingFragment StoreEntitySet="PatternFeedBack">
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="TotallyTime" ColumnName="TotallyTime" />
+          <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="PatternName" ColumnName="PatternName" />
+          <ScalarProperty Name="MdbName" ColumnName="MdbName" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchGroupLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.BatchGroupLog">
+        <MappingFragment StoreEntitySet="BatchGroupLog">
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StackListId" ColumnName="StackListId" />
+          <ScalarProperty Name="StartLoadingTime" ColumnName="StartLoadingTime" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+          <ScalarProperty Name="BatchIndex" ColumnName="BatchIndex" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="IsConnect" ColumnName="IsConnect" />
+          <ScalarProperty Name="NextBatchName" ColumnName="NextBatchName" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="FrontBatchName" ColumnName="FrontBatchName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatternLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.PatternLog">
+        <MappingFragment StoreEntitySet="PatternLog">
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="ActualDeviceName" ColumnName="ActualDeviceName" />
+          <ScalarProperty Name="PlanDeviceName" ColumnName="PlanDeviceName" />
+          <ScalarProperty Name="ActuallyStackName" ColumnName="ActuallyStackName" />
+          <ScalarProperty Name="PlanStackName" ColumnName="PlanStackName" />
+          <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="FileFullPath" ColumnName="FileFullPath" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="OldPatternId" ColumnName="OldPatternId" />
+          <ScalarProperty Name="IsNodePattern" ColumnName="IsNodePattern" />
+          <ScalarProperty Name="OffPartCount" ColumnName="OffPartCount" />
+          <ScalarProperty Name="PartCount" ColumnName="PartCount" />
+          <ScalarProperty Name="TotallyTime" ColumnName="TotallyTime" />
+          <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="PatternId" ColumnName="PatternId" />
+          <ScalarProperty Name="MdbName" ColumnName="MdbName" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StackDetailLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.StackDetailLog">
+        <MappingFragment StoreEntitySet="StackDetailLog">
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="ActualBatchName" ColumnName="ActualBatchName" />
+          <ScalarProperty Name="PlanBatchName" ColumnName="PlanBatchName" />
+          <ScalarProperty Name="PatternId" ColumnName="PatternId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StackIndex" ColumnName="StackIndex" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="StackName" ColumnName="StackName" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatternDetailLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.PatternDetailLog">
+        <MappingFragment StoreEntitySet="PatternDetailLog">
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="FinishedPartCount" ColumnName="FinishedPartCount" />
+          <ScalarProperty Name="PartCount" ColumnName="PartCount" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Thickness" ColumnName="Thickness" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="IsOffPart" ColumnName="IsOffPart" />
+          <ScalarProperty Name="PartId" ColumnName="PartId" />
+          <ScalarProperty Name="OldPatternId" ColumnName="OldPatternId" />
+          <ScalarProperty Name="PatternId" ColumnName="PatternId" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StackLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.StackLog">
+        <MappingFragment StoreEntitySet="StackLog">
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="ConnectColor" ColumnName="ConnectColor" />
+          <ScalarProperty Name="NextStackName" ColumnName="NextStackName" />
+          <ScalarProperty Name="LastStackName" ColumnName="LastStackName" />
+          <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="StackListId" ColumnName="StackListId" />
+          <ScalarProperty Name="MainColor" ColumnName="MainColor" />
+          <ScalarProperty Name="SecondBatchBookCount" ColumnName="SecondBatchBookCount" />
+          <ScalarProperty Name="FirstBatchBookCount" ColumnName="FirstBatchBookCount" />
+          <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+          <ScalarProperty Name="SecondBatchName" ColumnName="SecondBatchName" />
+          <ScalarProperty Name="FirstBatchName" ColumnName="FirstBatchName" />
+          <ScalarProperty Name="ActualDeviceName" ColumnName="ActualDeviceName" />
+          <ScalarProperty Name="PlanDeviceName" ColumnName="PlanDeviceName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StackName" ColumnName="StackName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLCLog">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.PLCLog">
+        <MappingFragment StoreEntitySet="PLCLog">
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="TriggerType" ColumnName="TriggerType" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaskManager">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.TaskManager">
+        <MappingFragment StoreEntitySet="TaskManager">
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="BatchIndex" ColumnName="BatchIndex" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchGroupPlus">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.BatchGroupPlus">
+        <MappingFragment StoreEntitySet="BatchGroupPlus">
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StartLoadingTime" ColumnName="StartLoadingTime" />
+          <ScalarProperty Name="BatchIndex" ColumnName="BatchIndex" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="LineId" ColumnName="LineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchProductionDetails">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.BatchProductionDetails">
+        <MappingFragment StoreEntitySet="BatchProductionDetails">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DifferenceNumber" ColumnName="DifferenceNumber" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuttingSawFileRelationPlus">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.CuttingSawFileRelationPlus">
+        <MappingFragment StoreEntitySet="CuttingSawFileRelationPlus">
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+          <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="SawFile" ColumnName="SawFile" />
+          <ScalarProperty Name="SawType" ColumnName="SawType" />
+          <ScalarProperty Name="SawFileName" ColumnName="SawFileName" />
+          <ScalarProperty Name="BoardCount" ColumnName="BoardCount" />
+          <ScalarProperty Name="StackIndex" ColumnName="StackIndex" />
+          <ScalarProperty Name="StackName" ColumnName="StackName" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchNamePilerNoBind">
+      <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingPlusModel.BatchNamePilerNoBind">
+        <MappingFragment StoreEntitySet="BatchNamePilerNoBind">
+          <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="HasUpProtect" ColumnName="HasUpProtect" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+          <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+          <ScalarProperty Name="StackName" ColumnName="StackName" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

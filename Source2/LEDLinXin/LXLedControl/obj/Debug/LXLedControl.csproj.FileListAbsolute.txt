@@ -1,0 +1,10 @@
+D:\设备资料\LED\灵信\LEDDemo\LXLedControl\bin\Debug\LXLedControl.dll
+D:\设备资料\LED\灵信\LEDDemo\LXLedControl\bin\Debug\LXLedControl.pdb
+D:\设备资料\LED\灵信\LEDDemo\LXLedControl\obj\Debug\LXLedControl.csprojAssemblyReference.cache
+D:\设备资料\LED\灵信\LEDDemo\LXLedControl\obj\Debug\LXLedControl.csproj.CoreCompileInputs.cache
+D:\设备资料\LED\灵信\LEDDemo\LXLedControl\obj\Debug\LXLedControl.dll
+D:\设备资料\LED\灵信\LEDDemo\LXLedControl\obj\Debug\LXLedControl.pdb
+E:\Project\Source2\LEDLinXin\LXLedControl\bin\Debug\LXLedControl.dll
+E:\Project\Source2\LEDLinXin\LXLedControl\bin\Debug\LXLedControl.pdb
+E:\Project\Source2\LEDLinXin\LXLedControl\obj\Debug\LXLedControl.dll
+E:\Project\Source2\LEDLinXin\LXLedControl\obj\Debug\LXLedControl.pdb

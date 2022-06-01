@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Plugins>
+
+  <RibbonTab name="MonitorMgr" quickStartGroup="Group0" path="监控管理/监控" 
+             type="NJIS.FPZWS.Sorting.Client.UI.MonitorEntry,NJIS.FPZWS.Sorting.Client">
+  </RibbonTab>
+  <RibbonTab name="ManagementMgr" quickStartGroup="Group1" path="维护管理/维护" 
+             type="NJIS.FPZWS.Sorting.Client.UI.ManagementEntry,NJIS.FPZWS.Sorting.Client">
+  </RibbonTab>
+
+  <RibbonTab name="PlanPanelStatis" quickStartGroup="Group2"  path ="排产批次/批次运行情况" 
+             type="NJIS.FPZWS.Tools.PlanPanels.PanelStatisEntry,NJIS.FPZWS.Sorting.Client"></RibbonTab>
+  <RibbonTab name="PlanPanelStatis" quickStartGroup="Group3"  path ="排产批次/机器人任务" 
+             type="NJIS.FPZWS.Tools.PlanPanels.TaskEntry,NJIS.FPZWS.Sorting.Client"></RibbonTab>
+
+</Plugins>

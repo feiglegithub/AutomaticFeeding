@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HuangGangBWMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="WMS_Task">
+          <Key>
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="TaskId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" />
+          <Property Name="PilerNo" Type="int" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="30" />
+          <Property Name="Amount" Type="int" />
+          <Property Name="TaskType" Type="int" Nullable="false" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="FromPosition" Type="varchar" MaxLength="20" />
+          <Property Name="ToPosition" Type="varchar" MaxLength="20" />
+          <Property Name="DdjNo" Type="int" />
+          <Property Name="HasUpProtect" Type="bit" />
+          <Property Name="TaskStatus" Type="int" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="DdjTime" Type="datetime" />
+          <Property Name="FinishTime" Type="datetime" />
+          <Property Name="ErrorMsg" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="HuangGangBWMSModelStoreContainer">
+          <EntitySet Name="WMS_Task" EntityType="Self.WMS_Task" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HuangGangBWMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="WMS_Task">
+          <Key>
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="TaskId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReqId" Type="Int64" />
+          <Property Name="PilerNo" Type="Int32" />
+          <Property Name="ProductCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="TaskType" Type="Int32" Nullable="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="FromPosition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ToPosition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DdjNo" Type="Int32" />
+          <Property Name="HasUpProtect" Type="Boolean" />
+          <Property Name="TaskStatus" Type="Int32" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="DdjTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishTime" Type="DateTime" Precision="3" />
+          <Property Name="ErrorMsg" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="HuangGangBWMSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="WMS_Task" EntityType="Self.WMS_Task" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HuangGangBWMSModelStoreContainer" CdmEntityContainer="HuangGangBWMSEntities">
+          <EntitySetMapping Name="WMS_Task">
+            <EntityTypeMapping TypeName="HuangGangBWMSModel.WMS_Task">
+              <MappingFragment StoreEntitySet="WMS_Task">
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+                <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+                <ScalarProperty Name="DdjNo" ColumnName="DdjNo" />
+                <ScalarProperty Name="HasUpProtect" ColumnName="HasUpProtect" />
+                <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="DdjTime" ColumnName="DdjTime" />
+                <ScalarProperty Name="FinishTime" ColumnName="FinishTime" />
+                <ScalarProperty Name="ErrorMsg" ColumnName="ErrorMsg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

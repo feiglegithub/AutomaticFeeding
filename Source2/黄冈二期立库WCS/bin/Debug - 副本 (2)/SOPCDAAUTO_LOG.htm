@@ -1,0 +1,65 @@
+<html>
+  <head>
+  <title>sopcdaauto.dll - TRACE</title>
+<meta name='generator' content='Trace generated' />
+<meta name='author' content='Christian Hock' />
+<style>
+	.ERROR{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.ERRORINFO{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.IN{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+ 	.OUT{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.OUTGOING{COLOR:magenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.CTOR{COLOR:cyan;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:darkgreen;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.DTOR{COLOR:darkmagenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.MEMORY{COLOR:darkgreen;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.INFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.MISC{COLOR:yellow;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:blue;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.SPECIAL{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.SPECIALINFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.VALUE{COLOR:blue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.HEADER{COLOR:black;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xERROR{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xERRORINFO{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xIN{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+ 	.xOUT{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xOUTGOING{COLOR:magenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xCTOR{COLOR:cyan;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:darkgreen;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xDTOR{COLOR:darkmagenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xMEMORY{COLOR:darkgreen;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xINFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xMISC{COLOR:yellow;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:blue;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xSPECIAL{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xSPECIALINFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xVALUE{COLOR:blue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+</style>
+<script id='clientEventHandlersJS' language='javascript'>
+<!--
+  function ChangeButton(MyButton, MyStyle, ValueOn, ValueOff){if(document.styleSheets[0].rules[MyStyle].style.display=='none'){document.styleSheets[0].rules[MyStyle].style.display='';document.all[MyButton].value=ValueOn;}else{document.styleSheets[0].rules[MyStyle].style.display='none';document.all[MyButton].value=ValueOff;}}
+  function btn0_onclick(){ChangeButton('btn0', 2, 'Hide In', 'Show In');}
+  function btn1_onclick(){ChangeButton('btn1', 3, 'Hide Out', 'Show Out');}
+  function btn2_onclick(){ChangeButton('btn2', 4, 'Hide Outgo', 'Show Outgo');}
+  function btn3_onclick(){ChangeButton('btn3', 5, 'Hide Ctor', 'Show Ctor');}
+  function btn4_onclick(){ChangeButton('btn4', 6, 'Hide Dtor', 'Show Dtor');}
+  function btn5_onclick(){ChangeButton('btn5', 7, 'Hide Memory', 'Show Memory');}
+  function btn6_onclick(){ChangeButton('btn6', 8, 'Hide Info', 'Show Info');}
+  function btn7_onclick(){ChangeButton('btn7', 9, 'Hide Misc', 'Show Misc');}
+  function btn8_onclick(){ChangeButton('btn8', 10, 'Hide Special', 'Show Special');}
+  function btn9_onclick(){ChangeButton('btn9', 11, 'Hide S-Info', 'Show S-Info');}
+  function btn10_onclick(){ChangeButton('btn10', 12, 'Hide Value', 'Show Value');}
+  function btn12_onclick(){ChangeButton('btn12', 0, 'Hide Error', 'Show Error');}
+  function btn13_onclick(){ChangeButton('btn13', 1, 'Hide Err-Info', 'Show Err-Info');}
+//-->
+</script>
+</head>
+<body>
+<h1 style='font-family:Arial' style='font-size:16pt'>Traceoutput</h1>
+<table style='font-family:Arial' style='font-size:10pt' bgcolor='white' align='justify' cellspacing='1' width='100%%' border='0' borderColorDark='white' borderColorLight='white' background='' borderColor='white'>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-File</td><td width='*'>WCS.exe</td></tr>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-Build</td><td width='*'>Release</td></tr>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-Version</td><td width='*'>1.0.0.0</td></tr>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-Path</td><td width='*'>E:\Project\Source2\<tr class='SPECIAL'><td width='65'>00000001</td><td width='85'>11:59:27,373</td><td width='40'>0A04</td><td width='15'>***</td><td width='*'>TRACEEVENT IS CREATED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000002</td><td width='85'>11:59:27,373</td><td width='40'>0A04</td><td width='15'>***</td><td width='*'>TRACE IS INITIALIZED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000003</td><td width='85'>14:39:26,598</td><td width='40'>1A1C</td><td width='15'>-></td><td width='*'>DLL_PROCESS_ATTACH</td></tr>
+<tr class='SPECIAL'><td width='65'>00000004</td><td width='85'>14:39:26,598</td><td width='40'>1A1C</td><td width='15'><-</td><td width='*'>DLL_PROCESS_ATTACH</td></tr>
+<tr class='SPECIAL'><td width='65'>00000005</td><td width='85'>14:39:26,598</td><td width='40'>1A1C</td><td width='15'>***</td><td width='*'>TRACEEVENT IS DELETED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000006</td><td width='85'>14:39:26,598</td><td width='40'>1A1C</td><td width='15'>***</td><td width='*'>TRACE IS UNINITIALIZED</td></tr>

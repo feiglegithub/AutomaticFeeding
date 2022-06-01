@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WCS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="INIPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Config</Value>
+    </Setting>
+    <Setting Name="LogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Log</Value>
+    </Setting>
+    <Setting Name="DBWCS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Persist Security Info =true; Password=!Q@W#E$R5t6y7u8i;User ID = sa ; Initial Catalog = HGWCSBC; Data Source =10.30.3.117</Value>
+    </Setting>
+    <Setting Name="DBTime" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Persist Security Info =true; Password=!Q@W#E$R5t6y7u8i;User ID = sa ; Initial Catalog = master; Data Source =10.30.3.116</Value>
+    </Setting>
+    <Setting Name="DBWCSPROD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Persist Security Info =true; Password=!Q@W#E$R5t6y7u8i;User ID = sa ; Initial Catalog = HGWCSBC; Data Source =.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

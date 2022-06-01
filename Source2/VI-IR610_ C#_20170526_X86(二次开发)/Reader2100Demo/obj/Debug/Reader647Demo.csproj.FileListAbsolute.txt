@@ -1,0 +1,13 @@
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.MainForm.resources
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.Properties.Resources.resources
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.csproj.GenerateResource.Cache
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\bin\Debug\Reader647DLL.dll
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\bin\Debug\Reader647Demo.exe
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\bin\Debug\Reader647Demo.pdb
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.exe
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.pdb
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.exe
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.pdb

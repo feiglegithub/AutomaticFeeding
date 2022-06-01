@@ -1,0 +1,160 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ assembly name="System" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ assembly name="$(TargetDir)NJIS.AppUtility.Net45.dll" #>
+<#@ import namespace="NJIS.AppUtility.Extensions"#>
+<#@ assembly name="$(TargetDir)NJIS.Framework.Core.dll" #>
+
+
+<#@ parameter name="NameSpace" type="System.String" #>
+
+<#@ include file="Manager.ttinclude" #>
+<#@ include file="Services.ttinclude"  #>
+<#@ include file="Contracts.ttinclude"  #>
+<#@ include file="EntityConfigurations.ttinclude"  #>
+<#@ include file="Dtos.ttinclude"  #>
+<#@ include file="DbContext.ttinclude"  #>
+
+<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
+
+
+<#
+    var assemblyFile=Path.Combine(TargetDir,TargetFileName);
+    var assembly=Assembly.LoadFrom(assemblyFile);
+
+    var dic=new Dictionary<string,List<Type>>();
+    foreach(var cls in assembly.GetTypes())
+    {
+		
+        if(IsEntityBase(cls)){
+            var sleaf=GetServerFolder(cls.ToString());
+            if(sleaf==null || sleaf==""){
+                sleaf="Default";   
+            }
+            if (dic.ContainsKey(sleaf))
+            {
+                dic[sleaf].Add(cls);          
+            }
+            else
+            {                   
+                dic.Add(sleaf,new List<Type>());
+                dic[sleaf].Add(cls);
+            }
+        }
+    }
+
+    
+
+    
+    foreach(var item in dic){
+        var dic1=new Dictionary<string,List<Type>>();
+        dic1.Add(item.Key,item.Value);
+        GetContractsCode(dic1);
+        GetServicesCode(dic1);
+        GetEntityConfigurationsCode(dic1);
+        GetDtosCode(dic1);
+        GetDbContextCode();
+    }
+    
+    //释放代码
+    GenerationEnvironment=new StringBuilder(); 
+
+#>
+
+<#+
+
+        
+        public bool IsEntityBase(Type type)
+        {
+            bool flag = false;
+            var implementedInterfaces = type.GetInterfaces();
+            foreach (var interfaceType in implementedInterfaces)
+            {
+                if (false == interfaceType.IsGenericType) { continue; }
+                var genericType = interfaceType.GetGenericTypeDefinition();
+                if (genericType.FullName.StartsWith("NJIS.Framework.Core.Data.IEntity"))
+                {
+                    flag=true;
+                    break;
+                }
+            }
+            return flag;
+        }
+        public string GetTypeName(PropertyInfo pi)
+        {
+            var res = pi.PropertyType.FullName;
+            if (pi.PropertyType.FullName.StartsWith("System.Nullable"))
+            {
+                res = string.Format("System.Nullable<{0}>",pi.PropertyType.GenericTypeArguments[0].FullName);
+            }
+            return res;
+        }
+
+    public string GetServerFolder(string fullName){
+        fullName=fullName.Substring(GetModelNameSpace().Length+1);
+        if(fullName.Contains('.'))
+            return fullName=fullName.Substring(0,fullName.LastIndexOf('.'));
+        return "";
+    }
+
+    public string GetModelNameSpace(){
+        return RootNameSpace+".Model";
+    }
+
+    public string GetItemNameSpace(string item){
+        if(item=="Default"){
+            return "";
+        }
+        return "."+item;
+    }
+    
+    // 默认命名空间  
+    public string DefaultNameSpace{
+        get{
+            return GetModelNameSpace(); 
+        }
+    }
+
+    // 获取解决方案路径    
+    public string  SolutionsPath{
+        get{
+            return Host.ResolveAssemblyReference("$(SolutionsPath)"); 
+        }
+    } 
+	
+    // 获取解决方案路径    
+    public string  ProjectDir{
+        get{
+            return Host.ResolveAssemblyReference("$(ProjectDir)"); 
+        }
+    }
+
+    // 默认命名空间    
+    public string  RootNameSpace{
+        get{
+            return Host.ResolveAssemblyReference("$(RootNameSpace)"); 
+        }
+    }
+
+    // 项目输出目录    
+    public string  TargetDir{
+        get{
+             return Host.ResolveAssemblyReference("$(TargetDir)"); 
+        }
+    }
+
+    //项目输出目录    
+    public string  TargetFileName{
+        get{
+
+            return Host.ResolveAssemblyReference("$(TargetFileName)"); 
+        }
+    }
+
+
+#>

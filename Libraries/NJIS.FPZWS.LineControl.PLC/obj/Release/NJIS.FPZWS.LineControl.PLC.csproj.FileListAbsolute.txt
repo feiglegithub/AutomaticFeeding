@@ -1,0 +1,15 @@
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.FPZWS.LineControl.PLC.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.FPZWS.LineControl.PLC.pdb
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\log4net.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.FPZWS.Common.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.FPZWS.Log.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.FPZWS.LineControl.PLC.Config.exe
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.PLC.Communication.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.PLC.Communication.pdb
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\bin\Release\NJIS.FPZWS.LineControl.PLC.Config.pdb
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\obj\Release\NJIS.FPZWS.LineControl.PLC.csprojAssemblyReference.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\obj\Release\NJIS.FPZWS.LineControl.PLC.csproj.CoreCompileInputs.cache
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\obj\Release\NJIS.FPZWS.LineControl.PLC.csproj.CopyComplete
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\obj\Release\NJIS.FPZWS.LineControl.PLC.dll
+D:\99_信息化\source\trunk\Libraries\NJIS.FPZWS.LineControl.PLC\obj\Release\NJIS.FPZWS.LineControl.PLC.pdb

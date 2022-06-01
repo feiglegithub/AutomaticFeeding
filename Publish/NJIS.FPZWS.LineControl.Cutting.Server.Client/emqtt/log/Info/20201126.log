@@ -1,0 +1,16 @@
+15:38:25 ================================
+15:38:25 ServerIp=10.30.3.117
+15:38:25 ServerPort=1883
+15:38:25 ReceiveClientId=NJIS.FPZWS.Sorting.SortingMonitorb29995b7-59c8-4e92-b29d-c17cbffe4e02
+15:38:25 SendClientId=NJIS.FPZWS.Sorting.SortingMonitorfac0c80e-80fb-4978-86b2-9f74d9cacd95
+15:38:25 SerializeMode=Json
+15:38:25 ================================
+15:38:25 start emqtt sender
+15:38:25 Subscribe=>/sfy/rx/pcs/cutting/1/rep/PartInfoPositionCommand
+15:38:26 Subscribe=>/sfy/rx/pcs/cutting/1/rep/ChainBufferInfo
+15:38:26 Subscribe=>/sfy/rx/pcs/cutting/1/rep/InitQueue
+15:38:26 Subscribe=>/sfy/rx/pcs/cutting/1/rep/alarm
+15:40:47 Subscribe=>/sfy/rx/pcs/cutting/1/rep/PartInfoPositionCommand
+15:40:47 Subscribe=>/sfy/rx/pcs/cutting/1/rep/ChainBufferInfo
+15:40:47 Subscribe=>/sfy/rx/pcs/cutting/1/rep/InitQueue
+15:40:47 Subscribe=>/sfy/rx/pcs/cutting/1/rep/alarm

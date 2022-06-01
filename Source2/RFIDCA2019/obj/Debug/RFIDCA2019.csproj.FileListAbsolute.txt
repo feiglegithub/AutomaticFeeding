@@ -1,0 +1,9 @@
+E:\Project\Source2\RFIDCA2019\bin\Debug\RFIDCA2019.exe.config
+E:\Project\Source2\RFIDCA2019\bin\Debug\RFIDCA2019.exe
+E:\Project\Source2\RFIDCA2019\bin\Debug\RFIDCA2019.pdb
+E:\Project\Source2\RFIDCA2019\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\RFIDCA2019\bin\Debug\NJIS.RFID.HBSEPD.exe
+E:\Project\Source2\RFIDCA2019\bin\Debug\NJIS.RFID.HBSEPD.pdb
+E:\Project\Source2\RFIDCA2019\obj\Debug\RFIDCA2019.exe
+E:\Project\Source2\RFIDCA2019\obj\Debug\RFIDCA2019.pdb
+E:\Project\Source2\RFIDCA2019\obj\Debug\RFIDCA2019.csprojResolveAssemblyReference.cache

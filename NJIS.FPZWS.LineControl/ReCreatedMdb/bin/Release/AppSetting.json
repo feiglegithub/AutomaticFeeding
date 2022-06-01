@@ -1,0 +1,11 @@
+﻿{
+  "App": "NJIS.FPZWS.LineControl.Cutting.Core.CuttingApp,NJIS.FPZWS.LineControl.Cutting.Core",
+  "Service": "NJIS.FPZWS.LineControl.Cutting",
+  "ServiceName": "NJIS.FPZWS.LineControl.Cutting",
+  "InstanceName": "",
+  "Description": "",
+  "DisplayName": "NJIS.FPZWS.LineControl.Cutting",
+  "StartTimeout": 10,
+  "StopTimeout": 10,
+  "HelpTextPrefix": "dg"
+}

@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC710043-5E14-4109-A484-B046BE83FF0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCS</RootNamespace>
+    <AssemblyName>WCS</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>wcs.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>E76B7285ABBBCA91C94479AEB853D1AC7BDA7CFC</ManifestCertificateThumbprint>
+    <ManifestKeyFile>WCS_Beta160609_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>ftp://10.18.102.20:22/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://10.18.102.20:1234/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>WCS.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.OPCSiemensDAAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\WCSDemo\WCS\WCS_APP\OPCDemo\Dll\Interop.OPCSiemensDAAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="NJIS.Ini, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NJIS.Ini.1.0.1\lib\NJIS.Ini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TelerikCommon, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="UnifiedAutomation.UaBase, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL" />
+    <Reference Include="UnifiedAutomation.UaClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90c158e6f23d82c1, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\BoardInStockCommand.cs" />
+    <Compile Include="Commands\Args\EventBaseArg.cs" />
+    <Compile Include="Commands\BoardOutStockCommand.cs" />
+    <Compile Include="Commands\CommandBase.cs" />
+    <Compile Include="Commands\CreatedSortingDetailCommand.cs" />
+    <Compile Include="Commands\EmptyBoardRequestCommand.cs" />
+    <Compile Include="Commands\EmptySubplateInStockRequestCommand.cs" />
+    <Compile Include="Commands\OutWareFinishedCommand.cs" />
+    <Compile Include="Commands\SortingBeginInStockCommand.cs" />
+    <Compile Include="Commands\SortingLoadingFinishedCommand.cs" />
+    <Compile Include="Commands\OffBoardInStockRequestCommand.cs" />
+    <Compile Include="Commands\PilerBeginCommand.cs" />
+    <Compile Include="Commands\PilerFinishedCommand.cs" />
+    <Compile Include="Commands\RequestMaterialCommand.cs" />
+    <Compile Include="Commands\RgvBeginCommand.cs" />
+    <Compile Include="Commands\RgvFinishedCommand.cs" />
+    <Compile Include="Commands\MhBeginCommand.cs" />
+    <Compile Include="Commands\MhFinishedCommand.cs" />
+    <Compile Include="Commands\SortingInStockRequestCommand.cs" />
+    <Compile Include="Commands\SortingOutStackCommand.cs" />
+    <Compile Include="Common\AppCommon.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Common\ControlTime.cs" />
+    <Compile Include="Common\DbHelperSQL.cs" />
+    <Compile Include="Common\LogHelper.cs" />
+    <Compile Include="Common\OracleHelper.cs" />
+    <Compile Include="Common\SqlHelper.cs" />
+    <Compile Include="Common\SystemTimeWin32.cs" />
+    <Compile Include="Common\ThreadHelper.cs" />
+    <Compile Include="Communications\CuttingEmptyStationCommunication.cs" />
+    <Compile Include="Communications\EmptySubplateStationCommunication.cs" />
+    <Compile Include="Communications\InOutCommunication.cs" />
+    <Compile Include="Communications\InStockStationCommunication.cs" />
+    <Compile Include="Communications\LineCommunication.cs" />
+    <Compile Include="Communications\MachineHandCommunication.cs" />
+    <Compile Include="Communications\OutStockStationCommunication.cs" />
+    <Compile Include="Communications\PilerCommunication.cs" />
+    <Compile Include="Communications\PilerCommunicationBase.cs" />
+    <Compile Include="Communications\RgvCommunication.cs" />
+    <Compile Include="DataBase\Sql.cs" />
+    <Compile Include="DataBase\WCSSql.cs" />
+    <Compile Include="DdjDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DdjDemo.Designer.cs">
+      <DependentUpon>DdjDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeviceMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeviceMonitor.Designer.cs">
+      <DependentUpon>DeviceMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeFrm.Designer.cs">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InWareFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InWareFrm.Designer.cs">
+      <DependentUpon>InWareFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PasswordFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasswordFrm.Designer.cs">
+      <DependentUpon>PasswordFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SortingDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SortingDetailFrm.Designer.cs">
+      <DependentUpon>SortingDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RGVTaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RGVTaskFrm.Designer.cs">
+      <DependentUpon>RGVTaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SortFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SortFrm.Designer.cs">
+      <DependentUpon>SortFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TaskFrm.Designer.cs">
+      <DependentUpon>TaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WriteDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WriteDataFrm.Designer.cs">
+      <DependentUpon>WriteDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\WmsServiceHelper.cs" />
+    <Compile Include="Interfaces\IPiler.cs" />
+    <Compile Include="Interfaces\IWms.cs" />
+    <Compile Include="DataBase\DdjInfo.cs" />
+    <Compile Include="Common\LogWrite.cs" />
+    <Compile Include="MachineHandTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineHandTestForm.Designer.cs">
+      <DependentUpon>MachineHandTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\DeviceData.cs" />
+    <Compile Include="model\LogMod.cs" />
+    <Compile Include="model\ManualTask.cs" />
+    <Compile Include="model\RequestInfo.cs" />
+    <Compile Include="model\RGVTask.cs" />
+    <Compile Include="model\SCInfo.cs" />
+    <Compile Include="model\SortStation.cs" />
+    <Compile Include="model\TaskInfo.cs" />
+    <Compile Include="model\WMSFeedBack.cs" />
+    <Compile Include="model\SortInfo.cs" />
+    <Compile Include="Mod\EmptyReq.cs" />
+    <Compile Include="Mod\InWare.cs" />
+    <Compile Include="Mod\RGVControl.cs" />
+    <Compile Include="Mod\ScControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mod\Monitor.cs" />
+    <Compile Include="DataBase\MonitorSql.cs" />
+    <Compile Include="Mod\OutWare.cs" />
+    <Compile Include="Mod\Sorting.cs" />
+    <Compile Include="OPC\OpcBaseManage.cs" />
+    <Compile Include="OPC\OpcEntity.cs" />
+    <Compile Include="OPC\OpcExecute.cs" />
+    <Compile Include="OPC\OpcHss.cs" />
+    <Compile Include="OPC\OpcHsc.cs" />
+    <Compile Include="OPC\OpcHsInBase.cs" />
+    <Compile Include="OPC\OpcSc.cs" />
+    <Compile Include="OPC\OpcHsEmptyReqBase.cs" />
+    <Compile Include="OPC\OpcHsEmptyInBase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceR\WebServiceDemo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DdjDemo.resx">
+      <DependentUpon>DdjDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeviceMonitor.resx">
+      <DependentUpon>DeviceMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeFrm.resx">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InWareFrm.resx">
+      <DependentUpon>InWareFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordFrm.resx">
+      <DependentUpon>PasswordFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingDetailFrm.resx">
+      <DependentUpon>SortingDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RGVTaskFrm.resx">
+      <DependentUpon>RGVTaskFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortFrm.resx">
+      <DependentUpon>SortFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TaskFrm.resx">
+      <DependentUpon>TaskFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WriteDataFrm.resx">
+      <DependentUpon>WriteDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineHandTestForm.resx">
+      <DependentUpon>MachineHandTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Config\Cn1.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Cn2.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Cn3.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Cn4.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Cn5.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Cn6.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Cn7.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Config0.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Config_CPU.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Config\License.lic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <None Include="ServiceR\WebServiceDemo\WCS.WebServiceDemo.ApplyWMSTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="ServiceR\WebServiceDemo\WCS.WebServiceDemo.ResultMsg.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="ServiceR\WebServiceDemo\WMSService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\Interop.OPCSiemensDAAutomation.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\UnifiedAutomation.UaBase.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\UnifiedAutomation.UaClient.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ddj.png" />
+    <Content Include="Resources\ddjRed.jpg" />
+    <Content Include="Resources\maxsize.png" />
+    <Content Include="Resources\minsize.png" />
+    <None Include="ServiceR\WebServiceDemo\configuration91.svcinfo" />
+    <None Include="ServiceR\WebServiceDemo\configuration.svcinfo" />
+    <None Include="ServiceR\WebServiceDemo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="ServiceR\WebServiceDemo\WMSService.disco" />
+    <Content Include="wcs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="ServiceR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="ServiceR\WebServiceDemo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libs\NJIS.Common\NJIS.Common.csproj">
+      <Project>{BB925A8A-29AE-4ABD-8F28-76B977AE36BA}</Project>
+      <Name>NJIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsConfig\WcsConfig.csproj">
+      <Project>{87ede5f3-1e69-400b-853b-a510cf9e1a5c}</Project>
+      <Name>WcsConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsContract\WcsContract.csproj">
+      <Project>{4857047A-10E7-4E27-82B8-7C3BD5B66F1D}</Project>
+      <Name>WcsContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsSortingAlgorithm\WcsSortingAlgorithm.csproj">
+      <Project>{FDDBAD32-4665-4FD8-8D23-F7F37C7600A1}</Project>
+      <Name>WcsSortingAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="WcsModel\WcsModel.csproj">
+      <Project>{E6E2D214-6CC1-4EB8-8860-46704A9323BE}</Project>
+      <Name>WcsModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="WcsService\WcsService.csproj">
+      <Project>{C60462E5-88B8-42D1-B47D-ECCFDEA2DB57}</Project>
+      <Name>WcsService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

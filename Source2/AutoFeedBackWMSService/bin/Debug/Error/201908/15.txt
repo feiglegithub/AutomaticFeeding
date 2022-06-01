@@ -1,0 +1,972 @@
+【2019/8/15 14:07:32】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+【2019/8/15 14:07:36】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+【2019/8/15 14:07:39】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+【2019/8/15 14:07:42】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+【2019/8/15 14:07:45】没有终结点在侦听可以接受消息的 http://10.30.3.112:7080/default/interface2wcsService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+【2019/8/15 14:07:49】接收对 http://10.30.3.112:7080/default/interface2wcsService 的 HTTP 响应时发生错误。这可能是由于服务终结点绑定未使用 HTTP 协议造成的。这还可能是由于服务器中止了 HTTP 请求上下文(可能由于服务关闭)所致。有关详细信息，请参见服务器日志。
+【2019/8/15 14:08:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:08:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:09:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:10:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:11:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:12:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:13:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:14:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:15:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:16:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:17:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:18:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:19:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:20:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:21:59】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:01】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:03】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:05】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:07】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:09】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:11】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:13】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:15】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:17】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:19】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:21】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:23】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:25】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:27】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:29】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:31】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:33】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:35】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:37】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:39】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:41】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:43】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:45】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:47】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:49】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:51】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:53】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:55】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:22:57】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:44】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:46】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:48】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:50】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:52】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:54】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:56】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:23:58】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:00】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:02】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:04】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:06】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:08】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:10】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:12】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:14】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:16】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:18】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:20】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:22】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:24】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:26】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:28】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:30】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:32】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:34】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:36】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:38】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:40】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。
+【2019/8/15 14:24:42】ErrCode: 16100063
+Message: 输入参数与定义的不匹配，com.sfy.wms.autowarehouse.interface2wcs.interface2wcs.updateTaskStatus.biz。

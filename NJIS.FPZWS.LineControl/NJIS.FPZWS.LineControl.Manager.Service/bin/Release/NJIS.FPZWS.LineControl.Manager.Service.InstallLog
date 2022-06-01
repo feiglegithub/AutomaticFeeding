@@ -1,0 +1,161 @@
+﻿正在安装程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在安装服务 CuttingManagerService...
+已成功安装服务 CuttingManagerService。
+正在日志 Application 中创建 EventLog 源 CuttingManagerService...
+正在提交程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+正在从系统中移除服务 CuttingManagerService...
+已成功地从系统中移除服务 CuttingManagerService。
+尝试停止服务 CuttingManagerService。
+正在安装程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在安装服务 CuttingManagerService...
+已成功安装服务 CuttingManagerService。
+正在日志 Application 中创建 EventLog 源 CuttingManagerService...
+正在提交程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+正在从系统中移除服务 CuttingManagerService...
+已成功地从系统中移除服务 CuttingManagerService。
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+在卸载 System.Diagnostics.EventLogInstaller 安装程序的过程中发生异常。
+System.Security.SecurityException: 未找到源，但未能搜索某些或全部事件日志。  不可访问的日志: Security, State。
+在卸载的过程中发生异常。将忽略该异常并继续卸载。但是，在卸载完成之后应用程序可能未完全卸载。
+正在安装程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在安装服务 CuttingManagerService...
+正在日志 Application 中创建 EventLog 源 CuttingManagerService...
+正在回滚程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在将事件日志还原到源 CuttingManagerService 的前一状态。
+在 System.Diagnostics.EventLogInstaller 安装程序的“回退”阶段发生异常。
+System.Security.SecurityException: 未找到源，但未能搜索某些或全部事件日志。  不可访问的日志: Security, State。
+在安装的“回退”阶段发生异常。将忽略该异常并继续回退。但是，在完成回退后计算机可能无法完全还原到它的初始状态。
+正在安装程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在安装服务 CuttingManagerService...
+已成功安装服务 CuttingManagerService。
+正在日志 Application 中创建 EventLog 源 CuttingManagerService...
+正在提交程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+在卸载 System.Diagnostics.EventLogInstaller 安装程序的过程中发生异常。
+System.Security.SecurityException: 不允许所请求的注册表访问权。
+在卸载的过程中发生异常。将忽略该异常并继续卸载。但是，在卸载完成之后应用程序可能未完全卸载。
+正在安装程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在安装服务 CuttingManagerService...
+正在日志 Application 中创建 EventLog 源 CuttingManagerService...
+正在回滚程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在将事件日志还原到源 CuttingManagerService 的前一状态。
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+正在从系统中移除服务 CuttingManagerService...
+已成功地从系统中移除服务 CuttingManagerService。
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+警告: 源 CuttingManagerService 未在本地计算机上注册。
+正在从系统中移除服务 CuttingManagerService...
+已成功地从系统中移除服务 CuttingManagerService。
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+警告: 源 CuttingManagerService 未在本地计算机上注册。
+正在从系统中移除服务 CuttingManagerService...
+已成功地从系统中移除服务 CuttingManagerService。
+正在安装程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在安装服务 CuttingManagerService...
+正在日志 Application 中创建 EventLog 源 CuttingManagerService...
+正在回滚程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   i = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+   logtoconsole = 
+正在将事件日志还原到源 CuttingManagerService 的前一状态。
+正在卸载程序集“D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.InstallLog
+   assemblypath = D:\99_信息化\source\trunk\NJIS.FPZWS.LineControl\NJIS.FPZWS.LineControl.Manager.Service\bin\Release\NJIS.FPZWS.LineControl.Manager.Service.exe
+正在移除 EventLog 源 CuttingManagerService。
+警告: 源 CuttingManagerService 未在本地计算机上注册。
+正在从系统中移除服务 CuttingManagerService...
+已成功地从系统中移除服务 CuttingManagerService。

@@ -1,0 +1,327 @@
+<html>
+  <head>
+  <title>sopcdaauto.dll - TRACE</title>
+<meta name='generator' content='Trace generated' />
+<meta name='author' content='Christian Hock' />
+<style>
+	.ERROR{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.ERRORINFO{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.IN{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+ 	.OUT{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.OUTGOING{COLOR:magenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.CTOR{COLOR:cyan;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:darkgreen;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.DTOR{COLOR:darkmagenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.MEMORY{COLOR:darkgreen;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.INFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.MISC{COLOR:yellow;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:blue;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.SPECIAL{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.SPECIALINFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.VALUE{COLOR:blue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.HEADER{COLOR:black;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xERROR{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xERRORINFO{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xIN{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+ 	.xOUT{COLOR:green;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xOUTGOING{COLOR:magenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xCTOR{COLOR:cyan;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:darkgreen;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xDTOR{COLOR:darkmagenta;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xMEMORY{COLOR:darkgreen;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xINFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xMISC{COLOR:yellow;FONT-STYLE:normal; FONT-WEIGHT:bold;BACKGROUND-COLOR:blue;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xSPECIAL{COLOR:red;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xSPECIALINFO{COLOR:darkblue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:#E0E0E0;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+	.xVALUE{COLOR:blue;FONT-STYLE:normal; FONT-WEIGHT:normal;BACKGROUND-COLOR:white;FONT-FAMILY:Arial;FONT-SIZE:10pt}
+</style>
+<script id='clientEventHandlersJS' language='javascript'>
+<!--
+  function ChangeButton(MyButton, MyStyle, ValueOn, ValueOff){if(document.styleSheets[0].rules[MyStyle].style.display=='none'){document.styleSheets[0].rules[MyStyle].style.display='';document.all[MyButton].value=ValueOn;}else{document.styleSheets[0].rules[MyStyle].style.display='none';document.all[MyButton].value=ValueOff;}}
+  function btn0_onclick(){ChangeButton('btn0', 2, 'Hide In', 'Show In');}
+  function btn1_onclick(){ChangeButton('btn1', 3, 'Hide Out', 'Show Out');}
+  function btn2_onclick(){ChangeButton('btn2', 4, 'Hide Outgo', 'Show Outgo');}
+  function btn3_onclick(){ChangeButton('btn3', 5, 'Hide Ctor', 'Show Ctor');}
+  function btn4_onclick(){ChangeButton('btn4', 6, 'Hide Dtor', 'Show Dtor');}
+  function btn5_onclick(){ChangeButton('btn5', 7, 'Hide Memory', 'Show Memory');}
+  function btn6_onclick(){ChangeButton('btn6', 8, 'Hide Info', 'Show Info');}
+  function btn7_onclick(){ChangeButton('btn7', 9, 'Hide Misc', 'Show Misc');}
+  function btn8_onclick(){ChangeButton('btn8', 10, 'Hide Special', 'Show Special');}
+  function btn9_onclick(){ChangeButton('btn9', 11, 'Hide S-Info', 'Show S-Info');}
+  function btn10_onclick(){ChangeButton('btn10', 12, 'Hide Value', 'Show Value');}
+  function btn12_onclick(){ChangeButton('btn12', 0, 'Hide Error', 'Show Error');}
+  function btn13_onclick(){ChangeButton('btn13', 1, 'Hide Err-Info', 'Show Err-Info');}
+//-->
+</script>
+</head>
+<body>
+<h1 style='font-family:Arial' style='font-size:16pt'>Traceoutput</h1>
+<table style='font-family:Arial' style='font-size:10pt' bgcolor='white' align='justify' cellspacing='1' width='100%%' border='0' borderColorDark='white' borderColorLight='white' background='' borderColor='white'>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-File</td><td width='*'>WCS.exe</td></tr>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-Build</td><td width='*'>Release</td></tr>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-Version</td><td width='*'>1.0.0.0</td></tr>
+  <tr><td bgcolor='#e0e0e0' width='100'>EXE-Path</td><td width='*'>E:\Project\Source2\<tr class='ERROR'><td width='65'>00016001</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016002</td><td width='85'>21:35:46,837</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016003</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016004</td><td width='85'>21:35:46,837</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016005</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016006</td><td width='85'>21:35:46,837</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016007</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016008</td><td width='85'>21:35:46,837</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016009</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016010</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016011</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016012</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016013</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016014</td><td width='85'>21:35:46,837</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016015</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016016</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016017</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016018</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016019</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016020</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016021</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016022</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016023</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016024</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016025</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016026</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016027</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016028</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016029</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016030</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016031</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016032</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016033</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016034</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016035</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016036</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016037</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016038</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016039</td><td width='85'>21:35:46,847</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016040</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016041</td><td width='85'>21:35:46,847</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016042</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016043</td><td width='85'>21:35:46,847</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016044</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016045</td><td width='85'>21:35:46,847</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016046</td><td width='85'>21:35:46,847</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016047</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016048</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016049</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016050</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016051</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016052</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016053</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016054</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016055</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016056</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016057</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016058</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016059</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016060</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016061</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016062</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016063</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016064</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016065</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016066</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016067</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016068</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016069</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016070</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016071</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016072</td><td width='85'>21:35:46,857</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016073</td><td width='85'>21:35:46,857</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016074</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016075</td><td width='85'>21:35:46,867</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016076</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016077</td><td width='85'>21:35:46,867</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016078</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016079</td><td width='85'>21:35:46,867</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016080</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016081</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016082</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016083</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016084</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016085</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016086</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016087</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016088</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016089</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016090</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016091</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016092</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016093</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016094</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016095</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016096</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016097</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016098</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016099</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016100</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016101</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016102</td><td width='85'>21:35:46,867</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016103</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016104</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016105</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016106</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016107</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016108</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016109</td><td width='85'>21:35:46,877</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016110</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016111</td><td width='85'>21:35:46,877</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016112</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016113</td><td width='85'>21:35:46,877</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016114</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016115</td><td width='85'>21:35:46,877</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016116</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016117</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016118</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016119</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016120</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016121</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016122</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016123</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016124</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016125</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016126</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016127</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016128</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016129</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016130</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016131</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016132</td><td width='85'>21:35:46,877</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016133</td><td width='85'>21:35:46,887</td><td width='40'>2190</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016134</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016135</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016136</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016137</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016138</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016139</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016140</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016141</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016142</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016143</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016144</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016145</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016146</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016147</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016148</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016149</td><td width='85'>21:35:46,887</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016150</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016151</td><td width='85'>21:35:46,887</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016152</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016153</td><td width='85'>21:35:46,887</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016154</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016155</td><td width='85'>21:35:46,887</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016156</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016157</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016158</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016159</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016160</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016161</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016162</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016163</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016164</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016165</td><td width='85'>21:35:46,887</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016166</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016167</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016168</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016169</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016170</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016171</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016172</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016173</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016174</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016175</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016176</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016177</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016178</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016179</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016180</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016181</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016182</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016183</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016184</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016185</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016186</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016187</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016188</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016189</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016190</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016191</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016192</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016193</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016194</td><td width='85'>21:35:46,897</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016195</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016196</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016197</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016198</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016199</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016200</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016201</td><td width='85'>21:35:46,907</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016202</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016203</td><td width='85'>21:35:46,907</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016204</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016205</td><td width='85'>21:35:46,907</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016206</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016207</td><td width='85'>21:35:46,907</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016208</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016209</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016210</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016211</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016212</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016213</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016214</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016215</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016216</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016217</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016218</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016219</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016220</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016221</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016222</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016223</td><td width='85'>21:35:46,907</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016224</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016225</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016226</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016227</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016228</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016229</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016230</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016231</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016232</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016233</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016234</td><td width='85'>21:35:46,917</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016235</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016236</td><td width='85'>21:35:46,917</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016237</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016238</td><td width='85'>21:35:46,917</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016239</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016240</td><td width='85'>21:35:46,917</td><td width='40'>04E0</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016241</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016242</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016243</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016244</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016245</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016246</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016247</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016248</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016249</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016250</td><td width='85'>21:35:46,917</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016251</td><td width='85'>21:35:46,927</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016252</td><td width='85'>21:35:46,927</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016253</td><td width='85'>21:35:46,927</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016254</td><td width='85'>21:35:46,927</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016255</td><td width='85'>21:35:46,927</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='ERROR'><td width='65'>00016256</td><td width='85'>21:35:46,927</td><td width='40'>1888</td><td width='15'>ERR</td><td width='*'>'m_pOPCSyncIO->Read' COPCItemImpl::Read from Source: '1' [hr=0x800706BA]</td></tr>
+<tr class='SPECIAL'><td width='65'>00000001</td><td width='85'>21:39:09,419</td><td width='40'>2270</td><td width='15'>***</td><td width='*'>TRACEEVENT IS CREATED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000002</td><td width='85'>21:39:09,419</td><td width='40'>2270</td><td width='15'>***</td><td width='*'>TRACE IS INITIALIZED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000001</td><td width='85'>08:08:57,923</td><td width='40'>1510</td><td width='15'>***</td><td width='*'>TRACEEVENT IS CREATED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000002</td><td width='85'>08:08:57,943</td><td width='40'>1510</td><td width='15'>***</td><td width='*'>TRACE IS INITIALIZED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000003</td><td width='85'>18:36:29,162</td><td width='40'>1CF8</td><td width='15'>-></td><td width='*'>DLL_PROCESS_ATTACH</td></tr>
+<tr class='SPECIAL'><td width='65'>00000004</td><td width='85'>18:36:29,162</td><td width='40'>1CF8</td><td width='15'><-</td><td width='*'>DLL_PROCESS_ATTACH</td></tr>
+<tr class='SPECIAL'><td width='65'>00000005</td><td width='85'>18:36:29,162</td><td width='40'>1CF8</td><td width='15'>***</td><td width='*'>TRACEEVENT IS DELETED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000006</td><td width='85'>18:36:29,162</td><td width='40'>1CF8</td><td width='15'>***</td><td width='*'>TRACE IS UNINITIALIZED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000001</td><td width='85'>18:36:30,581</td><td width='40'>0C54</td><td width='15'>***</td><td width='*'>TRACEEVENT IS CREATED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000002</td><td width='85'>18:36:30,581</td><td width='40'>0C54</td><td width='15'>***</td><td width='*'>TRACE IS INITIALIZED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000001</td><td width='85'>07:52:49,326</td><td width='40'>22AC</td><td width='15'>***</td><td width='*'>TRACEEVENT IS CREATED</td></tr>
+<tr class='SPECIAL'><td width='65'>00000002</td><td width='85'>07:52:49,336</td><td width='40'>22AC</td><td width='15'>***</td><td width='*'>TRACE IS INITIALIZED</td></tr>

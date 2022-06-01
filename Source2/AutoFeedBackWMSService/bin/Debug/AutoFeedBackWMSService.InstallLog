@@ -1,0 +1,362 @@
+﻿正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 WCS_Service...
+已成功安装服务 WCS_Service。
+正在日志 Application 中创建 EventLog 源 WCS_Service...
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 WCS_Service...
+正在日志 Application 中创建 EventLog 源 WCS_Service...
+正在卸载程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在移除 EventLog 源 WCS_Service。
+正在从系统中移除服务 WCS_Service...
+已成功地从系统中移除服务 WCS_Service。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 WCS_Service...
+已成功安装服务 WCS_Service。
+正在日志 Application 中创建 EventLog 源 WCS_Service...
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在卸载程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在移除 EventLog 源 WCS_Service。
+正在从系统中移除服务 WCS_Service...
+已成功地从系统中移除服务 WCS_Service。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 WCS_Service...
+已成功安装服务 WCS_Service。
+正在日志 Application 中创建 EventLog 源 WCS_Service...
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在卸载程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在移除 EventLog 源 WCS_Service。
+正在从系统中移除服务 WCS_Service...
+已成功地从系统中移除服务 WCS_Service。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 WCS_Service...
+已成功安装服务 WCS_Service。
+正在日志 Application 中创建 EventLog 源 WCS_Service...
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在卸载程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在移除 EventLog 源 WCS_Service。
+正在从系统中移除服务 WCS_Service...
+已成功地从系统中移除服务 WCS_Service。
+正在卸载程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+没有 RunInstallerAttribute.Yes 的公共安装程序。在 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集中应该可以找到“Yes”特性。
+没有安装程序，因此移除 InstallState 文件。
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS...
+已成功安装服务 ServiceWCS。
+正在日志 Application 中创建 EventLog 源 ServiceWCS...
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+已成功安装服务 ServiceWCS2。
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+查看日志文件的内容以获得 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = C:\D\U盘资料\JiaShanInterface\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+已成功安装服务 ServiceWCS2。
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+查看日志文件的内容以获得 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在卸载程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+在卸载 AutoFeedBackWMSService.ProjectInstaller 安装程序的过程中发生异常。
+System.ArgumentException: savedState 字典包含不一致数据，它可能已损坏。
+在卸载的过程中发生异常。将忽略该异常并继续卸载。但是，在卸载完成之后应用程序可能未完全卸载。
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+已成功安装服务 ServiceWCS2。
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装服务 LEDService...
+已成功安装服务 LEDService。
+正在日志 Application 中创建 EventLog 源 LEDService...
+查看日志文件的内容以获得 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+已成功安装服务 ServiceWCS2。
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装服务 LEDService...
+已成功安装服务 LEDService。
+正在日志 Application 中创建 EventLog 源 LEDService...
+查看日志文件的内容以获得 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在卸载程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在移除 EventLog 源 ServiceWCS2。
+正在从系统中移除服务 ServiceWCS2...
+已成功地从系统中移除服务 ServiceWCS2。
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS2...
+已成功安装服务 ServiceWCS2。
+正在日志 Application 中创建 EventLog 源 ServiceWCS2...
+正在安装服务 ServiceWCS...
+已成功安装服务 ServiceWCS。
+正在日志 Application 中创建 EventLog 源 ServiceWCS...
+查看日志文件的内容以获得 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+正在安装程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+正在安装服务 ServiceWCS...
+已成功安装服务 ServiceWCS。
+正在日志 Application 中创建 EventLog 源 ServiceWCS...
+查看日志文件的内容以获得 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe 程序集的进度。
+该文件位于 E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog。
+正在提交程序集“E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.InstallLog
+   assemblypath = E:\Project\Source2\AutoFeedBackWMSService\bin\Debug\AutoFeedBackWMSService.exe

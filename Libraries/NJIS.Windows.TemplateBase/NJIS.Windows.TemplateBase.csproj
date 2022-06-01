@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72581702-4AB2-4849-AB30-4D249995F254}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.Windows.TemplateBase</RootNamespace>
+    <AssemblyName>NJIS.Windows.TemplateBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\NJIS.FPZWS.LineControl\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\UserInfo.cs" />
+    <Compile Include="IMenuContainer.cs" />
+    <Compile Include="LoginHelper.cs" />
+    <Compile Include="RadRibbonBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadRibbonBaseForm.Designer.cs">
+      <DependentUpon>RadRibbonBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UiHelper.cs" />
+    <Compile Include="UIUtils.cs" />
+    <Compile Include="UI\Dialogs\DialogEventArgs.cs" />
+    <Compile Include="UI\Dialogs\ExceptionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\ExceptionDlg.Designer.cs">
+      <DependentUpon>ExceptionDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\FormDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\FormDlg.Designer.cs">
+      <DependentUpon>FormDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IOperationEntry.cs" />
+    <Compile Include="UI\UserControls\UserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="RadRibbonBaseForm.resx">
+      <DependentUpon>RadRibbonBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Dialogs\ExceptionDlg.resx">
+      <DependentUpon>ExceptionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\FormDlg.resx">
+      <DependentUpon>FormDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <Content Include="Plugins.xml" />
+    <None Include="Resources\Window.png" />
+    <None Include="Resources\Window Resize.png" />
+    <None Include="Resources\Window Move.png" />
+    <None Include="Resources\WiFi Singal.png" />
+    <None Include="Resources\Users.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\TV On.png" />
+    <None Include="Resources\TV Off.png" />
+    <None Include="Resources\Trash Shredder.png" />
+    <None Include="Resources\Trash Full.png" />
+    <None Include="Resources\Trash Empty.png" />
+    <None Include="Resources\System Terminal.png" />
+    <None Include="Resources\System Preferences.png" />
+    <None Include="Resources\System Equalizer.png" />
+    <None Include="Resources\System Activity Monitor.png" />
+    <None Include="Resources\Stop.png" />
+    <None Include="Resources\Stop 2.png" />
+    <None Include="Resources\Star On.png" />
+    <None Include="Resources\Star Off.png" />
+    <None Include="Resources\Speaker.png" />
+    <None Include="Resources\Smiley Sad.png" />
+    <None Include="Resources\Smiley Happy.png" />
+    <None Include="Resources\Sign Warning.png" />
+    <None Include="Resources\Sign Public.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Search Remove.png" />
+    <None Include="Resources\Search Add.png" />
+    <None Include="Resources\Ruler.png" />
+    <None Include="Resources\Private.png" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\Pictures.png" />
+    <None Include="Resources\Pencil.png" />
+    <None Include="Resources\Note Sticky.png" />
+    <None Include="Resources\Note Pinned.png" />
+    <None Include="Resources\News.png" />
+    <None Include="Resources\News Remove.png" />
+    <None Include="Resources\News Add.png" />
+    <None Include="Resources\Music Red.png" />
+    <None Include="Resources\Music Green.png" />
+    <None Include="Resources\Music Blue.png" />
+    <None Include="Resources\Movies.png" />
+    <None Include="Resources\Money.png" />
+    <None Include="Resources\Money Bundle.png" />
+    <None Include="Resources\Mobile Phone.png" />
+    <None Include="Resources\Maps.png" />
+    <None Include="Resources\Mail.png" />
+    <None Include="Resources\Mail Send.png" />
+    <None Include="Resources\Mail Reply.png" />
+    <None Include="Resources\Mail Remove.png" />
+    <None Include="Resources\Mail Receive.png" />
+    <None Include="Resources\Mail Open 2.png" />
+    <None Include="Resources\Mail Open 1.png" />
+    <None Include="Resources\Mail Forward.png" />
+    <None Include="Resources\Mail Edit.png" />
+    <None Include="Resources\Mail Add.png" />
+    <None Include="Resources\Magic Wand.png" />
+    <None Include="Resources\Love.png" />
+    <None Include="Resources\Lock Open.png" />
+    <None Include="Resources\Lock Closed.png" />
+    <None Include="Resources\Link.png" />
+    <None Include="Resources\Light Bulb On.png" />
+    <None Include="Resources\Light Bulb Off.png" />
+    <None Include="Resources\iPhone.png" />
+    <None Include="Resources\iPad.png" />
+    <None Include="Resources\IM.png" />
+    <None Include="Resources\IM 2.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\Glyph Remove.png" />
+    <None Include="Resources\Glyph Check.png" />
+    <None Include="Resources\Glyph Add.png" />
+    <None Include="Resources\Globe Inactive.png" />
+    <None Include="Resources\Globe Active.png" />
+    <None Include="Resources\Fonts.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\Folder Sync.png" />
+    <None Include="Resources\Folder Smart.png" />
+    <None Include="Resources\Folder Remove.png" />
+    <None Include="Resources\Folder Add.png" />
+    <None Include="Resources\Finder.png" />
+    <None Include="Resources\File.png" />
+    <None Include="Resources\File Send.png" />
+    <None Include="Resources\File Remove.png" />
+    <None Include="Resources\File Receive.png" />
+    <None Include="Resources\File Add.png" />
+    <None Include="Resources\Drawer Open.png" />
+    <None Include="Resources\Drawer Closed.png" />
+    <None Include="Resources\Document Checklist.png" />
+    <None Include="Resources\Document Blueprint.png" />
+    <None Include="Resources\Document 2.png" />
+    <None Include="Resources\Document 2 Remove.png" />
+    <None Include="Resources\Document 2 Edit.png" />
+    <None Include="Resources\Document 2 Add.png" />
+    <None Include="Resources\Document 1.png" />
+    <None Include="Resources\Document 1 Remove.png" />
+    <None Include="Resources\Document 1 Edit.png" />
+    <None Include="Resources\Document 1 Add.png" />
+    <None Include="Resources\Disc DVD.png" />
+    <None Include="Resources\Disc Blu Ray.png" />
+    <None Include="Resources\Desktop.png" />
+    <None Include="Resources\Database.png" />
+    <None Include="Resources\Database Remove.png" />
+    <None Include="Resources\Database Add.png" />
+    <None Include="Resources\Dashboard.png" />
+    <None Include="Resources\Credit Card.png" />
+    <None Include="Resources\Credit Card PayPal.png" />
+    <None Include="Resources\Contacts.png" />
+    <None Include="Resources\Contacts Sync.png" />
+    <None Include="Resources\Contacts Remove.png" />
+    <None Include="Resources\Contacts Add.png" />
+    <None Include="Resources\Contact.png" />
+    <None Include="Resources\Computer On.png" />
+    <None Include="Resources\Computer Off.png" />
+    <None Include="Resources\Comment.png" />
+    <None Include="Resources\Comment Remove.png" />
+    <None Include="Resources\Comment Edit.png" />
+    <None Include="Resources\Comment Add.png" />
+    <None Include="Resources\Cog.png" />
+    <None Include="Resources\Cocktail.png" />
+    <None Include="Resources\CMD Key.png" />
+    <None Include="Resources\Clock.png" />
+    <None Include="Resources\Clock Alarm.png" />
+    <None Include="Resources\Checkbox Full.png" />
+    <None Include="Resources\Checkbox Empty.png" />
+    <None Include="Resources\Chart.png" />
+    <None Include="Resources\Chart Pie.png" />
+    <None Include="Resources\Chart Bar.png" />
+    <None Include="Resources\Camera.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\Calendar 2.png" />
+    <None Include="Resources\Button White Stop.png" />
+    <None Include="Resources\Button White RSS.png" />
+    <None Include="Resources\Button White Remove.png" />
+    <None Include="Resources\Button White Load.png" />
+    <None Include="Resources\Button White Info.png" />
+    <None Include="Resources\Button White Help.png" />
+    <None Include="Resources\Button White Check.png" />
+    <None Include="Resources\Button White Add.png" />
+    <None Include="Resources\Button Stop.png" />
+    <None Include="Resources\Button RSS.png" />
+    <None Include="Resources\Button Remove.png" />
+    <None Include="Resources\Button Record.png" />
+    <None Include="Resources\Button Record Active.png" />
+    <None Include="Resources\Button Previous.png" />
+    <None Include="Resources\Button Play.png" />
+    <None Include="Resources\Button Pause.png" />
+    <None Include="Resources\Button Next.png" />
+    <None Include="Resources\Button Load.png" />
+    <None Include="Resources\Button Info.png" />
+    <None Include="Resources\Button Help.png" />
+    <None Include="Resources\Button Eject.png" />
+    <None Include="Resources\Button Color Circle.png" />
+    <None Include="Resources\Button Check.png" />
+    <None Include="Resources\Button Burn.png" />
+    <None Include="Resources\Button Add.png" />
+    <None Include="Resources\Bug.png" />
+    <None Include="Resources\Briefcase.png" />
+    <None Include="Resources\Box.png" />
+    <None Include="Resources\Box Up.png" />
+    <None Include="Resources\Box Remove.png" />
+    <None Include="Resources\Box Down.png" />
+    <None Include="Resources\Box Add.png" />
+    <None Include="Resources\Bookmarks.png" />
+    <None Include="Resources\Bookmarks 2.png" />
+    <None Include="Resources\Bluetooth.png" />
+    <None Include="Resources\Black Board.png" />
+    <None Include="Resources\Black Board 2.png" />
+    <None Include="Resources\Arrow Up.png" />
+    <None Include="Resources\Arrow Right.png" />
+    <None Include="Resources\Arrow Left.png" />
+    <None Include="Resources\Arrow Down.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

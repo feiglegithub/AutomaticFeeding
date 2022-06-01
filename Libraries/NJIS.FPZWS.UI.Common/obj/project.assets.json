@@ -1,0 +1,196 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x64": {
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x86": {
+      "NJIS.FPZWS.Common/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "runtime": {
+          "lib/NJIS.FPZWS.Common.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NJIS.FPZWS.Common/1.0.0": {
+      "sha512": "zjRs7SHi0iP+zM3KUqRW0XJF8HYJw0UhiHJ1algZhfwZj5WGfCvMzyFELVvKqq0E4huzwFg3vXyIqsaNHS96aw==",
+      "type": "package",
+      "path": "njis.fpzws.common/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "build/_._",
+        "content/_._",
+        "lib/NJIS.FPZWS.Common.dll",
+        "njis.fpzws.common.1.0.0.nupkg.sha512",
+        "njis.fpzws.common.nuspec"
+      ]
+    },
+    "SharpZipLib/0.86.0": {
+      "sha512": "gRn1KM/GK2tm4ig4zr8HQlTO+6nlxKEmoz03jyjwmKPmnpieQOtUCNwGYadfoeLLpYxhBK8joomOJoO+BVYliw==",
+      "type": "package",
+      "path": "sharpziplib/0.86.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/11/ICSharpCode.SharpZipLib.dll",
+        "lib/20/ICSharpCode.SharpZipLib.dll",
+        "lib/SL3/SharpZipLib.Silverlight3.dll",
+        "lib/SL4/SharpZipLib.Silverlight4.dll",
+        "sharpziplib.0.86.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6": [
+      "NJIS.FPZWS.Common >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\11019622\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.UI.Common\\NJIS.FPZWS.UI.Common.csproj",
+      "projectName": "NJIS.FPZWS.UI.Common",
+      "projectPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.UI.Common\\NJIS.FPZWS.UI.Common.csproj",
+      "packagesPath": "C:\\Users\\11019622\\.nuget\\packages\\",
+      "outputPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.UI.Common\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\11019622\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net46"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://10.10.14.46:8070/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net46": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "NJIS.FPZWS.Common": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

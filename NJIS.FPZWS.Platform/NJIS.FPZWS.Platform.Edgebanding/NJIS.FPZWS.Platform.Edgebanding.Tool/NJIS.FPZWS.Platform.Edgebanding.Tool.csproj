@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{903C9EB8-7BCB-4439-B5C8-7E4820BD7BB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.Platform.Edgebanding.Tool</RootNamespace>
+    <AssemblyName>Edgebanding</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Publish\NJIS.FPZWS.Platform.Edgebanding.Tool\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>20181106091137111_easyicon_net_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NJIS.Ini, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.Ini.1.0.1\lib\NJIS.Ini.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Telerik.WinControls.GridView\v4.0_2017.2.502.40__5bb2a467cbec794e\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\DeliverDataSetting.cs" />
+    <Compile Include="UI\DeliverdataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DeliverdataForm.designer.cs">
+      <DependentUpon>DeliverdataForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\DeliverdataForm.resx">
+      <DependentUpon>DeliverdataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DeliverDataSetting.ini" />
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <ProjectReference Include="..\..\..\Libraries\NJIS.Dapper.Repositories\NJIS.Dapper.Repositories.csproj">
+      <Project>{212a95af-5870-47e0-95ca-7a888091ea8e}</Project>
+      <Name>NJIS.Dapper.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\NJIS.FPZWS.Common\NJIS.FPZWS.Common.csproj">
+      <Project>{33b9d348-1f64-42db-b43a-37e95feca61c}</Project>
+      <Name>NJIS.FPZWS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\NJIS.FPZWS.UI.Common\NJIS.FPZWS.UI.Common.csproj">
+      <Project>{ca276db5-aa0d-4c88-b986-498d8bbf9ae8}</Project>
+      <Name>NJIS.FPZWS.UI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.Platform.Contract\NJIS.FPZWS.Platform.Edgebanding.Contract.csproj">
+      <Project>{F8B466B8-DA07-4EEA-9FBE-048868DCAD5B}</Project>
+      <Name>NJIS.FPZWS.Platform.Edgebanding.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.Platform.Model\NJIS.FPZWS.Platform.Edgebanding.Model.csproj">
+      <Project>{30f85850-e18f-4026-a2fc-213eae8aec32}</Project>
+      <Name>NJIS.FPZWS.Platform.Edgebanding.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.Platform.Repository\NJIS.FPZWS.Platform.Edgebanding.Repository.csproj">
+      <Project>{65de31f0-d123-4b56-84b2-043a0eed4ceb}</Project>
+      <Name>NJIS.FPZWS.Platform.Edgebanding.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.Platform.Service\NJIS.FPZWS.Platform.Edgebanding.Service.csproj">
+      <Project>{30d7ec5d-d0a4-4bbb-b7e5-d275ead2a361}</Project>
+      <Name>NJIS.FPZWS.Platform.Edgebanding.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="20181106091137111_easyicon_net_32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

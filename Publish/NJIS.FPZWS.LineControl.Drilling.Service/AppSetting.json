@@ -1,0 +1,11 @@
+﻿{
+  "App": "NJIS.FPZWS.App.BatApp,App",
+  "Service": "NJIS.FPZWS.App",
+  "ServiceName": "NJIS.FPZWS.App",
+  "InstanceName": "",
+  "Description": "",
+  "DisplayName": "NJIS.FPZWS.App",
+  "StartTimeout": 10,
+  "StopTimeout": 10,
+  "HelpTextPrefix": "dg"
+}

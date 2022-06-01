@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9971165-B79F-4D2E-8937-6A9F85B7BF30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.LineControl.Cutting.DomainPlus</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.LineControl.Cutting.DomainPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\NJIS.FPZWS.LineControl.Cutting.ServicePlus\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cleaner, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.FPZWS.Cleaner.1.0.0\lib\Cleaner.exe</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.JRO">
+      <HintPath>.\Interop.JRO.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NJIS.FPZWS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.FPZWS.Common.1.0.0\lib\NJIS.FPZWS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NJIS.FPZWS.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.FPZWS.Log.1.1.0\lib\net46\NJIS.FPZWS.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="NJIS.Ini, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.Ini.1.0.1\lib\NJIS.Ini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\CacheStarter.cs" />
+    <Compile Include="Cache\PartInfoCache.cs" />
+    <Compile Include="Cache\PartScanLog.cs" />
+    <Compile Include="Collectors\CollectorStarter.cs" />
+    <Compile Include="Control\Commands\ChainBufferCommand.cs" />
+    <Compile Include="Control\Commands\InPartCommand.cs" />
+    <Compile Include="Control\EmqttMessagerAdapter.cs" />
+    <Compile Include="Control\Entitys\ChainBufferInputEntity.cs" />
+    <Compile Include="Control\Entitys\ChainBufferOutputEntity.cs" />
+    <Compile Include="Control\Entitys\InPartInputEntity.cs" />
+    <Compile Include="Control\Entitys\InPartOutputEntity.cs" />
+    <Compile Include="Control\PlcCommunicationModularStarter.cs" />
+    <Compile Include="Control\PlcMqttMessager.cs" />
+    <Compile Include="Control\PlcMqttMessagerStarter.cs" />
+    <Compile Include="Emqtt\ChainBufferChanageStatusCommand.cs" />
+    <Compile Include="Emqtt\EmqttCommandBase.cs" />
+    <Compile Include="Emqtt\EmqttInitializer.cs" />
+    <Compile Include="Emqtt\EmqttStarter.cs" />
+    <Compile Include="Emqtt\IEmqttCommand.cs" />
+    <Compile Include="Extension\TableExtension.cs" />
+    <Compile Include="Mdb\AccessDb.cs" />
+    <Compile Include="Mdb\MdbOperator.cs" />
+    <Compile Include="Mdb\MdbRebuild.cs" />
+    <Compile Include="Mdb\MdbStarter.cs" />
+    <Compile Include="Model\PatternInfo.cs" />
+    <Compile Include="Model\WorkpieceInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RxCollector.cs" />
+    <Compile Include="RxCuttingBuilder.cs" />
+    <Compile Include="RxInParter.cs" />
+    <Compile Include="RxSpotter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppSetting.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="config.json" />
+    <None Include="CuttingSetting.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config" />
+    <None Include="plc.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.LineControl.PLC.Siemens.S7Net\NJIS.FPZWS.LineControl.PLC.Siemens.S7Net.csproj">
+      <Project>{9bddc02f-04c1-412e-aab7-ede638275eed}</Project>
+      <Name>NJIS.FPZWS.LineControl.PLC.Siemens.S7Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.LineControl.PLC\NJIS.FPZWS.LineControl.PLC.csproj">
+      <Project>{D42D33D0-A285-453A-955C-EE519AADB6B6}</Project>
+      <Name>NJIS.FPZWS.LineControl.PLC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.MqttClient\NJIS.FPZWS.MqttClient.csproj">
+      <Project>{CEB61362-762F-4186-9A31-D3E01E7068C5}</Project>
+      <Name>NJIS.FPZWS.MqttClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.Wcf\NJIS.FPZWS.Wcf.csproj">
+      <Project>{54DB5DA6-22DC-42B0-AFDC-644893ACAD4B}</Project>
+      <Name>NJIS.FPZWS.Wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ContractPlus\NJIS.FPZWS.LineControl.Cutting.ContractPlus.csproj">
+      <Project>{22F6A4EF-A93B-4E0F-99AB-F65FDB62E5C9}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ContractPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Core\NJIS.FPZWS.LineControl.Cutting.Core.csproj">
+      <Project>{7287C0B9-FC16-4C01-87EE-8D2F1BB4DB5B}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Message\NJIS.FPZWS.LineControl.Cutting.Message.csproj">
+      <Project>{4CA2FD0C-7F3F-47A0-872F-F600529F68A6}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Message</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ModelPlus\NJIS.FPZWS.LineControl.Cutting.ModelPlus.csproj">
+      <Project>{F2FAD384-8989-41A6-8A67-58DADEECCD20}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ModelPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ServicePlus\NJIS.FPZWS.LineControl.Cutting.ServicePlus.csproj">
+      <Project>{CFB92635-52E7-44EF-A3C7-0B13EA009CDD}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ServicePlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MDBTemplate\Template.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62E48626-302B-449D-8EF5-98F3259126CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.Tools.Client</RootNamespace>
+    <AssemblyName>NJIS.Tools.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;__ISMDICONTAINER__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NJIS_FPZWS_128.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NJIS.AppUtility.Net4.5, Version=1.2.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\NJIS.FPZWS.LineControl\packages\NJIS.AppUtility.Net4.5.dll.1.2.1.5\lib\NJIS.AppUtility.Net4.5.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Helper\UILocalizedHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\UCOpions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\UCOpions.Designer.cs">
+      <DependentUpon>UCOpions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <ProjectReference Include="..\NJIS.Windows.TemplateBase\NJIS.Windows.TemplateBase.csproj">
+      <Project>{72581702-4ab2-4849-ab30-4d249995f254}</Project>
+      <Name>NJIS.Windows.TemplateBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6RibbonMenuPrepare2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="connection.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\cascadeFlat.png" />
+    <None Include="Resources\verticalFlat.png" />
+    <None Include="Resources\horizontalFlat.png" />
+    <None Include="Resources\NJIS_FPZWS_128.png" />
+    <None Include="Resources\NJIS_FPZWS_16.png" />
+    <None Include="Resources\NJIS_FPZWS_32.png" />
+    <None Include="Resources\NJIS_FPZWS_48.png" />
+    <None Include="Resources\NJIS_FPZWS_64.png" />
+    <Content Include="NJIS_FPZWS_128.ico" />
+    <Content Include="Plugins.xml" />
+    <Content Include="themes\Telerik.WinControls.Themes.Aqua.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Breeze.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Desert.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.HighContrastBlack.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Material.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2007Black.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2007Silver.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2010Black.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2010Blue.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2010Silver.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2013Dark.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Office2013Light.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.TelerikMetro.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.TelerikMetroBlue.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.TelerikMetroTouch.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.VisualStudio2012Dark.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.VisualStudio2012Light.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Windows7.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themes\Telerik.WinControls.Themes.Windows8.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\erp [转换].png" />
+    <None Include="Resources\erp32.png" />
+    <None Include="Resources\erp64.png" />
+    <None Include="Resources\order64.png" />
+    <None Include="Resources\batch64.png" />
+    <None Include="Resources\order48.png" />
+    <None Include="Resources\batch32.png" />
+    <None Include="Resources\team32.png" />
+    <None Include="Resources\team48.png" />
+    <None Include="Resources\team64.png" />
+    <None Include="Resources\list64.png" />
+    <None Include="Resources\list32.png" />
+    <None Include="Resources\list48.png" />
+    <None Include="Resources\batch48.png" />
+    <None Include="Resources\mdb64.png" />
+    <None Include="Resources\mdb32.png" />
+    <None Include="Resources\mdb48.png" />
+    <None Include="Resources\file32.png" />
+    <None Include="Resources\file48.png" />
+    <None Include="Resources\file64.png" />
+    <None Include="Resources\task64.png" />
+    <None Include="Resources\task32.png" />
+    <None Include="Resources\task48.png" />
+    <None Include="Resources\log32.png" />
+    <None Include="Resources\log48.png" />
+    <None Include="Resources\log64.png" />
+    <None Include="Resources\LogoLeftOfText.png" />
+    <Content Include="Resources\Logo_Above_Text._200psd.png" />
+    <Content Include="Resources\mfqxtxz5e2jjpg.jpg" />
+    <Content Include="Resources\Ningji02.png" />
+    <Content Include="Resources\Only_Logo.png" />
+    <Content Include="Resources\Only_Logo_18.png" />
+    <Content Include="Resources\Only_Logo_24.png" />
+    <Content Include="Resources\Only_Logo_30.png" />
+    <Content Include="Resources\Only_Logo_32.png" />
+    <None Include="Resources\suofeiya.png" />
+    <Content Include="Resources\save_16.png" />
+    <Content Include="Resources\save_24.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\user_18.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del Telerik*.xml
+xcopy *.* ..\..\..\..\Publish\NJIS.FPZWS.LineControl.Sorting.Client\ /Y /E
+xcopy *.* ..\..\..\..\Publish\NJIS.FPZWS.LineControl.Drilling.Client\ /Y /E
+xcopy *.* ..\..\..\..\NJIS.FPZWS.LineControl\Client\Edge\ /Y /E
+xcopy *.* ..\..\..\..\NJIS.FPZWS.Platform\publish\ /Y /E
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\bin\Debug\RFIDCA20012.exe.config
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\bin\Debug\RFIDCA20012.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\bin\Debug\RFIDCA20012.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\bin\Debug\NJIS.RFID.HBSEPD.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\bin\Debug\NJIS.RFID.HBSEPD.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\obj\Debug\RFIDCA20012.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\obj\Debug\RFIDCA20012.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDCA20012\obj\Debug\RFIDCA20012.csprojResolveAssemblyReference.cache

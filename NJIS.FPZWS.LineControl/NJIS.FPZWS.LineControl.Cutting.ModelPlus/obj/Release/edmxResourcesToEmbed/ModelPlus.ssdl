@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NJIS.FPZWS.LineControl.CuttingPlusModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.BatchGroupLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BatchGroupLog">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="FrontBatchName" Type="nvarchar" MaxLength="255" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="NextBatchName" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsConnect" Type="bit" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="BatchIndex" Type="int" Nullable="false" />
+    <Property Name="IsFinished" Type="bit" Nullable="false" />
+    <Property Name="StartLoadingTime" Type="datetime" />
+    <Property Name="StackListId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BatchGroupPlus">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanDate" Type="date" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BatchIndex" Type="int" Nullable="false" />
+    <Property Name="StartLoadingTime" Type="datetime" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="date" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BatchNamePilerNoBind">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PilerNo" Type="int" Nullable="false" />
+    <Property Name="TaskId" Type="bigint" Nullable="false" />
+    <Property Name="Count" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HasUpProtect" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="ReqId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BatchProductionDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="DifferenceNumber" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.CuttingPartReenter”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CuttingPartReenter">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PartId" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ReenterType" Type="int" Nullable="false" />
+    <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+    <Property Name="ProductionLine" Type="nvarchar" MaxLength="255" />
+    <Property Name="OperationResult" Type="bit" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
+    <Property Name="Length" Type="float" Nullable="false" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.CuttingPartScanLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CuttingPartScanLog">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PartId" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="InteractionPoints" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="PartType" Type="int" Nullable="false" />
+    <Property Name="Result" Type="int" Nullable="false" />
+    <Property Name="Thickness" Type="real" />
+    <Property Name="Length" Type="real" />
+    <Property Name="Width" Type="real" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.CuttingSawFileRelationPlus”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CuttingSawFileRelationPlus">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PlanDate" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="StackName" />
+      <PropertyRef Name="StackIndex" />
+      <PropertyRef Name="BoardCount" />
+      <PropertyRef Name="SawFileName" />
+      <PropertyRef Name="SawType" />
+      <PropertyRef Name="SawFile" />
+      <PropertyRef Name="TaskId" />
+      <PropertyRef Name="TaskDistributeId" />
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackIndex" Type="int" Nullable="false" />
+    <Property Name="BoardCount" Type="int" Nullable="false" />
+    <Property Name="SawFileName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="SawType" Type="int" Nullable="false" />
+    <Property Name="SawFile" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" />
+    <Property Name="UpdatedTime" Type="datetime" />
+    <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TaskDistributeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="DeviceName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.DeviceInfos”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="DeviceInfos">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentId" Type="int" />
+    <Property Name="ProductionLine" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="50" />
+    <Property Name="State" Type="int" />
+    <Property Name="Msg" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
+    <Property Name="ProcessName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DeviceType" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DeviceDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlaceNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="Ratio" Type="real" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.MdbParse”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="MdbParse">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BatchId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.PartFeedBack”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PartFeedBack">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PartId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DevicePPCD_ID" Type="bigint" Nullable="false" />
+    <Property Name="Length" Type="real" Nullable="false" />
+    <Property Name="Width" Type="real" Nullable="false" />
+    <Property Name="Thickness" Type="real" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="PATTERN" Type="nvarchar" MaxLength="30" />
+    <Property Name="OrderNumber" Type="nvarchar" MaxLength="80" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.Pattern”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Pattern">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="MdbName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PatternId" Type="int" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="BookCount" Type="int" Nullable="false" />
+    <Property Name="TotallyTime" Type="int" Nullable="false" />
+    <Property Name="PartCount" Type="int" Nullable="false" />
+    <Property Name="OffPartCount" Type="int" Nullable="false" />
+    <Property Name="IsNodePattern" Type="bit" Nullable="false" />
+    <Property Name="OldPatternId" Type="int" Nullable="false" />
+    <Property Name="IsEnable" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileFullPath" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="FinishedTime" Type="datetime" />
+    <Property Name="PlanStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActuallyStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlanDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActualDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActuallyTotalTime" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.PatternDetail”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PatternDetail">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PatternId" Type="int" Nullable="false" />
+    <Property Name="OldPatternId" Type="int" Nullable="false" />
+    <Property Name="PartId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsOffPart" Type="bit" Nullable="false" />
+    <Property Name="Length" Type="float" Nullable="false" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="Thickness" Type="float" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsFinished" Type="bit" Nullable="false" />
+    <Property Name="PartCount" Type="int" Nullable="false" />
+    <Property Name="FinishedPartCount" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.PatternDetailLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PatternDetailLog">
+    <Key>
+      <PropertyRef Name="LineId" />
+      <PropertyRef Name="BatchName" />
+      <PropertyRef Name="PatternId" />
+      <PropertyRef Name="OldPatternId" />
+      <PropertyRef Name="PartId" />
+      <PropertyRef Name="IsOffPart" />
+      <PropertyRef Name="Length" />
+      <PropertyRef Name="Width" />
+      <PropertyRef Name="Thickness" />
+      <PropertyRef Name="Color" />
+      <PropertyRef Name="IsFinished" />
+      <PropertyRef Name="PartCount" />
+      <PropertyRef Name="FinishedPartCount" />
+      <PropertyRef Name="CreatedTime" />
+      <PropertyRef Name="UpdatedTime" />
+      <PropertyRef Name="OperationName" />
+      <PropertyRef Name="LogTime" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PatternId" Type="int" Nullable="false" />
+    <Property Name="OldPatternId" Type="int" Nullable="false" />
+    <Property Name="PartId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsOffPart" Type="bit" Nullable="false" />
+    <Property Name="Length" Type="float" Nullable="false" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="Thickness" Type="float" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsFinished" Type="bit" Nullable="false" />
+    <Property Name="PartCount" Type="int" Nullable="false" />
+    <Property Name="FinishedPartCount" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.PatternFeedBack”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PatternFeedBack">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="MdbName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PatternName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="FinishedTime" Type="datetime" />
+    <Property Name="TotallyTime" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.PatternLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PatternLog">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="MdbName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PatternId" Type="int" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="BookCount" Type="int" Nullable="false" />
+    <Property Name="TotallyTime" Type="int" Nullable="false" />
+    <Property Name="PartCount" Type="int" Nullable="false" />
+    <Property Name="OffPartCount" Type="int" Nullable="false" />
+    <Property Name="IsNodePattern" Type="bit" Nullable="false" />
+    <Property Name="OldPatternId" Type="int" Nullable="false" />
+    <Property Name="IsEnable" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileFullPath" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="FinishedTime" Type="datetime" />
+    <Property Name="PlanStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActuallyStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlanDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActualDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.PLCLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PLCLog">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Station" />
+      <PropertyRef Name="TriggerType" />
+      <PropertyRef Name="Detail" />
+      <PropertyRef Name="CreatedTime" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Station" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TriggerType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Detail" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="LogType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.Stack”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Stack">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="PlanDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActualDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstBatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="SecondBatchName" Type="nvarchar" MaxLength="255" />
+    <Property Name="BookCount" Type="int" Nullable="false" />
+    <Property Name="FirstBatchBookCount" Type="int" Nullable="false" />
+    <Property Name="SecondBatchBookCount" Type="int" Nullable="false" />
+    <Property Name="MainColor" Type="nvarchar" MaxLength="255" />
+    <Property Name="StackListId" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="FinishedTime" Type="datetime" />
+    <Property Name="LastStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="NextStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ConnectColor" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.StackDetail”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="StackDetail">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackIndex" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="PatternId" Type="int" Nullable="false" />
+    <Property Name="PlanBatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ActualBatchName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.StackDetailLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="StackDetailLog">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="StackIndex" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="PatternId" Type="int" Nullable="false" />
+    <Property Name="PlanBatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ActualBatchName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.StackLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="StackLog">
+    <Key>
+      <PropertyRef Name="LineId" />
+      <PropertyRef Name="PlanDate" />
+      <PropertyRef Name="StackName" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="FirstBatchName" />
+      <PropertyRef Name="BookCount" />
+      <PropertyRef Name="FirstBatchBookCount" />
+      <PropertyRef Name="SecondBatchBookCount" />
+      <PropertyRef Name="StackListId" />
+      <PropertyRef Name="CreatedTime" />
+      <PropertyRef Name="UpdatedTime" />
+      <PropertyRef Name="OperationName" />
+      <PropertyRef Name="LogTime" />
+    </Key>
+    <Property Name="LineId" Type="bigint" Nullable="false" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="PlanDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ActualDeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstBatchName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="SecondBatchName" Type="nvarchar" MaxLength="255" />
+    <Property Name="BookCount" Type="int" Nullable="false" />
+    <Property Name="FirstBatchBookCount" Type="int" Nullable="false" />
+    <Property Name="SecondBatchBookCount" Type="int" Nullable="false" />
+    <Property Name="MainColor" Type="nvarchar" MaxLength="255" />
+    <Property Name="StackListId" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="FinishedTime" Type="datetime" />
+    <Property Name="LastStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="NextStackName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ConnectColor" Type="nvarchar" MaxLength="255" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaskManager">
+    <Key>
+      <PropertyRef Name="LineId" />
+    </Key>
+    <Property Name="LineId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanDate" Type="datetime" Nullable="false" />
+    <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+    <Property Name="BatchIndex" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedTime" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“NJIS.FPZWS.LineControl.CuttingPlus.dbo.users”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="password" />
+    </Key>
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="NJISFPZWSLineControlCuttingPlusModelStoreContainer">
+    <EntitySet Name="BatchGroupPlus" EntityType="Self.BatchGroupPlus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BatchNamePilerNoBind" EntityType="Self.BatchNamePilerNoBind" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BatchProductionDetails" EntityType="Self.BatchProductionDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaskManager" EntityType="Self.TaskManager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BatchGroupLog" EntityType="Self.BatchGroupLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BatchGroupLog].[LineId] AS [LineId], 
+    [BatchGroupLog].[PlanDate] AS [PlanDate], 
+    [BatchGroupLog].[FrontBatchName] AS [FrontBatchName], 
+    [BatchGroupLog].[BatchName] AS [BatchName], 
+    [BatchGroupLog].[NextBatchName] AS [NextBatchName], 
+    [BatchGroupLog].[IsConnect] AS [IsConnect], 
+    [BatchGroupLog].[GroupId] AS [GroupId], 
+    [BatchGroupLog].[BatchIndex] AS [BatchIndex], 
+    [BatchGroupLog].[IsFinished] AS [IsFinished], 
+    [BatchGroupLog].[StartLoadingTime] AS [StartLoadingTime], 
+    [BatchGroupLog].[StackListId] AS [StackListId], 
+    [BatchGroupLog].[Status] AS [Status], 
+    [BatchGroupLog].[CreatedTime] AS [CreatedTime], 
+    [BatchGroupLog].[UpdatedTime] AS [UpdatedTime], 
+    [BatchGroupLog].[OperationName] AS [OperationName], 
+    [BatchGroupLog].[LogTime] AS [LogTime]
+    FROM [dbo].[BatchGroupLog] AS [BatchGroupLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CuttingPartReenter" EntityType="Self.CuttingPartReenter" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CuttingPartReenter].[LineId] AS [LineId], 
+    [CuttingPartReenter].[BatchName] AS [BatchName], 
+    [CuttingPartReenter].[PartId] AS [PartId], 
+    [CuttingPartReenter].[ReenterType] AS [ReenterType], 
+    [CuttingPartReenter].[TaskDistributeId] AS [TaskDistributeId], 
+    [CuttingPartReenter].[ProductionLine] AS [ProductionLine], 
+    [CuttingPartReenter].[OperationResult] AS [OperationResult], 
+    [CuttingPartReenter].[Remark] AS [Remark], 
+    [CuttingPartReenter].[Length] AS [Length], 
+    [CuttingPartReenter].[Width] AS [Width], 
+    [CuttingPartReenter].[CreatedTime] AS [CreatedTime], 
+    [CuttingPartReenter].[UpdatedTime] AS [UpdatedTime]
+    FROM [dbo].[CuttingPartReenter] AS [CuttingPartReenter]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CuttingPartScanLog" EntityType="Self.CuttingPartScanLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CuttingPartScanLog].[LineId] AS [LineId], 
+    [CuttingPartScanLog].[PartId] AS [PartId], 
+    [CuttingPartScanLog].[BatchName] AS [BatchName], 
+    [CuttingPartScanLog].[InteractionPoints] AS [InteractionPoints], 
+    [CuttingPartScanLog].[CreatedTime] AS [CreatedTime], 
+    [CuttingPartScanLog].[UpdatedTime] AS [UpdatedTime], 
+    [CuttingPartScanLog].[PartType] AS [PartType], 
+    [CuttingPartScanLog].[Result] AS [Result], 
+    [CuttingPartScanLog].[Thickness] AS [Thickness], 
+    [CuttingPartScanLog].[Length] AS [Length], 
+    [CuttingPartScanLog].[Width] AS [Width]
+    FROM [dbo].[CuttingPartScanLog] AS [CuttingPartScanLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CuttingSawFileRelationPlus" EntityType="Self.CuttingSawFileRelationPlus" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CuttingSawFileRelationPlus].[Id] AS [Id], 
+    [CuttingSawFileRelationPlus].[PlanDate] AS [PlanDate], 
+    [CuttingSawFileRelationPlus].[BatchName] AS [BatchName], 
+    [CuttingSawFileRelationPlus].[StackName] AS [StackName], 
+    [CuttingSawFileRelationPlus].[StackIndex] AS [StackIndex], 
+    [CuttingSawFileRelationPlus].[BoardCount] AS [BoardCount], 
+    [CuttingSawFileRelationPlus].[SawFileName] AS [SawFileName], 
+    [CuttingSawFileRelationPlus].[SawType] AS [SawType], 
+    [CuttingSawFileRelationPlus].[SawFile] AS [SawFile], 
+    [CuttingSawFileRelationPlus].[CreatedTime] AS [CreatedTime], 
+    [CuttingSawFileRelationPlus].[UpdatedTime] AS [UpdatedTime], 
+    [CuttingSawFileRelationPlus].[TaskId] AS [TaskId], 
+    [CuttingSawFileRelationPlus].[TaskDistributeId] AS [TaskDistributeId], 
+    [CuttingSawFileRelationPlus].[Status] AS [Status], 
+    [CuttingSawFileRelationPlus].[DeviceName] AS [DeviceName]
+    FROM [dbo].[CuttingSawFileRelationPlus] AS [CuttingSawFileRelationPlus]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DeviceInfos" EntityType="Self.DeviceInfos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DeviceInfos].[LineId] AS [LineId], 
+    [DeviceInfos].[DepartmentId] AS [DepartmentId], 
+    [DeviceInfos].[ProductionLine] AS [ProductionLine], 
+    [DeviceInfos].[DeviceName] AS [DeviceName], 
+    [DeviceInfos].[State] AS [State], 
+    [DeviceInfos].[Msg] AS [Msg], 
+    [DeviceInfos].[Remark] AS [Remark], 
+    [DeviceInfos].[ProcessName] AS [ProcessName], 
+    [DeviceInfos].[DeviceType] AS [DeviceType], 
+    [DeviceInfos].[DeviceDescription] AS [DeviceDescription], 
+    [DeviceInfos].[PlaceNo] AS [PlaceNo], 
+    [DeviceInfos].[Ratio] AS [Ratio]
+    FROM [dbo].[DeviceInfos] AS [DeviceInfos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MdbParse" EntityType="Self.MdbParse" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MdbParse].[LineId] AS [LineId], 
+    [MdbParse].[BatchId] AS [BatchId], 
+    [MdbParse].[TaskId] AS [TaskId], 
+    [MdbParse].[Status] AS [Status], 
+    [MdbParse].[PlanDate] AS [PlanDate], 
+    [MdbParse].[CreatedTime] AS [CreatedTime], 
+    [MdbParse].[UpdatedTime] AS [UpdatedTime]
+    FROM [dbo].[MdbParse] AS [MdbParse]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartFeedBack" EntityType="Self.PartFeedBack" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PartFeedBack].[LineId] AS [LineId], 
+    [PartFeedBack].[PartId] AS [PartId], 
+    [PartFeedBack].[DeviceName] AS [DeviceName], 
+    [PartFeedBack].[Status] AS [Status], 
+    [PartFeedBack].[BatchName] AS [BatchName], 
+    [PartFeedBack].[DevicePPCD_ID] AS [DevicePPCD_ID], 
+    [PartFeedBack].[Length] AS [Length], 
+    [PartFeedBack].[Width] AS [Width], 
+    [PartFeedBack].[Thickness] AS [Thickness], 
+    [PartFeedBack].[Color] AS [Color], 
+    [PartFeedBack].[CreatedTime] AS [CreatedTime], 
+    [PartFeedBack].[UpdatedTime] AS [UpdatedTime], 
+    [PartFeedBack].[PATTERN] AS [PATTERN], 
+    [PartFeedBack].[OrderNumber] AS [OrderNumber]
+    FROM [dbo].[PartFeedBack] AS [PartFeedBack]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Pattern" EntityType="Self.Pattern" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pattern].[LineId] AS [LineId], 
+    [Pattern].[PlanDate] AS [PlanDate], 
+    [Pattern].[BatchName] AS [BatchName], 
+    [Pattern].[MdbName] AS [MdbName], 
+    [Pattern].[PatternId] AS [PatternId], 
+    [Pattern].[Color] AS [Color], 
+    [Pattern].[BookCount] AS [BookCount], 
+    [Pattern].[TotallyTime] AS [TotallyTime], 
+    [Pattern].[PartCount] AS [PartCount], 
+    [Pattern].[OffPartCount] AS [OffPartCount], 
+    [Pattern].[IsNodePattern] AS [IsNodePattern], 
+    [Pattern].[OldPatternId] AS [OldPatternId], 
+    [Pattern].[IsEnable] AS [IsEnable], 
+    [Pattern].[Status] AS [Status], 
+    [Pattern].[DeviceName] AS [DeviceName], 
+    [Pattern].[FileFullPath] AS [FileFullPath], 
+    [Pattern].[CreatedTime] AS [CreatedTime], 
+    [Pattern].[UpdatedTime] AS [UpdatedTime], 
+    [Pattern].[StartTime] AS [StartTime], 
+    [Pattern].[FinishedTime] AS [FinishedTime], 
+    [Pattern].[PlanStackName] AS [PlanStackName], 
+    [Pattern].[ActuallyStackName] AS [ActuallyStackName], 
+    [Pattern].[PlanDeviceName] AS [PlanDeviceName], 
+    [Pattern].[ActualDeviceName] AS [ActualDeviceName], 
+    [Pattern].[ActuallyTotalTime] AS [ActuallyTotalTime]
+    FROM [dbo].[Pattern] AS [Pattern]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PatternDetail" EntityType="Self.PatternDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PatternDetail].[LineId] AS [LineId], 
+    [PatternDetail].[BatchName] AS [BatchName], 
+    [PatternDetail].[PatternId] AS [PatternId], 
+    [PatternDetail].[OldPatternId] AS [OldPatternId], 
+    [PatternDetail].[PartId] AS [PartId], 
+    [PatternDetail].[IsOffPart] AS [IsOffPart], 
+    [PatternDetail].[Length] AS [Length], 
+    [PatternDetail].[Width] AS [Width], 
+    [PatternDetail].[Thickness] AS [Thickness], 
+    [PatternDetail].[Color] AS [Color], 
+    [PatternDetail].[IsFinished] AS [IsFinished], 
+    [PatternDetail].[PartCount] AS [PartCount], 
+    [PatternDetail].[FinishedPartCount] AS [FinishedPartCount], 
+    [PatternDetail].[CreatedTime] AS [CreatedTime], 
+    [PatternDetail].[UpdatedTime] AS [UpdatedTime]
+    FROM [dbo].[PatternDetail] AS [PatternDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PatternDetailLog" EntityType="Self.PatternDetailLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PatternDetailLog].[LineId] AS [LineId], 
+    [PatternDetailLog].[BatchName] AS [BatchName], 
+    [PatternDetailLog].[PatternId] AS [PatternId], 
+    [PatternDetailLog].[OldPatternId] AS [OldPatternId], 
+    [PatternDetailLog].[PartId] AS [PartId], 
+    [PatternDetailLog].[IsOffPart] AS [IsOffPart], 
+    [PatternDetailLog].[Length] AS [Length], 
+    [PatternDetailLog].[Width] AS [Width], 
+    [PatternDetailLog].[Thickness] AS [Thickness], 
+    [PatternDetailLog].[Color] AS [Color], 
+    [PatternDetailLog].[IsFinished] AS [IsFinished], 
+    [PatternDetailLog].[PartCount] AS [PartCount], 
+    [PatternDetailLog].[FinishedPartCount] AS [FinishedPartCount], 
+    [PatternDetailLog].[CreatedTime] AS [CreatedTime], 
+    [PatternDetailLog].[UpdatedTime] AS [UpdatedTime], 
+    [PatternDetailLog].[OperationName] AS [OperationName], 
+    [PatternDetailLog].[LogTime] AS [LogTime]
+    FROM [dbo].[PatternDetailLog] AS [PatternDetailLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PatternFeedBack" EntityType="Self.PatternFeedBack" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PatternFeedBack].[LineId] AS [LineId], 
+    [PatternFeedBack].[DeviceName] AS [DeviceName], 
+    [PatternFeedBack].[MdbName] AS [MdbName], 
+    [PatternFeedBack].[PatternName] AS [PatternName], 
+    [PatternFeedBack].[StartTime] AS [StartTime], 
+    [PatternFeedBack].[FinishedTime] AS [FinishedTime], 
+    [PatternFeedBack].[TotallyTime] AS [TotallyTime], 
+    [PatternFeedBack].[CreatedTime] AS [CreatedTime], 
+    [PatternFeedBack].[UpdatedTime] AS [UpdatedTime]
+    FROM [dbo].[PatternFeedBack] AS [PatternFeedBack]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PatternLog" EntityType="Self.PatternLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PatternLog].[LineId] AS [LineId], 
+    [PatternLog].[PlanDate] AS [PlanDate], 
+    [PatternLog].[BatchName] AS [BatchName], 
+    [PatternLog].[MdbName] AS [MdbName], 
+    [PatternLog].[PatternId] AS [PatternId], 
+    [PatternLog].[Color] AS [Color], 
+    [PatternLog].[BookCount] AS [BookCount], 
+    [PatternLog].[TotallyTime] AS [TotallyTime], 
+    [PatternLog].[PartCount] AS [PartCount], 
+    [PatternLog].[OffPartCount] AS [OffPartCount], 
+    [PatternLog].[IsNodePattern] AS [IsNodePattern], 
+    [PatternLog].[OldPatternId] AS [OldPatternId], 
+    [PatternLog].[IsEnable] AS [IsEnable], 
+    [PatternLog].[Status] AS [Status], 
+    [PatternLog].[DeviceName] AS [DeviceName], 
+    [PatternLog].[FileFullPath] AS [FileFullPath], 
+    [PatternLog].[CreatedTime] AS [CreatedTime], 
+    [PatternLog].[UpdatedTime] AS [UpdatedTime], 
+    [PatternLog].[StartTime] AS [StartTime], 
+    [PatternLog].[FinishedTime] AS [FinishedTime], 
+    [PatternLog].[PlanStackName] AS [PlanStackName], 
+    [PatternLog].[ActuallyStackName] AS [ActuallyStackName], 
+    [PatternLog].[PlanDeviceName] AS [PlanDeviceName], 
+    [PatternLog].[ActualDeviceName] AS [ActualDeviceName], 
+    [PatternLog].[OperationName] AS [OperationName], 
+    [PatternLog].[LogTime] AS [LogTime]
+    FROM [dbo].[PatternLog] AS [PatternLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PLCLog" EntityType="Self.PLCLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PLCLog].[Id] AS [Id], 
+    [PLCLog].[Station] AS [Station], 
+    [PLCLog].[TriggerType] AS [TriggerType], 
+    [PLCLog].[Detail] AS [Detail], 
+    [PLCLog].[CreatedTime] AS [CreatedTime], 
+    [PLCLog].[LogType] AS [LogType]
+    FROM [dbo].[PLCLog] AS [PLCLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Stack" EntityType="Self.Stack" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Stack].[LineId] AS [LineId], 
+    [Stack].[PlanDate] AS [PlanDate], 
+    [Stack].[StackName] AS [StackName], 
+    [Stack].[Status] AS [Status], 
+    [Stack].[PlanDeviceName] AS [PlanDeviceName], 
+    [Stack].[ActualDeviceName] AS [ActualDeviceName], 
+    [Stack].[FirstBatchName] AS [FirstBatchName], 
+    [Stack].[SecondBatchName] AS [SecondBatchName], 
+    [Stack].[BookCount] AS [BookCount], 
+    [Stack].[FirstBatchBookCount] AS [FirstBatchBookCount], 
+    [Stack].[SecondBatchBookCount] AS [SecondBatchBookCount], 
+    [Stack].[MainColor] AS [MainColor], 
+    [Stack].[StackListId] AS [StackListId], 
+    [Stack].[CreatedTime] AS [CreatedTime], 
+    [Stack].[UpdatedTime] AS [UpdatedTime], 
+    [Stack].[StartTime] AS [StartTime], 
+    [Stack].[FinishedTime] AS [FinishedTime], 
+    [Stack].[LastStackName] AS [LastStackName], 
+    [Stack].[NextStackName] AS [NextStackName], 
+    [Stack].[ConnectColor] AS [ConnectColor]
+    FROM [dbo].[Stack] AS [Stack]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="StackDetail" EntityType="Self.StackDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [StackDetail].[LineId] AS [LineId], 
+    [StackDetail].[StackName] AS [StackName], 
+    [StackDetail].[Color] AS [Color], 
+    [StackDetail].[StackIndex] AS [StackIndex], 
+    [StackDetail].[Status] AS [Status], 
+    [StackDetail].[PatternId] AS [PatternId], 
+    [StackDetail].[PlanBatchName] AS [PlanBatchName], 
+    [StackDetail].[ActualBatchName] AS [ActualBatchName], 
+    [StackDetail].[PlanDate] AS [PlanDate], 
+    [StackDetail].[CreatedTime] AS [CreatedTime], 
+    [StackDetail].[UpdatedTime] AS [UpdatedTime]
+    FROM [dbo].[StackDetail] AS [StackDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="StackDetailLog" EntityType="Self.StackDetailLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [StackDetailLog].[LineId] AS [LineId], 
+    [StackDetailLog].[StackName] AS [StackName], 
+    [StackDetailLog].[Color] AS [Color], 
+    [StackDetailLog].[StackIndex] AS [StackIndex], 
+    [StackDetailLog].[Status] AS [Status], 
+    [StackDetailLog].[PatternId] AS [PatternId], 
+    [StackDetailLog].[PlanBatchName] AS [PlanBatchName], 
+    [StackDetailLog].[ActualBatchName] AS [ActualBatchName], 
+    [StackDetailLog].[PlanDate] AS [PlanDate], 
+    [StackDetailLog].[CreatedTime] AS [CreatedTime], 
+    [StackDetailLog].[UpdatedTime] AS [UpdatedTime], 
+    [StackDetailLog].[OperationName] AS [OperationName], 
+    [StackDetailLog].[LogTime] AS [LogTime]
+    FROM [dbo].[StackDetailLog] AS [StackDetailLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="StackLog" EntityType="Self.StackLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [StackLog].[LineId] AS [LineId], 
+    [StackLog].[PlanDate] AS [PlanDate], 
+    [StackLog].[StackName] AS [StackName], 
+    [StackLog].[Status] AS [Status], 
+    [StackLog].[PlanDeviceName] AS [PlanDeviceName], 
+    [StackLog].[ActualDeviceName] AS [ActualDeviceName], 
+    [StackLog].[FirstBatchName] AS [FirstBatchName], 
+    [StackLog].[SecondBatchName] AS [SecondBatchName], 
+    [StackLog].[BookCount] AS [BookCount], 
+    [StackLog].[FirstBatchBookCount] AS [FirstBatchBookCount], 
+    [StackLog].[SecondBatchBookCount] AS [SecondBatchBookCount], 
+    [StackLog].[MainColor] AS [MainColor], 
+    [StackLog].[StackListId] AS [StackListId], 
+    [StackLog].[CreatedTime] AS [CreatedTime], 
+    [StackLog].[UpdatedTime] AS [UpdatedTime], 
+    [StackLog].[StartTime] AS [StartTime], 
+    [StackLog].[FinishedTime] AS [FinishedTime], 
+    [StackLog].[LastStackName] AS [LastStackName], 
+    [StackLog].[NextStackName] AS [NextStackName], 
+    [StackLog].[ConnectColor] AS [ConnectColor], 
+    [StackLog].[OperationName] AS [OperationName], 
+    [StackLog].[LogTime] AS [LogTime]
+    FROM [dbo].[StackLog] AS [StackLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="users" EntityType="Self.users" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [users].[password] AS [password]
+    FROM [dbo].[users] AS [users]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

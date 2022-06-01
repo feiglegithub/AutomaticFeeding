@@ -1,0 +1,50 @@
+﻿{
+  "Services": [
+    {
+      "Name": "NJIS.FPZWS.Wcf.Monitor.MonitorControl",
+      "BehaviorConfiguration": "defaultbehavior",
+      "Endpoints": [
+        {
+          "Binding": "netTcpBinding",
+          "BindingConfiguration": "defaultTcpBinding"
+        }
+      ],
+      "BaseAddresses": []
+    }
+  ],
+  "BaseAddresses": [ "net.tcp://127.0.0.1:9999", "http://127.0.0.1:9998" ],
+  "Behaviors": [
+    {
+      "MaxConcurrentCalls": 1000,
+      "MaxConcurrentSessions": 1000,
+      "MaxConcurrentInstances": 1000,
+      "IncludeExceptionDetailInFaults": true,
+      "HttpGetEnabled": true,
+      "HttpsGetEnabled": false,
+      "HttpGetBinding": null,
+      "HttpGetBindingConfiguration": null,
+      "Type": 0,
+      "Name": "defaultbehavior"
+    }
+  ],
+  "Bindings": [
+    {
+      "SendTimeout": 600,
+      "ListenBacklog": 200,
+      "MaxBufferPoolSize": 2147483647,
+      "MaxBufferSize": 2147483647,
+      "MaxConnections": 1000,
+      "MaxReceivedMessageSize": 2147483647,
+      "ReaderQuotasMaxDepth": 64,
+      "ReaderQuotasMaxStringContentLength": 8192,
+      "ReaderQuotasMaxArrayLength": 16384,
+      "ReaderQuotasMaxBytesPerRead": 4096,
+      "ReaderQuotasMaxNameTableCharCount": 16384,
+      "SecurityMode": "None",
+      "SecurityTransportClientCredentialType": "None",
+      "SecurityMessageClientCredentialType": "None",
+      "Name": "defaultTcpBinding",
+      "Type": 0
+    }
+  ]
+}

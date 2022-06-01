@@ -1,0 +1,11 @@
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\RFIDApp2019.exe.config
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\RFIDApp2019.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\RFIDApp2019.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\CommomLY1.0.dll
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\obj\Debug\RFIDApp2019.Properties.Resources.resources
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\obj\Debug\RFIDApp2019.csproj.GenerateResource.Cache
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\obj\Debug\RFIDApp2019.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\obj\Debug\RFIDApp2019.pdb
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\obj\Debug\RFIDApp2019.Form10.resources
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\RFIDControl.exe
+E:\Project\Source2\黄冈二期立库WCS\RFIDApp2019\bin\Debug\RFIDControl.pdb

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MesDataCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TaskDistribute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TaskDistributeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BatchId" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="BatchCode" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="DepartmentId" Type="bigint" Nullable="false" />
+    <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreatedTime" Type="datetime" />
+    <Property Name="UpdatedTime" Type="datetime" />
+    <Property Name="TaskMessage" Type="nvarchar" MaxLength="512" />
+    <Property Name="Version" Type="int" Nullable="false" />
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MesDataCenterModelStoreContainer">
+    <EntitySet Name="TaskDistribute" EntityType="Self.TaskDistribute" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

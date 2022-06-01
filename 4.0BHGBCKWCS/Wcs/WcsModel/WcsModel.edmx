@@ -1,0 +1,1247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HGWCSBCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BatchSortingList">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BatchName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="FinishedTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="EmptyBoardRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="IsNeed" Type="bit" Nullable="false" />
+          <Property Name="IsRequest" Type="bit" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" Nullable="false" />
+          <Property Name="FromStation" Type="int" Nullable="false" />
+          <Property Name="ToStation" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GroupLinkTask">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+          <Property Name="TaskId" Type="bigint" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="PilerNo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MachineHandTaskLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TaskId" Type="bigint" Nullable="false" />
+          <Property Name="FromStation" Type="int" Nullable="false" />
+          <Property Name="ToStation" Type="int" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="FinishedTime" Type="datetime" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="OperationCount" Type="int" Nullable="false" />
+          <Property Name="CurOperationCount" Type="int" Nullable="false" />
+          <Property Name="OperationName" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="ManualTask">
+          <Key>
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="TaskId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" />
+          <Property Name="PilerNo" Type="int" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="30" />
+          <Property Name="Amount" Type="int" />
+          <Property Name="TaskType" Type="int" Nullable="false" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="FromPosition" Type="varchar" MaxLength="20" />
+          <Property Name="ToPosition" Type="varchar" MaxLength="20" />
+          <Property Name="DdjNo" Type="int" />
+          <Property Name="HasUpProtect" Type="bit" />
+          <Property Name="TaskStatus" Type="int" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="DdjTime" Type="datetime" />
+          <Property Name="FinishTime" Type="datetime" />
+          <Property Name="ErrorMsg" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="OffBoardRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PilerNo" Type="int" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="IsRequest" Type="bit" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" Nullable="false" />
+          <Property Name="FromStation" Type="int" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.ProductCodeWeight”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="ProductCodeWeight">
+          <Key>
+            <PropertyRef Name="PID" />
+          </Key>
+          <Property Name="PID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="30" />
+          <Property Name="Weight" Type="int" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.RGV_Task”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="RGV_Task">
+          <Key>
+            <PropertyRef Name="RTaskId" />
+          </Key>
+          <Property Name="RTaskId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TaskId" Type="bigint" />
+          <Property Name="TaskType" Type="int" />
+          <Property Name="FromPosition" Type="int" />
+          <Property Name="ToPosition" Type="int" />
+          <Property Name="PilerNo" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="FinishTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RGVRequestLog">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PilerNo" Type="bigint" Nullable="false" />
+          <Property Name="RequestType" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="FromPosition" Type="varchar" MaxLength="255" />
+          <Property Name="ToPosition" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="SortingBindingPilerNo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="PilerNo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingDetail">
+          <Key>
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="TaskId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartFromBookCount" Type="int" Nullable="false" />
+          <Property Name="EndFromBookCount" Type="int" Nullable="false" />
+          <Property Name="StartToBookCount" Type="int" Nullable="false" />
+          <Property Name="EndToBookCount" Type="int" Nullable="false" />
+          <Property Name="FromStation" Type="int" Nullable="false" />
+          <Property Name="ToStation" Type="int" Nullable="false" />
+          <Property Name="MainPilerNo" Type="int" Nullable="false" />
+          <Property Name="ParallelPilerNo" Type="int" Nullable="false" />
+          <Property Name="IsReverseSorting" Type="bit" Nullable="false" />
+          <Property Name="MainPilerIsFinished" Type="bit" Nullable="false" />
+          <Property Name="ParallelPilerIsFinished" Type="bit" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="CurOperationCount" Type="int" Nullable="false" />
+          <Property Name="StartPilerNo" Type="int" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="OperationCount" Type="int" Nullable="false" />
+          <Property Name="ParallelSortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingInStockRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="FromStation" Type="int" Nullable="false" />
+          <Property Name="IsRequest" Type="bit" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingInStockTask">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TaskId" Type="bigint" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="FromStationNo" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="ReqId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingRequestGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="BatchName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="IsRequest" Type="bit" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="StationNo" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IsCreatedSolution" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingStationInfo">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StationNo" Type="int" Nullable="false" />
+          <Property Name="StationType" Type="int" Nullable="false" />
+          <Property Name="Color" Type="varchar" MaxLength="255" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="StationRemark" Type="varchar" MaxLength="255" />
+          <Property Name="PilerNo" Type="int" Nullable="false" />
+          <Property Name="HasBoard" Type="bit" Nullable="false" />
+          <Property Name="HasUpBoard" Type="bit" Nullable="false" />
+          <Property Name="IsOuting" Type="bit" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingStationLoadingInfo">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StationNo" Type="int" Nullable="false" />
+          <Property Name="StationType" Type="int" Nullable="false" />
+          <Property Name="Color" Type="varchar" MaxLength="255" />
+          <Property Name="BookCount" Type="int" Nullable="false" />
+          <Property Name="StationRemark" Type="varchar" MaxLength="255" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingTaskStatus">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StationNo" Type="int" Nullable="false" />
+          <Property Name="BatchName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="ColorIndex" Type="int" Nullable="false" />
+          <Property Name="CurBookCount" Type="int" Nullable="false" />
+          <Property Name="NeedBookCount" Type="int" Nullable="false" />
+          <Property Name="IsFinished" Type="bit" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TmpSolution">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+          <Property Name="SolutionId" Type="int" Nullable="false" />
+          <Property Name="SortingTaskId" Type="bigint" Nullable="false" />
+          <Property Name="SortingBookCount" Type="int" Nullable="false" />
+          <Property Name="PilerBookCount" Type="int" Nullable="false" />
+          <Property Name="PilerNo" Type="int" Nullable="false" />
+          <Property Name="TaskId" Type="bigint" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="OperationCount" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="IsReverse" Type="bit" Nullable="false" />
+          <Property Name="IsParallel" Type="bit" Nullable="false" />
+          <Property Name="SortingIndex" Type="int" Nullable="false" />
+          <Property Name="ParallelIndex" Type="int" Nullable="false" />
+          <Property Name="IsOffPiler" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.WCS_DeviceMonitor”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="WCS_DeviceMonitor">
+          <Key>
+            <PropertyRef Name="SId" />
+          </Key>
+          <Property Name="SId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeviceNo" Type="varchar" MaxLength="10" />
+          <Property Name="ItemNo" Type="int" />
+          <Property Name="PilerNo" Type="int" />
+          <Property Name="Target" Type="int" />
+          <Property Name="Staus" Type="bit" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.WCS_Log_Error”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="WCS_Log_Error">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Msg" />
+            <PropertyRef Name="StartDate" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PilerNo" Type="bigint" />
+          <Property Name="Device" Type="varchar" MaxLength="10" />
+          <Property Name="Msg" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Times" Type="int" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.WCS_Log_Opt”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="WCS_Log_Opt">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Msg" />
+            <PropertyRef Name="StartDate" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Device" Type="varchar" MaxLength="10" />
+          <Property Name="PilerNo" Type="bigint" />
+          <Property Name="Msg" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Times" Type="int" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.WCS_Request”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="WCS_Request">
+          <Key>
+            <PropertyRef Name="ReqId" />
+          </Key>
+          <Property Name="ReqId" Type="bigint" Nullable="false" />
+          <Property Name="TaskId" Type="bigint" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="30" />
+          <Property Name="PilerNo" Type="int" />
+          <Property Name="Amount" Type="int" />
+          <Property Name="RequestType" Type="int" />
+          <Property Name="FromPosition" Type="varchar" MaxLength="20" />
+          <Property Name="ToPosition" Type="varchar" MaxLength="20" />
+          <Property Name="RequestStatus" Type="int" />
+          <Property Name="RequestTime" Type="datetime" />
+          <Property Name="ResponseTime" Type="datetime" />
+          <Property Name="ErrorMsg" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“HGWCSBC.dbo.V_RequestMaterial”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="V_RequestMaterial">
+          <Key>
+            <PropertyRef Name="GroupId" />
+            <PropertyRef Name="ProductCode" />
+          </Key>
+          <Property Name="GroupId" Type="bigint" Nullable="false" />
+          <Property Name="ProductCode" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="NeedBookCount" Type="int" />
+        </EntityType>
+        <EntityContainer Name="HGWCSBCModelStoreContainer">
+          <EntitySet Name="BatchSortingList" EntityType="Self.BatchSortingList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmptyBoardRequest" EntityType="Self.EmptyBoardRequest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GroupLinkTask" EntityType="Self.GroupLinkTask" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MachineHandTaskLog" EntityType="Self.MachineHandTaskLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ManualTask" EntityType="Self.ManualTask" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OffBoardRequest" EntityType="Self.OffBoardRequest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RGVRequestLog" EntityType="Self.RGVRequestLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingBindingPilerNo" EntityType="Self.SortingBindingPilerNo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingDetail" EntityType="Self.SortingDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingInStockRequest" EntityType="Self.SortingInStockRequest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingInStockTask" EntityType="Self.SortingInStockTask" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingRequestGroup" EntityType="Self.SortingRequestGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingStationInfo" EntityType="Self.SortingStationInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingStationLoadingInfo" EntityType="Self.SortingStationLoadingInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SortingTaskStatus" EntityType="Self.SortingTaskStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TmpSolution" EntityType="Self.TmpSolution" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductCodeWeight" EntityType="Self.ProductCodeWeight" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[ProductCodeWeight].[PID] AS [PID], 
+[ProductCodeWeight].[ProductCode] AS [ProductCode], 
+[ProductCodeWeight].[Weight] AS [Weight]
+FROM [dbo].[ProductCodeWeight] AS [ProductCodeWeight]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="RGV_Task" EntityType="Self.RGV_Task" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[RGV_Task].[RTaskId] AS [RTaskId], 
+[RGV_Task].[TaskId] AS [TaskId], 
+[RGV_Task].[TaskType] AS [TaskType], 
+[RGV_Task].[FromPosition] AS [FromPosition], 
+[RGV_Task].[ToPosition] AS [ToPosition], 
+[RGV_Task].[PilerNo] AS [PilerNo], 
+[RGV_Task].[Status] AS [Status], 
+[RGV_Task].[CreateTime] AS [CreateTime], 
+[RGV_Task].[StartTime] AS [StartTime], 
+[RGV_Task].[FinishTime] AS [FinishTime]
+FROM [dbo].[RGV_Task] AS [RGV_Task]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="WCS_DeviceMonitor" EntityType="Self.WCS_DeviceMonitor" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[WCS_DeviceMonitor].[SId] AS [SId], 
+[WCS_DeviceMonitor].[DeviceNo] AS [DeviceNo], 
+[WCS_DeviceMonitor].[ItemNo] AS [ItemNo], 
+[WCS_DeviceMonitor].[PilerNo] AS [PilerNo], 
+[WCS_DeviceMonitor].[Target] AS [Target], 
+[WCS_DeviceMonitor].[Staus] AS [Staus]
+FROM [dbo].[WCS_DeviceMonitor] AS [WCS_DeviceMonitor]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="WCS_Log_Error" EntityType="Self.WCS_Log_Error" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[WCS_Log_Error].[ID] AS [ID], 
+[WCS_Log_Error].[PilerNo] AS [PilerNo], 
+[WCS_Log_Error].[Device] AS [Device], 
+[WCS_Log_Error].[Msg] AS [Msg], 
+[WCS_Log_Error].[StartDate] AS [StartDate], 
+[WCS_Log_Error].[EndDate] AS [EndDate], 
+[WCS_Log_Error].[Times] AS [Times]
+FROM [dbo].[WCS_Log_Error] AS [WCS_Log_Error]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="WCS_Log_Opt" EntityType="Self.WCS_Log_Opt" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[WCS_Log_Opt].[ID] AS [ID], 
+[WCS_Log_Opt].[Type] AS [Type], 
+[WCS_Log_Opt].[Device] AS [Device], 
+[WCS_Log_Opt].[PilerNo] AS [PilerNo], 
+[WCS_Log_Opt].[Msg] AS [Msg], 
+[WCS_Log_Opt].[StartDate] AS [StartDate], 
+[WCS_Log_Opt].[EndDate] AS [EndDate], 
+[WCS_Log_Opt].[Times] AS [Times]
+FROM [dbo].[WCS_Log_Opt] AS [WCS_Log_Opt]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="WCS_Request" EntityType="Self.WCS_Request" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[WCS_Request].[ReqId] AS [ReqId], 
+[WCS_Request].[TaskId] AS [TaskId], 
+[WCS_Request].[ProductCode] AS [ProductCode], 
+[WCS_Request].[PilerNo] AS [PilerNo], 
+[WCS_Request].[Amount] AS [Amount], 
+[WCS_Request].[RequestType] AS [RequestType], 
+[WCS_Request].[FromPosition] AS [FromPosition], 
+[WCS_Request].[ToPosition] AS [ToPosition], 
+[WCS_Request].[RequestStatus] AS [RequestStatus], 
+[WCS_Request].[RequestTime] AS [RequestTime], 
+[WCS_Request].[ResponseTime] AS [ResponseTime], 
+[WCS_Request].[ErrorMsg] AS [ErrorMsg]
+FROM [dbo].[WCS_Request] AS [WCS_Request]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="V_RequestMaterial" EntityType="Self.V_RequestMaterial" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[V_RequestMaterial].[GroupId] AS [GroupId], 
+[V_RequestMaterial].[ProductCode] AS [ProductCode], 
+[V_RequestMaterial].[NeedBookCount] AS [NeedBookCount]
+FROM [dbo].[V_RequestMaterial] AS [V_RequestMaterial]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HGWCSBCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BatchSortingList">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BatchName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="RGVRequestLog">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PilerNo" Type="Int64" Nullable="false" />
+          <Property Name="RequestType" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FromPosition" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ToPosition" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SortingStationInfo">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StationNo" Type="Int32" Nullable="false" />
+          <Property Name="StationType" Type="Int32" Nullable="false" />
+          <Property Name="Color" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="StationRemark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PilerNo" Type="Int32" Nullable="false" />
+          <Property Name="HasBoard" Type="Boolean" Nullable="false" />
+          <Property Name="HasUpBoard" Type="Boolean" Nullable="false" />
+          <Property Name="IsOuting" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductCodeWeight">
+          <Key>
+            <PropertyRef Name="PID" />
+          </Key>
+          <Property Name="PID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Weight" Type="Int32" />
+        </EntityType>
+        <EntityType Name="RGV_Task">
+          <Key>
+            <PropertyRef Name="RTaskId" />
+          </Key>
+          <Property Name="RTaskId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskId" Type="Int64" />
+          <Property Name="TaskType" Type="Int32" />
+          <Property Name="FromPosition" Type="Int32" />
+          <Property Name="ToPosition" Type="Int32" />
+          <Property Name="PilerNo" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="WCS_DeviceMonitor">
+          <Key>
+            <PropertyRef Name="SId" />
+          </Key>
+          <Property Name="SId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ItemNo" Type="Int32" />
+          <Property Name="PilerNo" Type="Int32" />
+          <Property Name="Target" Type="Int32" />
+          <Property Name="Staus" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="WCS_Log_Error">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Msg" />
+            <PropertyRef Name="StartDate" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PilerNo" Type="Int64" />
+          <Property Name="Device" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Msg" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Times" Type="Int32" />
+        </EntityType>
+        <EntityType Name="WCS_Log_Opt">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Msg" />
+            <PropertyRef Name="StartDate" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Device" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PilerNo" Type="Int64" />
+          <Property Name="Msg" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Times" Type="Int32" />
+        </EntityType>
+        <EntityType Name="WCS_Request">
+          <Key>
+            <PropertyRef Name="ReqId" />
+          </Key>
+          <Property Name="ReqId" Type="Int64" Nullable="false" />
+          <Property Name="TaskId" Type="Int64" />
+          <Property Name="ProductCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PilerNo" Type="Int32" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="RequestType" Type="Int32" />
+          <Property Name="FromPosition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ToPosition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RequestStatus" Type="Int32" />
+          <Property Name="RequestTime" Type="DateTime" Precision="3" />
+          <Property Name="ResponseTime" Type="DateTime" Precision="3" />
+          <Property Name="ErrorMsg" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="HGWCSBCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BatchSortingList" EntityType="Self.BatchSortingList" />
+          <EntitySet Name="RGVRequestLog" EntityType="Self.RGVRequestLog" />
+          <EntitySet Name="SortingStationInfo" EntityType="Self.SortingStationInfo" />
+          <EntitySet Name="ProductCodeWeight" EntityType="Self.ProductCodeWeight" />
+          <EntitySet Name="RGV_Task" EntityType="Self.RGV_Task" />
+          <EntitySet Name="WCS_DeviceMonitor" EntityType="Self.WCS_DeviceMonitor" />
+          <EntitySet Name="WCS_Log_Error" EntityType="Self.WCS_Log_Error" />
+          <EntitySet Name="WCS_Log_Opt" EntityType="Self.WCS_Log_Opt" />
+          <EntitySet Name="WCS_Request" EntityType="Self.WCS_Request" />
+          <EntitySet Name="ManualTask" EntityType="HGWCSBCModel.ManualTask" />
+          <EntitySet Name="GroupLinkTask" EntityType="HGWCSBCModel.GroupLinkTask" />
+          <EntitySet Name="SortingStationLoadingInfo" EntityType="HGWCSBCModel.SortingStationLoadingInfo" />
+          <EntitySet Name="SortingTaskStatus" EntityType="HGWCSBCModel.SortingTaskStatus" />
+          <EntitySet Name="TmpSolution" EntityType="HGWCSBCModel.TmpSolution" />
+          <EntitySet Name="SortingBindingPilerNo" EntityType="HGWCSBCModel.SortingBindingPilerNo" />
+          <EntitySet Name="V_RequestMaterial" EntityType="HGWCSBCModel.V_RequestMaterial" />
+          <EntitySet Name="SortingDetail" EntityType="HGWCSBCModel.SortingDetail" />
+          <EntitySet Name="MachineHandTaskLog" EntityType="HGWCSBCModel.MachineHandTaskLog" />
+          <EntitySet Name="SortingInStockRequest" EntityType="HGWCSBCModel.SortingInStockRequest" />
+          <EntitySet Name="OffBoardRequest" EntityType="HGWCSBCModel.OffBoardRequest" />
+          <EntitySet Name="SortingInStockTask" EntityType="HGWCSBCModel.SortingInStockTask" />
+          <EntitySet Name="SortingRequestGroup" EntityType="HGWCSBCModel.SortingRequestGroup" />
+          <EntitySet Name="EmptyBoardRequest" EntityType="HGWCSBCModel.EmptyBoardRequest" />
+        </EntityContainer>
+        <EntityType Name="ManualTask">
+          <Key>
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="TaskId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReqId" Type="Int64" />
+          <Property Name="PilerNo" Type="Int32" />
+          <Property Name="ProductCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="TaskType" Type="Int32" Nullable="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="FromPosition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ToPosition" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DdjNo" Type="Int32" />
+          <Property Name="HasUpProtect" Type="Boolean" />
+          <Property Name="TaskStatus" Type="Int32" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="DdjTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishTime" Type="DateTime" Precision="3" />
+          <Property Name="ErrorMsg" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GroupLinkTask">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+          <Property Name="TaskId" Type="Int64" Nullable="false" />
+          <Property Name="ReqId" Type="Int64" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="PilerNo" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingStationLoadingInfo">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StationNo" Type="Int32" Nullable="false" />
+          <Property Name="StationType" Type="Int32" Nullable="false" />
+          <Property Name="Color" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="StationRemark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SortingTaskStatus">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StationNo" Type="Int32" Nullable="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ColorIndex" Type="Int32" Nullable="false" />
+          <Property Name="CurBookCount" Type="Int32" Nullable="false" />
+          <Property Name="NeedBookCount" Type="Int32" Nullable="false" />
+          <Property Name="IsFinished" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TmpSolution">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+          <Property Name="SolutionId" Type="Int32" Nullable="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="SortingBookCount" Type="Int32" Nullable="false" />
+          <Property Name="PilerBookCount" Type="Int32" Nullable="false" />
+          <Property Name="PilerNo" Type="Int32" Nullable="false" />
+          <Property Name="TaskId" Type="Int64" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="OperationCount" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsReverse" Type="Boolean" Nullable="false" />
+          <Property Name="IsParallel" Type="Boolean" Nullable="false" />
+          <Property Name="SortingIndex" Type="Int32" Nullable="false" />
+          <Property Name="ParallelIndex" Type="Int32" Nullable="false" />
+          <Property Name="IsOffPiler" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingBindingPilerNo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="PilerNo" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="V_RequestMaterial">
+          <Key>
+            <PropertyRef Name="GroupId" />
+            <PropertyRef Name="ProductCode" />
+          </Key>
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="NeedBookCount" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SortingDetail">
+          <Key>
+            <PropertyRef Name="TaskId" />
+          </Key>
+          <Property Name="TaskId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartFromBookCount" Type="Int32" Nullable="false" />
+          <Property Name="EndFromBookCount" Type="Int32" Nullable="false" />
+          <Property Name="StartToBookCount" Type="Int32" Nullable="false" />
+          <Property Name="EndToBookCount" Type="Int32" Nullable="false" />
+          <Property Name="FromStation" Type="Int32" Nullable="false" />
+          <Property Name="ToStation" Type="Int32" Nullable="false" />
+          <Property Name="MainPilerNo" Type="Int32" Nullable="false" />
+          <Property Name="ParallelPilerNo" Type="Int32" Nullable="false" />
+          <Property Name="IsReverseSorting" Type="Boolean" Nullable="false" />
+          <Property Name="MainPilerIsFinished" Type="Boolean" Nullable="false" />
+          <Property Name="ParallelPilerIsFinished" Type="Boolean" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="CurOperationCount" Type="Int32" Nullable="false" />
+          <Property Name="StartPilerNo" Type="Int32" Nullable="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="OperationCount" Type="Int32" Nullable="false" />
+          <Property Name="ParallelSortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MachineHandTaskLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskId" Type="Int64" Nullable="false" />
+          <Property Name="FromStation" Type="Int32" Nullable="false" />
+          <Property Name="ToStation" Type="Int32" Nullable="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FinishedTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="OperationCount" Type="Int32" Nullable="false" />
+          <Property Name="CurOperationCount" Type="Int32" Nullable="false" />
+          <Property Name="OperationName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SortingInStockRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="FromStation" Type="Int32" Nullable="false" />
+          <Property Name="IsRequest" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReqId" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OffBoardRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PilerNo" Type="Int32" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="IsRequest" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+          <Property Name="ReqId" Type="Int64" Nullable="false" />
+          <Property Name="FromStation" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingInStockTask">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskId" Type="Int64" Nullable="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="FromStationNo" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReqId" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SortingRequestGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SortingTaskId" Type="Int64" Nullable="false" />
+          <Property Name="IsRequest" Type="Boolean" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="StationNo" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GroupId" Type="Int64" Nullable="false" />
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IsCreatedSolution" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmptyBoardRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="ProductCode" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IsNeed" Type="Boolean" Nullable="false" />
+          <Property Name="IsRequest" Type="Boolean" Nullable="false" />
+          <Property Name="ReqId" Type="Int64" Nullable="false" />
+          <Property Name="FromStation" Type="Int32" Nullable="false" />
+          <Property Name="ToStation" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HGWCSBCModelStoreContainer" CdmEntityContainer="HGWCSBCEntities">
+          <EntitySetMapping Name="BatchSortingList">
+            <EntityTypeMapping TypeName="HGWCSBCModel.BatchSortingList">
+              <MappingFragment StoreEntitySet="BatchSortingList">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RGVRequestLog">
+            <EntityTypeMapping TypeName="HGWCSBCModel.RGVRequestLog">
+              <MappingFragment StoreEntitySet="RGVRequestLog">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+                <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingStationInfo">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingStationInfo">
+              <MappingFragment StoreEntitySet="SortingStationInfo">
+                <ScalarProperty Name="IsOuting" ColumnName="IsOuting" />
+                <ScalarProperty Name="HasUpBoard" ColumnName="HasUpBoard" />
+                <ScalarProperty Name="HasBoard" ColumnName="HasBoard" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="StationNo" ColumnName="StationNo" />
+                <ScalarProperty Name="StationType" ColumnName="StationType" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="StationRemark" ColumnName="StationRemark" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductCodeWeight">
+            <EntityTypeMapping TypeName="HGWCSBCModel.ProductCodeWeight">
+              <MappingFragment StoreEntitySet="ProductCodeWeight">
+                <ScalarProperty Name="PID" ColumnName="PID" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RGV_Task">
+            <EntityTypeMapping TypeName="HGWCSBCModel.RGV_Task">
+              <MappingFragment StoreEntitySet="RGV_Task">
+                <ScalarProperty Name="RTaskId" ColumnName="RTaskId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+                <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+                <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="FinishTime" ColumnName="FinishTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WCS_DeviceMonitor">
+            <EntityTypeMapping TypeName="HGWCSBCModel.WCS_DeviceMonitor">
+              <MappingFragment StoreEntitySet="WCS_DeviceMonitor">
+                <ScalarProperty Name="SId" ColumnName="SId" />
+                <ScalarProperty Name="DeviceNo" ColumnName="DeviceNo" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Target" ColumnName="Target" />
+                <ScalarProperty Name="Staus" ColumnName="Staus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WCS_Log_Error">
+            <EntityTypeMapping TypeName="HGWCSBCModel.WCS_Log_Error">
+              <MappingFragment StoreEntitySet="WCS_Log_Error">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Device" ColumnName="Device" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Times" ColumnName="Times" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WCS_Log_Opt">
+            <EntityTypeMapping TypeName="HGWCSBCModel.WCS_Log_Opt">
+              <MappingFragment StoreEntitySet="WCS_Log_Opt">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Device" ColumnName="Device" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Times" ColumnName="Times" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WCS_Request">
+            <EntityTypeMapping TypeName="HGWCSBCModel.WCS_Request">
+              <MappingFragment StoreEntitySet="WCS_Request">
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+                <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+                <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+                <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+                <ScalarProperty Name="RequestTime" ColumnName="RequestTime" />
+                <ScalarProperty Name="ResponseTime" ColumnName="ResponseTime" />
+                <ScalarProperty Name="ErrorMsg" ColumnName="ErrorMsg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ManualTask">
+            <EntityTypeMapping TypeName="HGWCSBCModel.ManualTask">
+              <MappingFragment StoreEntitySet="ManualTask">
+                <ScalarProperty Name="ErrorMsg" ColumnName="ErrorMsg" />
+                <ScalarProperty Name="FinishTime" ColumnName="FinishTime" />
+                <ScalarProperty Name="DdjTime" ColumnName="DdjTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+                <ScalarProperty Name="HasUpProtect" ColumnName="HasUpProtect" />
+                <ScalarProperty Name="DdjNo" ColumnName="DdjNo" />
+                <ScalarProperty Name="ToPosition" ColumnName="ToPosition" />
+                <ScalarProperty Name="FromPosition" ColumnName="FromPosition" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GroupLinkTask">
+            <EntityTypeMapping TypeName="HGWCSBCModel.GroupLinkTask">
+              <MappingFragment StoreEntitySet="GroupLinkTask">
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingStationLoadingInfo">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingStationLoadingInfo">
+              <MappingFragment StoreEntitySet="SortingStationLoadingInfo">
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="StationRemark" ColumnName="StationRemark" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="StationType" ColumnName="StationType" />
+                <ScalarProperty Name="StationNo" ColumnName="StationNo" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingTaskStatus">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingTaskStatus">
+              <MappingFragment StoreEntitySet="SortingTaskStatus">
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+                <ScalarProperty Name="NeedBookCount" ColumnName="NeedBookCount" />
+                <ScalarProperty Name="CurBookCount" ColumnName="CurBookCount" />
+                <ScalarProperty Name="ColorIndex" ColumnName="ColorIndex" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="StationNo" ColumnName="StationNo" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TmpSolution">
+            <EntityTypeMapping TypeName="HGWCSBCModel.TmpSolution">
+              <MappingFragment StoreEntitySet="TmpSolution">
+                <ScalarProperty Name="IsOffPiler" ColumnName="IsOffPiler" />
+                <ScalarProperty Name="ParallelIndex" ColumnName="ParallelIndex" />
+                <ScalarProperty Name="SortingIndex" ColumnName="SortingIndex" />
+                <ScalarProperty Name="IsParallel" ColumnName="IsParallel" />
+                <ScalarProperty Name="IsReverse" ColumnName="IsReverse" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="OperationCount" ColumnName="OperationCount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="PilerBookCount" ColumnName="PilerBookCount" />
+                <ScalarProperty Name="SortingBookCount" ColumnName="SortingBookCount" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="SolutionId" ColumnName="SolutionId" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingBindingPilerNo">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingBindingPilerNo">
+              <MappingFragment StoreEntitySet="SortingBindingPilerNo">
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_RequestMaterial">
+            <EntityTypeMapping TypeName="HGWCSBCModel.V_RequestMaterial">
+              <MappingFragment StoreEntitySet="V_RequestMaterial">
+                <ScalarProperty Name="NeedBookCount" ColumnName="NeedBookCount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingDetail">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingDetail">
+              <MappingFragment StoreEntitySet="SortingDetail">
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="ParallelSortingTaskId" ColumnName="ParallelSortingTaskId" />
+                <ScalarProperty Name="OperationCount" ColumnName="OperationCount" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="StartPilerNo" ColumnName="StartPilerNo" />
+                <ScalarProperty Name="CurOperationCount" ColumnName="CurOperationCount" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ParallelPilerIsFinished" ColumnName="ParallelPilerIsFinished" />
+                <ScalarProperty Name="MainPilerIsFinished" ColumnName="MainPilerIsFinished" />
+                <ScalarProperty Name="IsReverseSorting" ColumnName="IsReverseSorting" />
+                <ScalarProperty Name="ParallelPilerNo" ColumnName="ParallelPilerNo" />
+                <ScalarProperty Name="MainPilerNo" ColumnName="MainPilerNo" />
+                <ScalarProperty Name="ToStation" ColumnName="ToStation" />
+                <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+                <ScalarProperty Name="EndToBookCount" ColumnName="EndToBookCount" />
+                <ScalarProperty Name="StartToBookCount" ColumnName="StartToBookCount" />
+                <ScalarProperty Name="EndFromBookCount" ColumnName="EndFromBookCount" />
+                <ScalarProperty Name="StartFromBookCount" ColumnName="StartFromBookCount" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MachineHandTaskLog">
+            <EntityTypeMapping TypeName="HGWCSBCModel.MachineHandTaskLog">
+              <MappingFragment StoreEntitySet="MachineHandTaskLog">
+                <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+                <ScalarProperty Name="CurOperationCount" ColumnName="CurOperationCount" />
+                <ScalarProperty Name="OperationCount" ColumnName="OperationCount" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="FinishedTime" ColumnName="FinishedTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="ToStation" ColumnName="ToStation" />
+                <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingInStockRequest">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingInStockRequest">
+              <MappingFragment StoreEntitySet="SortingInStockRequest">
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="IsRequest" ColumnName="IsRequest" />
+                <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OffBoardRequest">
+            <EntityTypeMapping TypeName="HGWCSBCModel.OffBoardRequest">
+              <MappingFragment StoreEntitySet="OffBoardRequest">
+                <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="IsRequest" ColumnName="IsRequest" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingInStockTask">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingInStockTask">
+              <MappingFragment StoreEntitySet="SortingInStockTask">
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="FromStationNo" ColumnName="FromStationNo" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SortingRequestGroup">
+            <EntityTypeMapping TypeName="HGWCSBCModel.SortingRequestGroup">
+              <MappingFragment StoreEntitySet="SortingRequestGroup">
+                <ScalarProperty Name="IsCreatedSolution" ColumnName="IsCreatedSolution" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="StationNo" ColumnName="StationNo" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="IsRequest" ColumnName="IsRequest" />
+                <ScalarProperty Name="SortingTaskId" ColumnName="SortingTaskId" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmptyBoardRequest">
+            <EntityTypeMapping TypeName="HGWCSBCModel.EmptyBoardRequest">
+              <MappingFragment StoreEntitySet="EmptyBoardRequest">
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="ToStation" ColumnName="ToStation" />
+                <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+                <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+                <ScalarProperty Name="IsRequest" ColumnName="IsRequest" />
+                <ScalarProperty Name="IsNeed" ColumnName="IsNeed" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="BookCount" ColumnName="BookCount" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="eef868adfb604ebe971b4c27735544f6" Name="Diagram1">
+        <EntityTypeShape EntityType="HGWCSBCModel.BatchSortingList" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.RGVRequestLog" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingStationInfo" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.ProductCodeWeight" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.RGV_Task" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.WCS_DeviceMonitor" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.WCS_Log_Error" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.WCS_Log_Opt" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.WCS_Request" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HGWCSBCModel.ManualTask" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.GroupLinkTask" Width="1.5" PointX="9.375" PointY="4.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingStationLoadingInfo" Width="1.5" PointX="11.375" PointY="4.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingTaskStatus" Width="1.5" PointX="5.375" PointY="11.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.TmpSolution" Width="1.5" PointX="11.375" PointY="8.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingBindingPilerNo" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.V_RequestMaterial" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingDetail" Width="1.5" PointX="7.375" PointY="11.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.MachineHandTaskLog" Width="1.5" PointX="13.375" PointY="3.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingInStockRequest" Width="1.5" PointX="13.375" PointY="8.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.OffBoardRequest" Width="1.5" PointX="9.375" PointY="13.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingInStockTask" Width="1.5" PointX="13.375" PointY="11.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.SortingRequestGroup" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HGWCSBCModel.EmptyBoardRequest" Width="1.5" PointX="3.375" PointY="15.75" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

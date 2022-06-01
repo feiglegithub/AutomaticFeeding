@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NJIS.FPZWS.LineControl.DrillingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ChainBuffer">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Size" Type="int" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="Drilling">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartID" Type="nvarchar" MaxLength="80" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OrderNumber" Type="nvarchar" MaxLength="80" />
+          <Property Name="FinishLength" Type="real" />
+          <Property Name="FinishWidth" Type="real" />
+          <Property Name="FinishThickness" Type="real" />
+          <Property Name="DrillingProgram" Type="nvarchar(max)" />
+          <Property Name="DrillingProgramMD5" Type="nvarchar" MaxLength="50" />
+          <Property Name="DrillingProgramFileEncoding" Type="int" />
+          <Property Name="DrillingRotation" Type="int" />
+          <Property Name="DrillingType" Type="nvarchar" MaxLength="100" />
+          <Property Name="DrillingRouting" Type="nvarchar" MaxLength="50" />
+          <Property Name="ImportToMesStatus" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="WorkshopCode" Type="nvarchar" MaxLength="60" />
+          <Property Name="ProductionDate" Type="datetime" />
+          <Property Name="TaskId" Type="uniqueidentifier" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+          <Property Name="DrillingProgram1" Type="nvarchar(max)" />
+          <Property Name="FactoryCode" Type="nvarchar" MaxLength="80" />
+          <Property Name="MaterialInformation" Type="nvarchar" MaxLength="80" />
+          <Property Name="Materialflow" Type="nvarchar" MaxLength="80" />
+          <Property Name="OrderHeaderId" Type="nvarchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="DrillingImport">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" />
+          <Property Name="Machine" Type="nvarchar" MaxLength="80" />
+          <Property Name="ImportStatus" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="Msg" Type="nvarchar(max)" />
+          <Property Name="Way" Type="int" />
+        </EntityType>
+        <EntityType Name="PcsMachine">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SN" Type="nvarchar" MaxLength="80" />
+          <Property Name="Code" Type="nvarchar" MaxLength="80" />
+          <Property Name="Name" Type="nvarchar" MaxLength="80" />
+          <Property Name="Status" Type="int" />
+          <Property Name="IsProcessSingle" Type="int" Nullable="false" />
+          <Property Name="IsProcessDouble" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PcsNg">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartId" Type="nvarchar" MaxLength="80" />
+          <Property Name="Msg" Type="nvarchar" MaxLength="200" />
+          <Property Name="Status" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PcsPartInfoQueue">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartId" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+          <Property Name="OrderNumber" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="Place" Type="nvarchar" MaxLength="80" />
+          <Property Name="NextPlace" Type="nvarchar" MaxLength="80" />
+          <Property Name="DrillingRouting" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FinishLength" Type="real" Nullable="false" />
+          <Property Name="FinishWidth" Type="real" Nullable="false" />
+          <Property Name="FinishThickness" Type="real" Nullable="false" />
+          <Property Name="PcsMessage" Type="nvarchar" MaxLength="256" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="IsNg" Type="bit" />
+        </EntityType>
+        <EntityType Name="PcsPartPosition">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartId" Type="nvarchar" MaxLength="80" />
+          <Property Name="Position" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="Msg" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="NJISFPZWSLineControlDrillingModelStoreContainer">
+          <EntitySet Name="ChainBuffer" EntityType="Self.ChainBuffer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Drilling" EntityType="Self.Drilling" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DrillingImport" EntityType="Self.DrillingImport" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PcsMachine" EntityType="Self.PcsMachine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PcsNg" EntityType="Self.PcsNg" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PcsPartInfoQueue" EntityType="Self.PcsPartInfoQueue" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PcsPartPosition" EntityType="Self.PcsPartPosition" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NJIS.FPZWS.LineControl.DrillingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Drilling">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartID" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="OrderNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="FinishLength" Type="Single" />
+          <Property Name="FinishWidth" Type="Single" />
+          <Property Name="FinishThickness" Type="Single" />
+          <Property Name="DrillingProgram" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DrillingProgramMD5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DrillingProgramFileEncoding" Type="Int32" />
+          <Property Name="DrillingRotation" Type="Int32" />
+          <Property Name="DrillingType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DrillingRouting" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ImportToMesStatus" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="ProductionDate" Type="DateTime" Precision="3" />
+          <Property Name="TaskId" Type="Guid" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="DrillingProgram1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FactoryCode" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="MaterialInformation" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Materialflow" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="OrderHeaderId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Drilling" EntityType="Self.Drilling" />
+          <EntitySet Name="ChainBuffer" EntityType="NJIS.FPZWS.LineControl.DrillingModel.ChainBuffer" />
+          <EntitySet Name="PcsPartPosition" EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsPartPosition" />
+          <EntitySet Name="DrillingImport" EntityType="NJIS.FPZWS.LineControl.DrillingModel.DrillingImport" />
+          <EntitySet Name="PcsNg" EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsNg" />
+          <EntitySet Name="PcsMachine" EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsMachine" />
+          <EntitySet Name="PcsPartInfoQueue" EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsPartInfoQueue" />
+        </EntityContainer>
+        <EntityType Name="ChainBuffer">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Size" Type="Int32" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PcsPartPosition">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Position" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="Msg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DrillingImport">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="Machine" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="ImportStatus" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="Msg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Way" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PcsNg">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Msg" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="PcsMachine">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SN" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Code" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="IsProcessSingle" Type="Int32" Nullable="false" />
+          <Property Name="IsProcessDouble" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PcsPartInfoQueue">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="OrderNumber" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Place" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="NextPlace" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="DrillingRouting" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FinishLength" Type="Single" Nullable="false" />
+          <Property Name="FinishWidth" Type="Single" Nullable="false" />
+          <Property Name="FinishThickness" Type="Single" Nullable="false" />
+          <Property Name="PcsMessage" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="IsNg" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NJISFPZWSLineControlDrillingModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Drilling">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.Drilling">
+              <MappingFragment StoreEntitySet="Drilling">
+                <ScalarProperty Name="OrderHeaderId" ColumnName="OrderHeaderId" />
+                <ScalarProperty Name="Materialflow" ColumnName="Materialflow" />
+                <ScalarProperty Name="MaterialInformation" ColumnName="MaterialInformation" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="FinishLength" ColumnName="FinishLength" />
+                <ScalarProperty Name="FinishWidth" ColumnName="FinishWidth" />
+                <ScalarProperty Name="FinishThickness" ColumnName="FinishThickness" />
+                <ScalarProperty Name="DrillingProgram" ColumnName="DrillingProgram" />
+                <ScalarProperty Name="DrillingProgramMD5" ColumnName="DrillingProgramMD5" />
+                <ScalarProperty Name="DrillingProgramFileEncoding" ColumnName="DrillingProgramFileEncoding" />
+                <ScalarProperty Name="DrillingRotation" ColumnName="DrillingRotation" />
+                <ScalarProperty Name="DrillingType" ColumnName="DrillingType" />
+                <ScalarProperty Name="DrillingRouting" ColumnName="DrillingRouting" />
+                <ScalarProperty Name="ImportToMesStatus" ColumnName="ImportToMesStatus" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="WorkshopCode" ColumnName="WorkshopCode" />
+                <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+                <ScalarProperty Name="DrillingProgram1" ColumnName="DrillingProgram1" />
+                <ScalarProperty Name="FactoryCode" ColumnName="FactoryCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChainBuffer">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.ChainBuffer">
+              <MappingFragment StoreEntitySet="ChainBuffer">
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PcsPartPosition">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.PcsPartPosition">
+              <MappingFragment StoreEntitySet="PcsPartPosition">
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="PartId" ColumnName="PartId" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DrillingImport">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.DrillingImport">
+              <MappingFragment StoreEntitySet="DrillingImport">
+                <ScalarProperty Name="Way" ColumnName="Way" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="ImportStatus" ColumnName="ImportStatus" />
+                <ScalarProperty Name="Machine" ColumnName="Machine" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PcsNg">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.PcsNg">
+              <MappingFragment StoreEntitySet="PcsNg">
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="PartId" ColumnName="PartId" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PcsMachine">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.PcsMachine">
+              <MappingFragment StoreEntitySet="PcsMachine">
+                <ScalarProperty Name="IsProcessDouble" ColumnName="IsProcessDouble" />
+                <ScalarProperty Name="IsProcessSingle" ColumnName="IsProcessSingle" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PcsPartInfoQueue">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.DrillingModel.PcsPartInfoQueue">
+              <MappingFragment StoreEntitySet="PcsPartInfoQueue">
+                <ScalarProperty Name="IsNg" ColumnName="IsNg" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="PcsMessage" ColumnName="PcsMessage" />
+                <ScalarProperty Name="FinishThickness" ColumnName="FinishThickness" />
+                <ScalarProperty Name="FinishWidth" ColumnName="FinishWidth" />
+                <ScalarProperty Name="FinishLength" ColumnName="FinishLength" />
+                <ScalarProperty Name="DrillingRouting" ColumnName="DrillingRouting" />
+                <ScalarProperty Name="NextPlace" ColumnName="NextPlace" />
+                <ScalarProperty Name="Place" ColumnName="Place" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="PartId" ColumnName="PartId" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="e04dee69c5c04cd99c2d052c1b294ed6" Name="Diagram1">
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.Drilling" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.ChainBuffer" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsPartPosition" Width="1.5" PointX="6.375" PointY="3.625" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.DrillingImport" Width="1.5" PointX="6.375" PointY="6.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsNg" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsMachine" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.DrillingModel.PcsPartInfoQueue" Width="1.5" PointX="3.375" PointY="3.75" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4DF7A04-B0EF-4CDB-832C-392C37AD1FCC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NJIS.FPZWS.LineControl.Manager</RootNamespace>
+    <AssemblyName>开料管理</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\NJIS.FPZWS.LineControl.Manager\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>切割机.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EQATEC.Analytics.Monitor, Version=3.2.1.0, Culture=neutral, PublicKeyToken=213c7c68adb58a17, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\EQATEC.Analytics.Monitor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NJIS.Ini, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NJIS.Ini.1.0.1\lib\NJIS.Ini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Documents.SpreadsheetStreaming, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Analytics, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.ChartView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.PivotGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.RadChart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDiagram, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.RadDiagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMap, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.RadMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.SpellChecker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\TelerikData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms R2 2017\Bin40\TelerikExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CuttingSerialPortSetting.cs" />
+    <Compile Include="CuttingServerSettings.cs" />
+    <Compile Include="Utils\CuttingSawFileRelationPlusDBUtils.cs" />
+    <Compile Include="Helpers\Arithmetics\IPermutationResult.cs" />
+    <Compile Include="Helpers\Arithmetics\PermutationAlgorithm.cs" />
+    <Compile Include="Helpers\Arithmetics\PermutationFilterAlgorithm.cs" />
+    <Compile Include="Helpers\Arithmetics\PermutationMatchAlgorithm.cs" />
+    <Compile Include="Helpers\Arithmetics\VarianceAlgorithm.cs" />
+    <Compile Include="Helpers\PatternStackHelper.cs" />
+    <Compile Include="Helpers\PlcOperatorHelper.cs" />
+    <Compile Include="Helpers\SerialPortHelper.cs" />
+    <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="LocalServices\PlcListenService.cs" />
+    <Compile Include="LocalServices\SerialListenService.cs" />
+    <Compile Include="LocalServices\Singleton.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLCResultEnum.cs" />
+    <Compile Include="Presenters\BatchGroupPresenter.cs" />
+    <Compile Include="Presenters\CreatedStackPresenter.cs" />
+    <Compile Include="Presenters\DeviceManageControlPresenter.cs" />
+    <Compile Include="Presenters\NgManageControlPresenter.cs" />
+    <Compile Include="Presenters\PatternDetailPresenter.cs" />
+    <Compile Include="Presenters\PatternLogPresenter.cs" />
+    <Compile Include="Presenters\PatternPresenter.cs" />
+    <Compile Include="Presenters\SearchPresenterBase.cs" />
+    <Compile Include="Presenters\StackDetailPresenter.cs" />
+    <Compile Include="Presenters\StackPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\PublicUtils.cs" />
+    <Compile Include="ViewModels\BookStack.cs" />
+    <Compile Include="ViewModels\CuttingTaskDetail.cs" />
+    <Compile Include="ViewModels\PatternStack.cs" />
+    <Compile Include="ViewModels\TmpBatchInfo.cs" />
+    <Compile Include="Views\CuttingSawFileRelationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CuttingSawFileRelationView.Designer.cs">
+      <DependentUpon>CuttingSawFileRelationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CuttingStackListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CuttingStackListView.Designer.cs">
+      <DependentUpon>CuttingStackListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceManageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DeviceManageControl.Designer.cs">
+      <DependentUpon>DeviceManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceStatusMonitorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DeviceStatusMonitorControl.Designer.cs">
+      <DependentUpon>DeviceStatusMonitorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\BatchNamePilerNoBindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\BatchNamePilerNoBindForm.Designer.cs">
+      <DependentUpon>BatchNamePilerNoBindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\BatchProductionDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\BatchProductionDetailsForm.Designer.cs">
+      <DependentUpon>BatchProductionDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\PasswordValidationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\PasswordValidationForm.Designer.cs">
+      <DependentUpon>PasswordValidationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\PushAgainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\PushAgainForm.Designer.cs">
+      <DependentUpon>PushAgainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC2Form.Designer.cs">
+      <DependentUpon>UpdatePLC2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC2SB401Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC2SB401Form.Designer.cs">
+      <DependentUpon>UpdatePLC2SB401Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC3Form.Designer.cs">
+      <DependentUpon>UpdatePLC3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialog\UpdatePLC4Form.Designer.cs">
+      <DependentUpon>UpdatePLC4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\SerialPortSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\SerialPortSettingForm.Designer.cs">
+      <DependentUpon>SerialPortSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManualRequestWMSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ManualRequestWMSControl.Designer.cs">
+      <DependentUpon>ManualRequestWMSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MdbSplit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MdbSplit.Designer.cs">
+      <DependentUpon>MdbSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NotCuttingDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NotCuttingDataControl.Designer.cs">
+      <DependentUpon>NotCuttingDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartFeedBackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PartFeedBackView.Designer.cs">
+      <DependentUpon>PartFeedBackView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatternDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PatternDetailView.Designer.cs">
+      <DependentUpon>PatternDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatternLogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PatternLogView.Designer.cs">
+      <DependentUpon>PatternLogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatternView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PatternView.Designer.cs">
+      <DependentUpon>PatternView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PLCLogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PLCLogView.Designer.cs">
+      <DependentUpon>PLCLogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CuttingSawFileRelationPlusView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CuttingSawFileRelationPlusView.Designer.cs">
+      <DependentUpon>CuttingSawFileRelationPlusView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StackDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\StackDetailView.Designer.cs">
+      <DependentUpon>StackDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\StackView.Designer.cs">
+      <DependentUpon>StackView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubControls\NgManageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SubControls\NgManageControl.Designer.cs">
+      <DependentUpon>NgManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaskManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\TaskManager.Designer.cs">
+      <DependentUpon>TaskManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaskManger6Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\TaskManger6Control.Designer.cs">
+      <DependentUpon>TaskManger6Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMSWebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="_NJIS_FPZWS_LineControl_CuttingPlusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_NJIS_FPZWS_LineControl_CuttingPlusDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\CuttingSawFileRelationView.resx">
+      <DependentUpon>CuttingSawFileRelationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CuttingStackListView.resx">
+      <DependentUpon>CuttingStackListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeviceManageControl.resx">
+      <DependentUpon>DeviceManageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DeviceStatusMonitorControl.resx">
+      <DependentUpon>DeviceStatusMonitorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\BatchNamePilerNoBindForm.resx">
+      <DependentUpon>BatchNamePilerNoBindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\BatchProductionDetailsForm.resx">
+      <DependentUpon>BatchProductionDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\PasswordValidationForm.resx">
+      <DependentUpon>PasswordValidationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\PushAgainForm.resx">
+      <DependentUpon>PushAgainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\UpdatePLC2Form.resx">
+      <DependentUpon>UpdatePLC2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\UpdatePLC2SB401Form.resx">
+      <DependentUpon>UpdatePLC2SB401Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\UpdatePLC3Form.resx">
+      <DependentUpon>UpdatePLC3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialog\UpdatePLC4Form.resx">
+      <DependentUpon>UpdatePLC4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\SerialPortSettingForm.resx">
+      <DependentUpon>SerialPortSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ManualRequestWMSControl.resx">
+      <DependentUpon>ManualRequestWMSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MdbSplit.resx">
+      <DependentUpon>MdbSplit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NotCuttingDataControl.resx">
+      <DependentUpon>NotCuttingDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PartFeedBackView.resx">
+      <DependentUpon>PartFeedBackView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatternDetailView.resx">
+      <DependentUpon>PatternDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatternLogView.resx">
+      <DependentUpon>PatternLogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PatternView.resx">
+      <DependentUpon>PatternView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PLCLogView.resx">
+      <DependentUpon>PLCLogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CuttingSawFileRelationPlusView.resx">
+      <DependentUpon>CuttingSawFileRelationPlusView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StackDetailView.resx">
+      <DependentUpon>StackDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StackView.resx">
+      <DependentUpon>StackView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubControls\NgManageControl.resx">
+      <DependentUpon>NgManageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TaskManager.resx">
+      <DependentUpon>TaskManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TaskManger6Control.resx">
+      <DependentUpon>TaskManger6Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="configs\client.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="configs\FpzCcSetting.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="configs\RemoteConfigCenterTcpUrl.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CuttingSerialPortSetting.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CuttingServerSettings.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\WMSWebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WMSWebReference\ResultMsg.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WMSWebReference\WMSService.wsdl" />
+    <None Include="_NJIS_FPZWS_LineControl_CuttingPlusDataSet.xsc">
+      <DependentUpon>_NJIS_FPZWS_LineControl_CuttingPlusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_NJIS_FPZWS_LineControl_CuttingPlusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_NJIS_FPZWS_LineControl_CuttingPlusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_NJIS_FPZWS_LineControl_CuttingPlusDataSet.xss">
+      <DependentUpon>_NJIS_FPZWS_LineControl_CuttingPlusDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.UI.Common\NJIS.FPZWS.UI.Common.csproj">
+      <Project>{CA276DB5-AA0D-4C88-B986-498D8BBF9AE8}</Project>
+      <Name>NJIS.FPZWS.UI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.Wcf\NJIS.FPZWS.Wcf.csproj">
+      <Project>{54DB5DA6-22DC-42B0-AFDC-644893ACAD4B}</Project>
+      <Name>NJIS.FPZWS.Wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.PLC.Communication\NJIS.PLC.Communication.csproj">
+      <Project>{B6E82191-713C-4668-BABD-1C3A3C437C50}</Project>
+      <Name>NJIS.PLC.Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arithmetics\Arithmetics.csproj">
+      <Project>{A1BCBFC1-CDEA-4440-9B53-4A71014060AD}</Project>
+      <Name>Arithmetics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ContractPlus\NJIS.FPZWS.LineControl.Cutting.ContractPlus.csproj">
+      <Project>{22F6A4EF-A93B-4E0F-99AB-F65FDB62E5C9}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ContractPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ModelPlus\NJIS.FPZWS.LineControl.Cutting.ModelPlus.csproj">
+      <Project>{F2FAD384-8989-41A6-8A67-58DADEECCD20}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ModelPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Model\NJIS.FPZWS.LineControl.Cutting.Model.csproj">
+      <Project>{2FA3ED16-7BE7-4FF8-971C-6810F31F7078}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.ServicePlus\NJIS.FPZWS.LineControl.Cutting.ServicePlus.csproj">
+      <Project>{CFB92635-52E7-44EF-A3C7-0B13EA009CDD}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.ServicePlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Service\NJIS.FPZWS.LineControl.Cutting.Service.csproj">
+      <Project>{5DC2415A-468C-4528-BCED-798D80BB5D10}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右箭头32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双箭头32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左箭头32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双箭头32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WMSWebReference\WMSService.disco" />
+    <Content Include="切割机.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.30.3.118:8012/WMSService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WMSWebReference\</RelPath>
+      <UpdateFromURL>http://10.30.3.118:8012/WMSService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>开料管理_WMSWebReference_WMSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

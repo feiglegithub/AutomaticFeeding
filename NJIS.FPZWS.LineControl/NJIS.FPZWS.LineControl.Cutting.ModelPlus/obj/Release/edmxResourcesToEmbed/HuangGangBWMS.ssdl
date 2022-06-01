@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HuangGangBWMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="WMS_Task">
+    <Key>
+      <PropertyRef Name="TaskId" />
+    </Key>
+    <Property Name="TaskId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReqId" Type="bigint" />
+    <Property Name="PilerNo" Type="int" />
+    <Property Name="ProductCode" Type="varchar" MaxLength="30" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="TaskType" Type="int" Nullable="false" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="FromPosition" Type="varchar" MaxLength="20" />
+    <Property Name="ToPosition" Type="varchar" MaxLength="20" />
+    <Property Name="DdjNo" Type="int" />
+    <Property Name="HasUpProtect" Type="bit" />
+    <Property Name="TaskStatus" Type="int" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="DdjTime" Type="datetime" />
+    <Property Name="FinishTime" Type="datetime" />
+    <Property Name="ErrorMsg" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="HuangGangBWMSModelStoreContainer">
+    <EntitySet Name="WMS_Task" EntityType="Self.WMS_Task" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

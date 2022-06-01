@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NJIS.FPZWS.LineControl.CuttingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CuttingMachineFeedback">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="MachineName" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="BaseMachineStateExternalKeyName" Type="nvarchar" MaxLength="60" />
+          <Property Name="DetailMachineStateExternalKeyName" Type="nvarchar" MaxLength="120" />
+          <Property Name="StateDescription" Type="nvarchar(max)" />
+          <Property Name="MachineStateId" Type="bigint" />
+          <Property Name="CreatedTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CuttingManualLabelPrinter">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartID" Type="nvarchar" MaxLength="80" />
+          <Property Name="WorkshopCode" Type="nvarchar" MaxLength="60" />
+          <Property Name="WorkpieceID" Type="nvarchar" MaxLength="255" />
+          <Property Name="SawNumber" Type="int" />
+          <Property Name="Info" Type="nvarchar(max)" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="LastUpdatedTime" Type="datetime" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="CuttingNgPart">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OrderNumber" Type="nvarchar" MaxLength="80" />
+          <Property Name="FinishLength" Type="real" />
+          <Property Name="FinishWidth" Type="real" />
+          <Property Name="FinishThickness" Type="real" />
+          <Property Name="PartId" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+          <Property Name="TaskId" Type="uniqueidentifier" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CuttingSawFileRelation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PlanDate" Type="datetime" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+          <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="StackIndex" Type="int" Nullable="false" />
+          <Property Name="BoardCount" Type="int" Nullable="false" />
+          <Property Name="SawFileName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="SawType" Type="int" Nullable="false" />
+          <Property Name="SawFile" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="TaskId" Type="uniqueidentifier" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="CuttingStackList">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WorkshopCode" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="StackIndex" Type="int" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+          <Property Name="RawMaterialID" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="RawMaterialName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="SupplierInfo" Type="nvarchar" MaxLength="255" />
+          <Property Name="RawLength" Type="float" Nullable="false" />
+          <Property Name="RawWidth" Type="float" Nullable="false" />
+          <Property Name="RawThickness" Type="float" Nullable="false" />
+          <Property Name="RawColor" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="RawOrientation" Type="int" />
+          <Property Name="Information" Type="nvarchar(max)" />
+          <Property Name="PatternName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="OptimizationRun" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="StackType" Type="int" Nullable="false" />
+          <Property Name="ImportToMesStatus" Type="int" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="LastUpdatedTime" Type="datetime" />
+          <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BatchId" Type="nvarchar" MaxLength="64" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+          <Property Name="WMSStatus" Type="int" Nullable="false" />
+          <Property Name="PlanDate" Type="datetime" Nullable="false" />
+          <Property Name="DeviceGroup" Type="nvarchar" MaxLength="100" />
+          <Property Name="BatchProductIndex" Type="float" />
+          <Property Name="StackProductIndex" Type="float" />
+          <Property Name="BatchType" Type="nvarchar" MaxLength="100" />
+          <Property Name="OptimizationBatchName" Type="nvarchar" MaxLength="160" />
+          <Property Name="NcFilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="LabelFilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="PanelQty" Type="int" />
+        </EntityType>
+        <EntityType Name="CuttingStackProductionList">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StackName" Type="varchar" MaxLength="80" />
+          <Property Name="Status" Type="int" />
+          <Property Name="PlaceNo" Type="nvarchar" MaxLength="80" />
+          <Property Name="LastUpdatedTime" Type="datetime" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="80" />
+          <Property Name="PilerNo" Type="int" />
+        </EntityType>
+        <EntityType Name="CuttingStackShift">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StackName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="StartPlaceNo" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="EndPlaceNo" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdateTime" Type="datetime" />
+          <Property Name="BatchName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="PlanDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DeviceInfos">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DepartmentId" Type="int" />
+          <Property Name="ProductionLine" Type="varchar" MaxLength="20" />
+          <Property Name="DeviceName" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="int" />
+          <Property Name="Msg" Type="varchar" MaxLength="500" />
+          <Property Name="Remark" Type="varchar" MaxLength="255" />
+          <Property Name="ProcessName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="DeviceType" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="DeviceDescription" Type="varchar" MaxLength="255" />
+          <Property Name="PlaceNo" Type="varchar" MaxLength="255" />
+          <Property Name="Ratio" Type="real" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PartInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Upi" Type="nvarchar" MaxLength="80" />
+          <Property Name="PanelCode" Type="nvarchar" MaxLength="80" />
+          <Property Name="PanelName" Type="nvarchar" MaxLength="480" />
+          <Property Name="TeamCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="BatchCode" Type="nvarchar" MaxLength="160" />
+          <Property Name="ColorCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="Length" Type="real" Nullable="false" />
+          <Property Name="Width" Type="real" Nullable="false" />
+          <Property Name="Thickness" Type="real" Nullable="false" />
+          <Property Name="Weight" Type="real" Nullable="false" />
+          <Property Name="UnitName" Type="nvarchar" MaxLength="20" />
+          <Property Name="ProductionDate" Type="datetime" Nullable="false" />
+          <Property Name="PanelType" Type="int" />
+          <Property Name="EdgebandColorCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="EdgebandType" Type="nvarchar" MaxLength="100" />
+          <Property Name="EdgebandComments" Type="nvarchar" MaxLength="1000" />
+          <Property Name="OrderHeaderId" Type="bigint" />
+          <Property Name="OrderLineId" Type="bigint" />
+          <Property Name="OrderNumber" Type="nvarchar" MaxLength="80" />
+          <Property Name="EdgeInformation1" Type="nvarchar" MaxLength="80" />
+          <Property Name="EdgeInformation2" Type="nvarchar" MaxLength="80" />
+          <Property Name="EdgeInformation3" Type="nvarchar" MaxLength="80" />
+          <Property Name="EdgeInformation4" Type="nvarchar" MaxLength="80" />
+          <Property Name="Materialflow" Type="nvarchar" MaxLength="60" />
+          <Property Name="RawThickness" Type="real" />
+          <Property Name="SawLength" Type="real" />
+          <Property Name="SawWidth" Type="real" />
+          <Property Name="MaterialInformation" Type="varchar(max)" />
+          <Property Name="VehicleNum" Type="nvarchar" MaxLength="60" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+          <Property Name="IsDeleted" Type="int" />
+          <Property Name="OrganizationId" Type="bigint" />
+          <Property Name="CreatorUserId" Type="bigint" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatorUserId" Type="bigint" />
+          <Property Name="UpdatedTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="WMSCuttingStackList">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WorkshopCode" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="StackName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="StackIndex" Type="int" Nullable="false" />
+          <Property Name="BatchName" Type="nvarchar" MaxLength="160" Nullable="false" />
+          <Property Name="BatchIndex" Type="int" />
+          <Property Name="RawMaterialID" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="RawMaterialName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="SupplierInfo" Type="nvarchar" MaxLength="255" />
+          <Property Name="RawLength" Type="float" Nullable="false" />
+          <Property Name="RawWidth" Type="float" Nullable="false" />
+          <Property Name="RawThickness" Type="float" Nullable="false" />
+          <Property Name="RawColor" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="RawOrientation" Type="int" Nullable="false" />
+          <Property Name="Information" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="PatternName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="OptimizationRun" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="StackType" Type="int" Nullable="false" />
+          <Property Name="ImportToMesStatus" Type="int" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdatedTime" Type="datetime" Nullable="false" />
+          <Property Name="TaskId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BatchId" Type="nvarchar" MaxLength="64" />
+          <Property Name="TaskDistributeId" Type="uniqueidentifier" />
+          <Property Name="ProductionLine" Type="nvarchar" MaxLength="60" />
+          <Property Name="WMSStatus" Type="int" />
+          <Property Name="PlanDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="WMSStacktFeedBack">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StackName" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="IsSuccess" Type="bit" Nullable="false" />
+          <Property Name="FailReason" Type="varchar" MaxLength="250" />
+          <Property Name="CreatedTime" Type="datetime" />
+          <Property Name="UpdatedTime" Type="datetime" />
+          <Property Name="FeedbackStatus" Type="int" />
+        </EntityType>
+        <EntityContainer Name="NJISFPZWSLineControlCuttingModelStoreContainer">
+          <EntitySet Name="CuttingMachineFeedback" EntityType="Self.CuttingMachineFeedback" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CuttingManualLabelPrinter" EntityType="Self.CuttingManualLabelPrinter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CuttingNgPart" EntityType="Self.CuttingNgPart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CuttingSawFileRelation" EntityType="Self.CuttingSawFileRelation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CuttingStackList" EntityType="Self.CuttingStackList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CuttingStackProductionList" EntityType="Self.CuttingStackProductionList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CuttingStackShift" EntityType="Self.CuttingStackShift" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeviceInfos" EntityType="Self.DeviceInfos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartInfo" EntityType="Self.PartInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WMSCuttingStackList" EntityType="Self.WMSCuttingStackList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WMSStacktFeedBack" EntityType="Self.WMSStacktFeedBack" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NJIS.FPZWS.LineControl.CuttingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CutPartInfoCollector">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RealWith1" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="RealLen1" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="RealWith2" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RealLen2" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DefectId" Type="Int32" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="FactoryName" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CuttingManualLabelPrinter">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartID" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="WorkpieceID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SawNumber" Type="Int32" />
+          <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CuttingNgPart">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="OrderNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="FinishLength" Type="Single" />
+          <Property Name="FinishWidth" Type="Single" />
+          <Property Name="FinishThickness" Type="Single" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="TaskId" Type="Guid" />
+        </EntityType>
+        <EntityType Name="CuttingPartBackToLine">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="barcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="received" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CuttingSawFile">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OptimizationRun" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SawFile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Status2" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="TaskId" Type="Guid" />
+          <Property Name="ImportToMesStatus" Type="Int32" Nullable="false" />
+          <Property Name="BatchId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CuttingStackList">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StackName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StackIndex" Type="Int32" Nullable="false" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RawMaterialID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RawMaterialName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SupplierInfo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RawLength" Type="Double" Nullable="false" />
+          <Property Name="RawWidth" Type="Double" Nullable="false" />
+          <Property Name="RawThickness" Type="Double" Nullable="false" />
+          <Property Name="RawColor" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RawOrientation" Type="Int32" />
+          <Property Name="Information" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PatternName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OptimizationRun" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StackType" Type="Int32" Nullable="false" />
+          <Property Name="ImportToMesStatus" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="TaskId" Type="Guid" Nullable="false" />
+          <Property Name="BatchId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="TaskDistributeId" Type="Guid" Nullable="false" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="WMSStatus" Type="Int32" Nullable="false" />
+          <Property Name="PlanDate" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="ItemName" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="DeviceGroup" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BatchProductIndex" Type="Double" />
+          <Property Name="StackProductIndex" Type="Double" />
+          <Property Name="BatchType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OptimizationBatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="NcFilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LabelFilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PanelQty" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CuttingStackProductionList">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StackName" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="PlaceNo" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="ProductionLine" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PilerNo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PcsCuttingDevices">
+          <Key>
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="DeviceName" />
+          </Key>
+          <Property Name="LineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DeviceType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <Property Name="DeviceDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PcsPartPosition">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Position" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CutPartInfoCollector" EntityType="Self.CutPartInfoCollector" />
+          <EntitySet Name="CuttingManualLabelPrinter" EntityType="Self.CuttingManualLabelPrinter" />
+          <EntitySet Name="CuttingNgPart" EntityType="Self.CuttingNgPart" />
+          <EntitySet Name="CuttingPartBackToLine" EntityType="Self.CuttingPartBackToLine" />
+          <EntitySet Name="CuttingSawFile" EntityType="Self.CuttingSawFile" />
+          <EntitySet Name="CuttingStackList" EntityType="Self.CuttingStackList" />
+          <EntitySet Name="CuttingStackProductionList" EntityType="Self.CuttingStackProductionList" />
+          <EntitySet Name="PcsCuttingDevices" EntityType="Self.PcsCuttingDevices" />
+          <EntitySet Name="PcsPartPosition" EntityType="Self.PcsPartPosition" />
+          <EntitySet Name="CuttingTaskLog" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingTaskLog" />
+          <EntitySet Name="CuttingTaskDetail" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingTaskDetail" />
+          <EntitySet Name="CuttingPattern" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPattern" />
+          <EntitySet Name="DeviceInfos" EntityType="NJIS.FPZWS.LineControl.CuttingModel.DeviceInfos" />
+          <EntitySet Name="SpiltMDBResult" EntityType="NJIS.FPZWS.LineControl.CuttingModel.SpiltMDBResult" />
+          <EntitySet Name="WMSCuttingStackList" EntityType="NJIS.FPZWS.LineControl.CuttingModel.WMSCuttingStackList" />
+          <EntitySet Name="WMSStacktFeedBack" EntityType="NJIS.FPZWS.LineControl.CuttingModel.WMSStacktFeedBack" />
+          <EntitySet Name="CuttingMachineFeedback" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingMachineFeedback" />
+          <EntitySet Name="CuttingPartFeedBack" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartFeedBack" />
+          <EntitySet Name="CuttingRawBoardFeedback" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingRawBoardFeedback" />
+          <EntitySet Name="FeedbackLog" EntityType="NJIS.FPZWS.LineControl.CuttingModel.FeedbackLog" />
+          <EntitySet Name="PcsPartInfoPosition" EntityType="NJIS.FPZWS.LineControl.CuttingModel.PcsPartInfoPosition" />
+          <EntitySet Name="t_dt_mi" EntityType="NJIS.FPZWS.LineControl.CuttingModel.t_dt_mi" />
+          <EntitySet Name="CuttingStackShift" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackShift" />
+          <EntitySet Name="ChainBuffer" EntityType="NJIS.FPZWS.LineControl.CuttingModel.ChainBuffer" />
+          <EntitySet Name="CuttingCheckPart" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingCheckPart" />
+          <EntitySet Name="CuttingCheckRule" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingCheckRule" />
+          <EntitySet Name="Mdb_Parts_Udi" EntityType="NJIS.FPZWS.LineControl.CuttingModel.Mdb_Parts_Udi" />
+          <EntitySet Name="CuttingPartReenter" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartReenter" />
+          <EntitySet Name="CuttingPartScanLog" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartScanLog" />
+          <EntitySet Name="PartInfo" EntityType="NJIS.FPZWS.LineControl.CuttingModel.PartInfo" />
+          <EntitySet Name="CuttingFeedBack" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingFeedBack" />
+          <EntitySet Name="CuttingSawFileRelation" EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingSawFileRelation" />
+        </EntityContainer>
+        <EntityType Name="CuttingTaskLog">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="TaskId" Type="Guid" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="ItemName" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="FinishedStatus" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="DeviceName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IsSuccess" Type="Boolean" />
+          <Property Name="Msg" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="PlanDate" Type="DateTime" Precision="3" />
+          <Property Name="IsChangedDevice" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="CuttingTaskDetail">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="BatchName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="JOB_INDEX" Type="Int32" />
+          <Property Name="PART_INDEX" Type="Int32" />
+          <Property Name="PlanDate" Type="DateTime" Precision="3" />
+          <Property Name="PartId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PartFinishedStatus" Type="Boolean" Nullable="false" />
+          <Property Name="TaskEnable" Type="Boolean" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="Length" Type="Double" />
+          <Property Name="Width" Type="Double" />
+          <Property Name="OldPTN_INDEX" Type="Int32" Nullable="false" />
+          <Property Name="NewPTN_INDEX" Type="Int32" Nullable="false" />
+          <Property Name="IsNg" Type="Boolean" Nullable="false" />
+          <Property Name="IsOffPart" Type="Boolean" Nullable="false" />
+          <Property Name="Color" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CuttingPattern">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskDistributeId" Type="Guid" Nullable="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Cycles" Type="Int32" Nullable="false" />
+          <Property Name="FinishedCycles" Type="Int32" Nullable="false" />
+          <Property Name="CutMaxCount" Type="Int32" Nullable="false" />
+          <Property Name="BookCount" Type="Int32" Nullable="false" />
+          <Property Name="FinishedBookCount" Type="Int32" Nullable="false" />
+          <Property Name="PartCount" Type="Int32" Nullable="false" />
+          <Property Name="FinishedPartCount" Type="Int32" Nullable="false" />
+          <Property Name="FinishedProgress" Type="Single" Nullable="false" />
+          <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PatternName" Type="Int16" Nullable="false" />
+          <Property Name="CycleTime" Type="Int32" Nullable="false" />
+          <Property Name="TotalTime" Type="Int32" Nullable="false" />
+          <Property Name="NewPatternName" Type="Int16" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="DeviceInfos">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentId" Type="Int32" />
+          <Property Name="ProductionLine" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="Msg" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ProcessName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceType" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PlaceNo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Ratio" Type="Single" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SpiltMDBResult">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskDistributeId" Type="Guid" Nullable="false" />
+          <Property Name="TaskId" Type="Guid" Nullable="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StackListId" Type="Int64" Nullable="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="MDBFullName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Msg" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FinishedStatus" Type="Int32" Nullable="false" />
+          <Property Name="EstimatedTime" Type="Time" Precision="7" />
+          <Property Name="ActuallyTime" Type="Time" Precision="7" />
+          <Property Name="MdbStatus" Type="Int32" Nullable="false" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="EndTime" Type="DateTime" Precision="3" />
+          <Property Name="BatchIndex" Type="Int32" Nullable="false" />
+          <Property Name="ItemIndex" Type="Int32" Nullable="false" />
+          <Property Name="ActualPlanDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <Property Name="StartLoadingTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="WMSCuttingStackList">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkshopCode" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="StackName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StackIndex" Type="Int32" Nullable="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="BatchIndex" Type="Int32" />
+          <Property Name="RawMaterialID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RawMaterialName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierInfo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RawLength" Type="Double" Nullable="false" />
+          <Property Name="RawWidth" Type="Double" Nullable="false" />
+          <Property Name="RawThickness" Type="Double" Nullable="false" />
+          <Property Name="RawColor" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="RawOrientation" Type="Int32" Nullable="false" />
+          <Property Name="Information" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PatternName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="OptimizationRun" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StackType" Type="Int32" Nullable="false" />
+          <Property Name="ImportToMesStatus" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="TaskId" Type="Guid" Nullable="false" />
+          <Property Name="BatchId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="WMSStatus" Type="Int32" />
+          <Property Name="PlanDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="WMSStacktFeedBack">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StackName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="IsSuccess" Type="Boolean" Nullable="false" />
+          <Property Name="FailReason" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="FeedbackStatus" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CuttingMachineFeedback">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductionLine" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="EndTime" Type="DateTime" Precision="3" />
+          <Property Name="BaseMachineStateExternalKeyName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="DetailMachineStateExternalKeyName" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="StateDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MachineStateId" Type="Int64" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CuttingPartFeedBack">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UPID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PartID" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="ProductionDate" Type="DateTime" Precision="3" />
+          <Property Name="CuttingMachine" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SawNumber" Type="Int32" />
+          <Property Name="StackName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StackIndex" Type="Int32" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="RawMaterialID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RawMaterialName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierInfo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PatternName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="OptimizationRun" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LabelStatus" Type="Int32" />
+          <Property Name="CuttingStatus" Type="Int32" />
+          <Property Name="StatusInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FeedbackStatus" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CuttingRawBoardFeedback">
+          <Key>
+            <PropertyRef Name="LineID" />
+          </Key>
+          <Property Name="LineID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UBID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WorkshopCode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="StackName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StackIndex" Type="Int32" />
+          <Property Name="BatchName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="RawMaterialID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RawMaterialName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierInfo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CuttingMachine" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SawNumber" Type="Int32" />
+          <Property Name="RawBoardStatus" Type="Int32" />
+          <Property Name="InsertedInSaw" Type="DateTime" Precision="3" />
+          <Property Name="TimeLastPartLeavesSaw" Type="DateTime" Precision="3" />
+          <Property Name="ImportToMesStatus" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FeedbackLog">
+          <Key>
+            <PropertyRef Name="TableNO" />
+            <PropertyRef Name="PrimaryKey" />
+          </Key>
+          <Property Name="TableNO" Type="Byte" Nullable="false" />
+          <Property Name="PrimaryKey" Type="Int64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PcsPartInfoPosition">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" />
+          <Property Name="PartId" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Position" Type="Int32" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="t_dt_mi">
+          <Key>
+            <PropertyRef Name="et" />
+          </Key>
+          <Property Name="bt" Type="Time" Precision="7" />
+          <Property Name="bt5" Type="Time" Precision="7" />
+          <Property Name="bt10" Type="Time" Precision="7" />
+          <Property Name="bt30" Type="Time" Precision="7" />
+          <Property Name="bt60" Type="Time" Precision="7" />
+          <Property Name="et" Type="Time" Nullable="false" Precision="7" />
+        </EntityType>
+        <EntityType Name="CuttingStackShift">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StackName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="StartPlaceNo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EndPlaceNo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="ChainBuffer">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Size" Type="Int32" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CuttingCheckPart">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TaskDistributeId" Type="Guid" Nullable="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PartId" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+          <Property Name="CheckStatus" Type="Int32" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CuttingCheckRule">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CheckObject" Type="Int32" Nullable="false" />
+          <Property Name="CheckOperatorArgs" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CheckWay" Type="Int32" Nullable="false" />
+          <Property Name="Args" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StartCheckTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndCheckTime" Type="DateTime" Precision="3" />
+          <Property Name="CurrentCheckCount" Type="Int32" Nullable="false" />
+          <Property Name="CurrentIntervalCount" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Mdb_Parts_Udi">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JOB_INDEX" Type="Int16" />
+          <Property Name="PART_INDEX" Type="Int16" />
+          <Property Name="INFO1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO4" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO5" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO6" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO7" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO8" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO9" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO10" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO11" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO12" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO13" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO14" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO15" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO16" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO17" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO18" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO19" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO20" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO21" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO22" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO23" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO24" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO25" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO26" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO27" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO28" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO29" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO30" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO31" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO32" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO33" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO34" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO35" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO36" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO37" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO38" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO39" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO40" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO41" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO42" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO43" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO44" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO45" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO46" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO47" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO48" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO49" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO50" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO51" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO52" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO53" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO54" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO55" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO56" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO57" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO58" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO59" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="INFO60" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BatchId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="TaskId" Type="Guid" />
+          <Property Name="DepartmentId" Type="Int64" />
+          <Property Name="ImportToMesStatus" Type="Int32" Nullable="false" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CuttingPartReenter">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PartId" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ReenterType" Type="Int32" Nullable="false" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="ProductionLine" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="OperationResult" Type="Boolean" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Length" Type="Double" Nullable="false" />
+          <Property Name="Width" Type="Double" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CuttingPartScanLog">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="InteractionPoints" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PartType" Type="Int32" Nullable="false" />
+          <Property Name="Result" Type="Int32" Nullable="false" />
+          <Property Name="Thickness" Type="Single" />
+          <Property Name="Length" Type="Single" />
+          <Property Name="Width" Type="Single" />
+        </EntityType>
+        <EntityType Name="PartInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TaskId" Type="Guid" Nullable="false" />
+          <Property Name="Upi" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PanelCode" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PanelName" Type="String" MaxLength="480" FixedLength="false" Unicode="true" />
+          <Property Name="TeamCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BatchCode" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="ColorCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Length" Type="Single" Nullable="false" />
+          <Property Name="Width" Type="Single" Nullable="false" />
+          <Property Name="Thickness" Type="Single" Nullable="false" />
+          <Property Name="Weight" Type="Single" Nullable="false" />
+          <Property Name="UnitName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ProductionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PanelType" Type="Int32" />
+          <Property Name="EdgebandColorCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EdgebandType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EdgebandComments" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="OrderHeaderId" Type="Int64" />
+          <Property Name="OrderLineId" Type="Int64" />
+          <Property Name="OrderNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="EdgeInformation1" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="EdgeInformation2" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="EdgeInformation3" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="EdgeInformation4" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Materialflow" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="RawThickness" Type="Single" />
+          <Property Name="SawLength" Type="Single" />
+          <Property Name="SawWidth" Type="Single" />
+          <Property Name="MaterialInformation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleNum" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+          <Property Name="ProductionLine" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="IsDeleted" Type="Int32" />
+          <Property Name="OrganizationId" Type="Int64" />
+          <Property Name="CreatorUserId" Type="Int64" />
+          <Property Name="CreatedTime" Type="DateTime" Precision="3" />
+          <Property Name="UpdatorUserId" Type="Int64" />
+          <Property Name="UpdatedTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CuttingFeedBack">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DevicePPCD_ID" Type="Int64" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Length" Type="Single" Nullable="false" />
+          <Property Name="Width" Type="Single" Nullable="false" />
+          <Property Name="Thickness" Type="Single" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CuttingSawFileRelation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PlanDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BatchName" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="StackName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StackIndex" Type="Int32" Nullable="false" />
+          <Property Name="BoardCount" Type="Int32" Nullable="false" />
+          <Property Name="SawFileName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SawType" Type="Int32" Nullable="false" />
+          <Property Name="SawFile" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TaskId" Type="Guid" />
+          <Property Name="TaskDistributeId" Type="Guid" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NJISFPZWSLineControlCuttingModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="CuttingManualLabelPrinter">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingManualLabelPrinter">
+              <MappingFragment StoreEntitySet="CuttingManualLabelPrinter">
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="PartID" ColumnName="PartID" />
+                <ScalarProperty Name="WorkshopCode" ColumnName="WorkshopCode" />
+                <ScalarProperty Name="WorkpieceID" ColumnName="WorkpieceID" />
+                <ScalarProperty Name="SawNumber" ColumnName="SawNumber" />
+                <ScalarProperty Name="Info" ColumnName="Info" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CuttingNgPart">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingNgPart">
+              <MappingFragment StoreEntitySet="CuttingNgPart">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="PartId" ColumnName="PartId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="FinishLength" ColumnName="FinishLength" />
+                <ScalarProperty Name="FinishWidth" ColumnName="FinishWidth" />
+                <ScalarProperty Name="FinishThickness" ColumnName="FinishThickness" />
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CuttingStackList">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackList">
+              <MappingFragment StoreEntitySet="CuttingStackList">
+                <ScalarProperty Name="PanelQty" ColumnName="PanelQty" />
+                <ScalarProperty Name="LabelFilePath" ColumnName="LabelFilePath" />
+                <ScalarProperty Name="NcFilePath" ColumnName="NcFilePath" />
+                <ScalarProperty Name="OptimizationBatchName" ColumnName="OptimizationBatchName" />
+                <ScalarProperty Name="BatchType" ColumnName="BatchType" />
+                <ScalarProperty Name="StackProductIndex" ColumnName="StackProductIndex" />
+                <ScalarProperty Name="BatchProductIndex" ColumnName="BatchProductIndex" />
+                <ScalarProperty Name="DeviceGroup" ColumnName="DeviceGroup" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="WorkshopCode" ColumnName="WorkshopCode" />
+                <ScalarProperty Name="StackName" ColumnName="StackName" />
+                <ScalarProperty Name="StackIndex" ColumnName="StackIndex" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="RawMaterialID" ColumnName="RawMaterialID" />
+                <ScalarProperty Name="RawMaterialName" ColumnName="RawMaterialName" />
+                <ScalarProperty Name="SupplierInfo" ColumnName="SupplierInfo" />
+                <ScalarProperty Name="RawLength" ColumnName="RawLength" />
+                <ScalarProperty Name="RawWidth" ColumnName="RawWidth" />
+                <ScalarProperty Name="RawThickness" ColumnName="RawThickness" />
+                <ScalarProperty Name="RawColor" ColumnName="RawColor" />
+                <ScalarProperty Name="RawOrientation" ColumnName="RawOrientation" />
+                <ScalarProperty Name="Information" ColumnName="Information" />
+                <ScalarProperty Name="PatternName" ColumnName="PatternName" />
+                <ScalarProperty Name="OptimizationRun" ColumnName="OptimizationRun" />
+                <ScalarProperty Name="StackType" ColumnName="StackType" />
+                <ScalarProperty Name="ImportToMesStatus" ColumnName="ImportToMesStatus" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+                <ScalarProperty Name="WMSStatus" ColumnName="WMSStatus" />
+                <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CuttingStackProductionList">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackProductionList">
+              <MappingFragment StoreEntitySet="CuttingStackProductionList">
+                <ScalarProperty Name="PilerNo" ColumnName="PilerNo" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="StackName" ColumnName="StackName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PlaceNo" ColumnName="PlaceNo" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeviceInfos">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.DeviceInfos">
+              <MappingFragment StoreEntitySet="DeviceInfos">
+                <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+                <ScalarProperty Name="PlaceNo" ColumnName="PlaceNo" />
+                <ScalarProperty Name="DeviceDescription" ColumnName="DeviceDescription" />
+                <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+                <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WMSCuttingStackList">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.WMSCuttingStackList">
+              <MappingFragment StoreEntitySet="WMSCuttingStackList">
+                <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+                <ScalarProperty Name="WMSStatus" ColumnName="WMSStatus" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="LastUpdatedTime" ColumnName="LastUpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="ImportToMesStatus" ColumnName="ImportToMesStatus" />
+                <ScalarProperty Name="StackType" ColumnName="StackType" />
+                <ScalarProperty Name="OptimizationRun" ColumnName="OptimizationRun" />
+                <ScalarProperty Name="PatternName" ColumnName="PatternName" />
+                <ScalarProperty Name="Information" ColumnName="Information" />
+                <ScalarProperty Name="RawOrientation" ColumnName="RawOrientation" />
+                <ScalarProperty Name="RawColor" ColumnName="RawColor" />
+                <ScalarProperty Name="RawThickness" ColumnName="RawThickness" />
+                <ScalarProperty Name="RawWidth" ColumnName="RawWidth" />
+                <ScalarProperty Name="RawLength" ColumnName="RawLength" />
+                <ScalarProperty Name="SupplierInfo" ColumnName="SupplierInfo" />
+                <ScalarProperty Name="RawMaterialName" ColumnName="RawMaterialName" />
+                <ScalarProperty Name="RawMaterialID" ColumnName="RawMaterialID" />
+                <ScalarProperty Name="BatchIndex" ColumnName="BatchIndex" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="StackIndex" ColumnName="StackIndex" />
+                <ScalarProperty Name="StackName" ColumnName="StackName" />
+                <ScalarProperty Name="WorkshopCode" ColumnName="WorkshopCode" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WMSStacktFeedBack">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.WMSStacktFeedBack">
+              <MappingFragment StoreEntitySet="WMSStacktFeedBack">
+                <ScalarProperty Name="FeedbackStatus" ColumnName="FeedbackStatus" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="FailReason" ColumnName="FailReason" />
+                <ScalarProperty Name="IsSuccess" ColumnName="IsSuccess" />
+                <ScalarProperty Name="StackName" ColumnName="StackName" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CuttingMachineFeedback">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingMachineFeedback">
+              <MappingFragment StoreEntitySet="CuttingMachineFeedback">
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="MachineStateId" ColumnName="MachineStateId" />
+                <ScalarProperty Name="StateDescription" ColumnName="StateDescription" />
+                <ScalarProperty Name="DetailMachineStateExternalKeyName" ColumnName="DetailMachineStateExternalKeyName" />
+                <ScalarProperty Name="BaseMachineStateExternalKeyName" ColumnName="BaseMachineStateExternalKeyName" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CuttingStackShift">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackShift">
+              <MappingFragment StoreEntitySet="CuttingStackShift">
+                <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="EndPlaceNo" ColumnName="EndPlaceNo" />
+                <ScalarProperty Name="StartPlaceNo" ColumnName="StartPlaceNo" />
+                <ScalarProperty Name="StackName" ColumnName="StackName" />
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartInfo">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.PartInfo">
+              <MappingFragment StoreEntitySet="PartInfo">
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="UpdatorUserId" ColumnName="UpdatorUserId" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+                <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ProductionLine" ColumnName="ProductionLine" />
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="VehicleNum" ColumnName="VehicleNum" />
+                <ScalarProperty Name="MaterialInformation" ColumnName="MaterialInformation" />
+                <ScalarProperty Name="SawWidth" ColumnName="SawWidth" />
+                <ScalarProperty Name="SawLength" ColumnName="SawLength" />
+                <ScalarProperty Name="RawThickness" ColumnName="RawThickness" />
+                <ScalarProperty Name="Materialflow" ColumnName="Materialflow" />
+                <ScalarProperty Name="EdgeInformation4" ColumnName="EdgeInformation4" />
+                <ScalarProperty Name="EdgeInformation3" ColumnName="EdgeInformation3" />
+                <ScalarProperty Name="EdgeInformation2" ColumnName="EdgeInformation2" />
+                <ScalarProperty Name="EdgeInformation1" ColumnName="EdgeInformation1" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="OrderLineId" ColumnName="OrderLineId" />
+                <ScalarProperty Name="OrderHeaderId" ColumnName="OrderHeaderId" />
+                <ScalarProperty Name="EdgebandComments" ColumnName="EdgebandComments" />
+                <ScalarProperty Name="EdgebandType" ColumnName="EdgebandType" />
+                <ScalarProperty Name="EdgebandColorCode" ColumnName="EdgebandColorCode" />
+                <ScalarProperty Name="PanelType" ColumnName="PanelType" />
+                <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+                <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Thickness" ColumnName="Thickness" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+                <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+                <ScalarProperty Name="TeamCode" ColumnName="TeamCode" />
+                <ScalarProperty Name="PanelName" ColumnName="PanelName" />
+                <ScalarProperty Name="PanelCode" ColumnName="PanelCode" />
+                <ScalarProperty Name="Upi" ColumnName="Upi" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="PartId" ColumnName="PartId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CuttingSawFileRelation">
+            <EntityTypeMapping TypeName="NJIS.FPZWS.LineControl.CuttingModel.CuttingSawFileRelation">
+              <MappingFragment StoreEntitySet="CuttingSawFileRelation">
+                <ScalarProperty Name="TaskDistributeId" ColumnName="TaskDistributeId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="UpdatedTime" ColumnName="UpdatedTime" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="SawFile" ColumnName="SawFile" />
+                <ScalarProperty Name="SawType" ColumnName="SawType" />
+                <ScalarProperty Name="SawFileName" ColumnName="SawFileName" />
+                <ScalarProperty Name="BoardCount" ColumnName="BoardCount" />
+                <ScalarProperty Name="StackIndex" ColumnName="StackIndex" />
+                <ScalarProperty Name="StackName" ColumnName="StackName" />
+                <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+                <ScalarProperty Name="PlanDate" ColumnName="PlanDate" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="5554fd0c076c458280586e0b8dd2bea7" Name="Diagram1">
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CutPartInfoCollector" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingManualLabelPrinter" Width="2.25" PointX="3.375" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingNgPart" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartBackToLine" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingSawFile" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackList" Width="1.625" PointX="6.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackProductionList" Width="2.25" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.PcsCuttingDevices" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.PcsPartPosition" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingTaskLog" Width="1.75" PointX="9.375" PointY="3.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingTaskDetail" Width="1.5" PointX="9.375" PointY="7.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPattern" Width="1.5" PointX="11.75" PointY="7.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.DeviceInfos" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.SpiltMDBResult" Width="1.5" PointX="6.75" PointY="12.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.WMSCuttingStackList" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.WMSStacktFeedBack" Width="1.5" PointX="9.375" PointY="13.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingMachineFeedback" Width="1.5" PointX="11.375" PointY="13.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartFeedBack" Width="1.5" PointX="13.375" PointY="13.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingRawBoardFeedback" Width="1.5" PointX="14.375" PointY="7.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.FeedbackLog" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.PcsPartInfoPosition" Width="1.5" PointX="15.375" PointY="3.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.t_dt_mi" Width="1.5" PointX="3.375" PointY="15.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingStackShift" Width="1.5" PointX="16.75" PointY="6.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.ChainBuffer" Width="1.5" PointX="16.375" PointY="10.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingCheckPart" Width="1.5" PointX="15.75" PointY="13.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingCheckRule" Width="1.5" PointX="0.75" PointY="16.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.Mdb_Parts_Udi" Width="1.5" PointX="9.375" PointY="17.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartReenter" Width="1.5" PointX="3.375" PointY="11.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingPartScanLog" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.PartInfo" Width="1.5" PointX="15.375" PointY="17.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingFeedBack" Width="1.5" PointX="17.375" PointY="17.75" />
+        <EntityTypeShape EntityType="NJIS.FPZWS.LineControl.CuttingModel.CuttingSawFileRelation" Width="1.5" PointX="3.375" PointY="18.75" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

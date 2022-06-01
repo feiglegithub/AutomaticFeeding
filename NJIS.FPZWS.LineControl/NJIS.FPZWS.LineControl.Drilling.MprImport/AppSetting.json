@@ -1,0 +1,11 @@
+﻿{
+  "App": "NJIS.FPZWS.LineControl.Drilling.MprImport.MprImportApp,MprImport",
+  "Service": "NJIS.FPZWS.LineControl.Drilling.MprImport",
+  "ServiceName": "NJIS.FPZWS.LineControl.Drilling.MprImport",
+  "InstanceName": "",
+  "Description": "",
+  "DisplayName": "NJIS.FPZWS.LineControl.Drilling.MprImport",
+  "StartTimeout": 10,
+  "StopTimeout": 10,
+  "HelpTextPrefix": "dg"
+}

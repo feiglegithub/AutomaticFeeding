@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:nns="http://www.primeton.com/interface2wcsService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns0="com.sfy.wms.autowarehouse.interface2wcs.wcsInterfaceParam" name="interface2wcsServiceService" targetNamespace="http://www.primeton.com/interface2wcsService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.primeton.com/interface2wcsService" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="/default/interface2wcsService?xsd=wcsInterfaceParam.xsd" namespace="com.sfy.wms.autowarehouse.interface2wcs.wcsInterfaceParam" />
+      <xsd:element name="appleReworkLocator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="SEQID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NORDID" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="CSYSTYPE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NPALLETID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NOPTTYPE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NOPTSTATION" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="CWHID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="QUANTITY" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="HEIGHT" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DOPTDATE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="CAPPREASON" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NREASONCODE" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="appleReworkLocatorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATUS" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="MESSAGE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DATA" nillable="true" type="ns0:TaskInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="applyTask">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="NORDID" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="CSYSTYPE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NPALLETID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NOPTTYPE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NOPTSTATION" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="CWHID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="QUANTITY" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="HEIGHT" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DOPTDATE" nillable="true" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="applyTaskResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="MESSAGE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DATA" nillable="true" type="ns0:TaskInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createTask">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="task" nillable="true" type="ns0:TaskInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createTaskResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="MESSAGE" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateScStatus">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="SEQID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NWKSTATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NWKMESSAGE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DOPTDATE" nillable="true" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateScStatusResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="MESSAGE" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateStationStatus">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATION_NUMBER" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATION_NAME" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATION_TYPE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATION_STATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATION_MESSAGE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DOPTDATE" nillable="true" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateStationStatusResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="MESSAGE" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateTaskStatus">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="SEQID" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NWKSTATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="NWKMESSAGE" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="DOPTDATE" nillable="true" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateTaskStatusResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="STATUS" type="xsd:int" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="MESSAGE" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="updateStationStatusResponse">
+    <wsdl:part name="updateStationStatusResponse" element="nns:updateStationStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="appleReworkLocatorResponse">
+    <wsdl:part name="appleReworkLocatorResponse" element="nns:appleReworkLocatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateScStatus">
+    <wsdl:part name="updateScStatus" element="nns:updateScStatus" />
+  </wsdl:message>
+  <wsdl:message name="updateScStatusResponse">
+    <wsdl:part name="updateScStatusResponse" element="nns:updateScStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateStationStatus">
+    <wsdl:part name="updateStationStatus" element="nns:updateStationStatus" />
+  </wsdl:message>
+  <wsdl:message name="applyTaskResponse">
+    <wsdl:part name="applyTaskResponse" element="nns:applyTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="applyTask">
+    <wsdl:part name="applyTask" element="nns:applyTask" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskStatusResponse">
+    <wsdl:part name="updateTaskStatusResponse" element="nns:updateTaskStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTaskStatus">
+    <wsdl:part name="updateTaskStatus" element="nns:updateTaskStatus" />
+  </wsdl:message>
+  <wsdl:message name="appleReworkLocator">
+    <wsdl:part name="appleReworkLocator" element="nns:appleReworkLocator" />
+  </wsdl:message>
+  <wsdl:message name="createTask">
+    <wsdl:part name="createTask" element="nns:createTask" />
+  </wsdl:message>
+  <wsdl:message name="createTaskResponse">
+    <wsdl:part name="createTaskResponse" element="nns:createTaskResponse" />
+  </wsdl:message>
+  <wsdl:portType name="interface2wcsService">
+    <wsdl:operation name="appleReworkLocator">
+      <wsdl:input name="appleReworkLocator" message="nns:appleReworkLocator" />
+      <wsdl:output name="appleReworkLocatorResponse" message="nns:appleReworkLocatorResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="applyTask">
+      <wsdl:input name="applyTask" message="nns:applyTask" />
+      <wsdl:output name="applyTaskResponse" message="nns:applyTaskResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createTask">
+      <wsdl:input name="createTask" message="nns:createTask" />
+      <wsdl:output name="createTaskResponse" message="nns:createTaskResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateScStatus">
+      <wsdl:input name="updateScStatus" message="nns:updateScStatus" />
+      <wsdl:output name="updateScStatusResponse" message="nns:updateScStatusResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateStationStatus">
+      <wsdl:input name="updateStationStatus" message="nns:updateStationStatus" />
+      <wsdl:output name="updateStationStatusResponse" message="nns:updateStationStatusResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTaskStatus">
+      <wsdl:input name="updateTaskStatus" message="nns:updateTaskStatus" />
+      <wsdl:output name="updateTaskStatusResponse" message="nns:updateTaskStatusResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+﻿{
+  "App": "NJIS.FPZWS.LineControl.Edgebanding.Core.EdgebandingApp,NJIS.FPZWS.LineControl.Edgebanding.Core",
+  "Service": "NJIS.FPZWS.LineControl.Edgebanding",
+  "ServiceName": "NJIS.FPZWS.LineControl.Edgebanding",
+  "InstanceName": "",
+  "Description": "",
+  "DisplayName": "NJIS.FPZWS.LineControl.Edgebanding",
+  "StartTimeout": 10,
+  "StopTimeout": 10,
+  "HelpTextPrefix": "dg"
+}

@@ -1,0 +1,8 @@
+E:\Project\Source2\RFIDControl\bin\Debug\RFIDControl.exe.config
+E:\Project\Source2\RFIDControl\bin\Debug\RFIDControl.exe
+E:\Project\Source2\RFIDControl\bin\Debug\RFIDControl.pdb
+E:\Project\Source2\RFIDControl\obj\Debug\RFIDControl.Form1.resources
+E:\Project\Source2\RFIDControl\obj\Debug\RFIDControl.Properties.Resources.resources
+E:\Project\Source2\RFIDControl\obj\Debug\RFIDControl.csproj.GenerateResource.Cache
+E:\Project\Source2\RFIDControl\obj\Debug\RFIDControl.exe
+E:\Project\Source2\RFIDControl\obj\Debug\RFIDControl.pdb

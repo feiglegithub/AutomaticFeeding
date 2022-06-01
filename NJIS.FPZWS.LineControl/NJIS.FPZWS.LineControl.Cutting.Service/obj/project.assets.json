@@ -1,0 +1,557 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "Dapper/1.50.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net451/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Dapper.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
+        }
+      },
+      "NJIS.Dapper.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "Dapper": "1.50.2",
+          "NJIS.Model.Attributes": "1.0.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Contract/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0",
+          "NJIS.FPZWS.Wcf": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Repository/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.Dapper.Repositories": "1.0.0",
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Wcf/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        }
+      },
+      "NJIS.Model.Attributes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "Dapper/1.50.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net451/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Dapper.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
+        }
+      },
+      "NJIS.Dapper.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "Dapper": "1.50.2",
+          "NJIS.Model.Attributes": "1.0.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Contract/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0",
+          "NJIS.FPZWS.Wcf": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Repository/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.Dapper.Repositories": "1.0.0",
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Wcf/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        }
+      },
+      "NJIS.Model.Attributes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x64": {
+      "Dapper/1.50.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net451/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Dapper.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
+        }
+      },
+      "NJIS.Dapper.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "Dapper": "1.50.2",
+          "NJIS.Model.Attributes": "1.0.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Contract/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0",
+          "NJIS.FPZWS.Wcf": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Repository/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.Dapper.Repositories": "1.0.0",
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Wcf/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        }
+      },
+      "NJIS.Model.Attributes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x86": {
+      "Dapper/1.50.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net451/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Dapper.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
+        }
+      },
+      "NJIS.Dapper.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "Dapper": "1.50.2",
+          "NJIS.Model.Attributes": "1.0.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Dapper.Repositories.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Contract/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0",
+          "NJIS.FPZWS.Wcf": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Contract.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Model.dll": {}
+        }
+      },
+      "NJIS.FPZWS.LineControl.Cutting.Repository/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "NJIS.Dapper.Repositories": "1.0.0",
+          "NJIS.FPZWS.LineControl.Cutting.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.LineControl.Cutting.Repository.dll": {}
+        }
+      },
+      "NJIS.FPZWS.Wcf/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.FPZWS.Wcf.dll": {}
+        }
+      },
+      "NJIS.Model.Attributes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NJIS.Model.Attributes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dapper/1.50.2": {
+      "sha512": "S3lL2dDO/9uEZ0zMoz5gO8dHSTQqLlp2g50Lx7WoLno5j7cDDW/+HR9DpGkEDjiRdE2w2wklPTUUWriGOK4auw==",
+      "type": "package",
+      "path": "dapper/1.50.2",
+      "files": [
+        ".nupkg.metadata",
+        "dapper.1.50.2.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net40/Dapper.dll",
+        "lib/net40/Dapper.xml",
+        "lib/net45/Dapper.dll",
+        "lib/net45/Dapper.xml",
+        "lib/net451/Dapper.dll",
+        "lib/net451/Dapper.xml",
+        "lib/netstandard1.3/Dapper.dll",
+        "lib/netstandard1.3/Dapper.xml"
+      ]
+    },
+    "protobuf-net/2.0.0.668": {
+      "sha512": "Lgj+Kf1+RV0utKxX9u1WEcymPGrbWrj/AwFmFADFLLa/LLdc1ji2MIGcecFRAGUu6UO8BRbdjZAIYWvLlN1B/A==",
+      "type": "package",
+      "path": "protobuf-net/2.0.0.668",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20-cf/protobuf-net.dll",
+        "lib/net20-cf/protobuf-net.pdb",
+        "lib/net20-cf/protobuf-net.xml",
+        "lib/net20/protobuf-net.dll",
+        "lib/net20/protobuf-net.pdb",
+        "lib/net20/protobuf-net.xml",
+        "lib/net30/protobuf-net.dll",
+        "lib/net30/protobuf-net.pdb",
+        "lib/net30/protobuf-net.xml",
+        "lib/net35-cf/protobuf-net.dll",
+        "lib/net35-cf/protobuf-net.pdb",
+        "lib/net35-cf/protobuf-net.xml",
+        "lib/net35/protobuf-net.dll",
+        "lib/net35/protobuf-net.pdb",
+        "lib/net35/protobuf-net.xml",
+        "lib/net40-cf/protobuf-net.dll",
+        "lib/net40-cf/protobuf-net.pdb",
+        "lib/net40-cf/protobuf-net.xml",
+        "lib/net40/protobuf-net.dll",
+        "lib/net40/protobuf-net.pdb",
+        "lib/net40/protobuf-net.xml",
+        "lib/netcore45/protobuf-net.XML",
+        "lib/netcore45/protobuf-net.dll",
+        "lib/netcore45/protobuf-net.pdb",
+        "lib/netcore45/protobuf-net.pri",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.dll",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.pdb",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.xml",
+        "lib/sl3-wp/protobuf-net.dll",
+        "lib/sl3-wp/protobuf-net.pdb",
+        "lib/sl3-wp/protobuf-net.xml",
+        "lib/sl4-windowsphone71/protobuf-net.dll",
+        "lib/sl4-windowsphone71/protobuf-net.pdb",
+        "lib/sl4-windowsphone71/protobuf-net.xml",
+        "lib/sl4/protobuf-net.dll",
+        "lib/sl4/protobuf-net.pdb",
+        "lib/sl4/protobuf-net.xml",
+        "lib/windowsphone8/protobuf-net.dll",
+        "lib/windowsphone8/protobuf-net.pdb",
+        "lib/windowsphone8/protobuf-net.xml",
+        "protobuf-net.2.0.0.668.nupkg.sha512",
+        "protobuf-net.nuspec"
+      ]
+    },
+    "NJIS.Dapper.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../../Libraries/NJIS.Dapper.Repositories/NJIS.Dapper.Repositories.csproj",
+      "msbuildProject": "../../Libraries/NJIS.Dapper.Repositories/NJIS.Dapper.Repositories.csproj"
+    },
+    "NJIS.FPZWS.LineControl.Cutting.Contract/1.0.0": {
+      "type": "project",
+      "path": "../NJIS.FPZWS.LineControl.Cutting.Contract/NJIS.FPZWS.LineControl.Cutting.Contract.csproj",
+      "msbuildProject": "../NJIS.FPZWS.LineControl.Cutting.Contract/NJIS.FPZWS.LineControl.Cutting.Contract.csproj"
+    },
+    "NJIS.FPZWS.LineControl.Cutting.Model/1.0.0": {
+      "type": "project",
+      "path": "../NJIS.FPZWS.LineControl.Cutting.Model/NJIS.FPZWS.LineControl.Cutting.Model.csproj",
+      "msbuildProject": "../NJIS.FPZWS.LineControl.Cutting.Model/NJIS.FPZWS.LineControl.Cutting.Model.csproj"
+    },
+    "NJIS.FPZWS.LineControl.Cutting.Repository/1.0.0": {
+      "type": "project",
+      "path": "../NJIS.FPZWS.LineControl.Cutting.Repository/NJIS.FPZWS.LineControl.Cutting.Repository.csproj",
+      "msbuildProject": "../NJIS.FPZWS.LineControl.Cutting.Repository/NJIS.FPZWS.LineControl.Cutting.Repository.csproj"
+    },
+    "NJIS.FPZWS.Wcf/1.0.0": {
+      "type": "project",
+      "path": "../../Libraries/NJIS.FPZWS.Wcf/NJIS.FPZWS.Wcf.csproj",
+      "msbuildProject": "../../Libraries/NJIS.FPZWS.Wcf/NJIS.FPZWS.Wcf.csproj"
+    },
+    "NJIS.Model.Attributes/1.0.0": {
+      "type": "project",
+      "path": "../../Libraries/NJIS.Model.Attributes/NJIS.Model.Attributes.csproj",
+      "msbuildProject": "../../Libraries/NJIS.Model.Attributes/NJIS.Model.Attributes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6": [
+      "Dapper >= 1.50.2",
+      "NJIS.Dapper.Repositories >= 1.0.0",
+      "NJIS.FPZWS.LineControl.Cutting.Contract >= 1.0.0",
+      "NJIS.FPZWS.LineControl.Cutting.Model >= 1.0.0",
+      "NJIS.FPZWS.LineControl.Cutting.Repository >= 1.0.0",
+      "NJIS.FPZWS.Wcf >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\11019622\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Service\\NJIS.FPZWS.LineControl.Cutting.Service.csproj",
+      "projectName": "NJIS.FPZWS.LineControl.Cutting.Service",
+      "projectPath": "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Service\\NJIS.FPZWS.LineControl.Cutting.Service.csproj",
+      "packagesPath": "C:\\Users\\11019622\\.nuget\\packages\\",
+      "outputPath": "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\11019622\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net46"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://10.10.14.46:8070/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net46": {
+          "projectReferences": {
+            "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.Dapper.Repositories\\NJIS.Dapper.Repositories.csproj": {
+              "projectPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.Dapper.Repositories\\NJIS.Dapper.Repositories.csproj"
+            },
+            "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.Wcf\\NJIS.FPZWS.Wcf.csproj": {
+              "projectPath": "D:\\99_信息化\\source\\trunk\\Libraries\\NJIS.FPZWS.Wcf\\NJIS.FPZWS.Wcf.csproj"
+            },
+            "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Contract\\NJIS.FPZWS.LineControl.Cutting.Contract.csproj": {
+              "projectPath": "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Contract\\NJIS.FPZWS.LineControl.Cutting.Contract.csproj"
+            },
+            "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Model\\NJIS.FPZWS.LineControl.Cutting.Model.csproj": {
+              "projectPath": "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Model\\NJIS.FPZWS.LineControl.Cutting.Model.csproj"
+            },
+            "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Repository\\NJIS.FPZWS.LineControl.Cutting.Repository.csproj": {
+              "projectPath": "D:\\99_信息化\\source\\trunk\\NJIS.FPZWS.LineControl\\NJIS.FPZWS.LineControl.Cutting.Repository\\NJIS.FPZWS.LineControl.Cutting.Repository.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[1.50.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

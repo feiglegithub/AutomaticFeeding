@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Connection>
+  <String key="LIVE_NJIS.FPZWS.Sorting"
+          value="server=10.30.3.116;database=NJIS.FPZWS.Sorting;uid=sa;password=!Q@W#E$R5t6y7u8i">
+  </String>
+  <String key="DEV_NJIS.FPZWS.Sorting"
+          value="server=10.30.3.116;database=NJIS.FPZWS.Sorting;uid=sa;password=!Q@W#E$R5t6y7u8i">
+  </String>
+</Connection>

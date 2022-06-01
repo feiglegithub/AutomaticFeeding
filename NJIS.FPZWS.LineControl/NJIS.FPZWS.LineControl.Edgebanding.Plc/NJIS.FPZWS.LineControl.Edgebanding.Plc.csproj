@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D1266BC-7A77-4020-A75D-6077C4418E3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NJIS.FPZWS.LineControl.Edgebanding.Plc</RootNamespace>
+    <AssemblyName>NJIS.FPZWS.LineControl.Edgebanding.Plc</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\NJIS.FPZWS.LineControl.Edgebanding.PLC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Commands\AlarmCommand.cs" />
+    <Compile Include="Control\Commands\DbProcCommand.cs" />
+    <Compile Include="Control\Commands\EdgebandingCommandBase.cs" />
+    <Compile Include="Control\Commands\InPartCommand.cs" />
+    <Compile Include="Control\Commands\PositionCommand.cs" />
+    <Compile Include="Control\Entitys\AlarmInputEntity.cs" />
+    <Compile Include="Control\Entitys\DbProcInputEntity.cs" />
+    <Compile Include="Control\Entitys\DbProcOutputEntity.cs" />
+    <Compile Include="Control\Entitys\InPartInputEntity.cs" />
+    <Compile Include="Control\Entitys\InPartOutputEntity.cs" />
+    <Compile Include="Control\Entitys\PositionInputEntity.cs" />
+    <Compile Include="Control\Entitys\PositionOutputEntity.cs" />
+    <Compile Include="Control\PLcCommunicationModularStarter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.Ioc.Autofac\NJIS.FPZWS.Ioc.Autofac.csproj">
+      <Project>{3f5b25bd-83fe-4bba-8aa0-e5cf58e067c6}</Project>
+      <Name>NJIS.FPZWS.Ioc.Autofac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.LineControl.PLC\NJIS.FPZWS.LineControl.PLC.csproj">
+      <Project>{d42d33d0-a285-453a-955c-ee519aadb6b6}</Project>
+      <Name>NJIS.FPZWS.LineControl.PLC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.MqttClient\NJIS.FPZWS.MqttClient.csproj">
+      <Project>{CEB61362-762F-4186-9A31-D3E01E7068C5}</Project>
+      <Name>NJIS.FPZWS.MqttClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Edgebanding.Contract\NJIS.FPZWS.LineControl.Edgebanding.Contract.csproj">
+      <Project>{AE6FD305-CE22-418B-A940-3A9B2DED9EEA}</Project>
+      <Name>NJIS.FPZWS.LineControl.Edgebanding.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Edgebanding.Emqtt\NJIS.FPZWS.LineControl.Edgebanding.Emqtt.csproj">
+      <Project>{cc4fdb5a-ee43-4025-9592-b0ac91dc03b7}</Project>
+      <Name>NJIS.FPZWS.LineControl.Edgebanding.Emqtt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Edgebanding.Model\NJIS.FPZWS.LineControl.Edgebanding.Model.csproj">
+      <Project>{5C8331A8-7EE7-4722-A5E9-A81AF5247456}</Project>
+      <Name>NJIS.FPZWS.LineControl.Edgebanding.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.LineControl.PLC.Config\NJIS.FPZWS.LineControl.PLC.Config.csproj">
+      <Project>{ca9b017d-a99b-4087-a85f-dcea2a9f0168}</Project>
+      <Name>NJIS.FPZWS.LineControl.PLC.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.LineControl.PLC.Siemens.S7Net\NJIS.FPZWS.LineControl.PLC.Siemens.S7Net.csproj">
+      <Project>{9bddc02f-04c1-412e-aab7-ede638275eed}</Project>
+      <Name>NJIS.FPZWS.LineControl.PLC.Siemens.S7Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plc.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SentrySetting.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="NJIS.FPZWS.Common">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="NJIS.FPZWS.Log.Sentry">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

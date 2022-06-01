@@ -1,0 +1,127 @@
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\bin\Debug\Reader647DLL.dll
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\bin\Debug\Reader647Demo.exe
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\bin\Debug\Reader647Demo.pdb
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\ReaderDemo.MainForm.resources
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.Properties.Resources.resources
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.exe
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader647Demo\obj\Debug\Reader647Demo.pdb
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\Reader2100DLL.dll
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\Reader2100Demo.exe
+D:\workspace\218项目\Reader2100Demo\Reader2100SDK(C#)\Reader2100Demo\Reader2100Demo.pdb
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\ResolveAssemblyReference.cache
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\Reader2100Demo.exe
+D:\App\Reader\Reader2100SDK(C#)\Reader2100Demo\Reader2100Demo.pdb
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\Reader2100Demo.exe
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\Reader2100Demo.pdb
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#\Reader2100SDK(C#)\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+E:\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.1\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.2\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csprojResolveAssemblyReference.cache
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20160608_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csprojResolveAssemblyReference.cache
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+C:\Users\Administrator\Desktop\Reader2100DemoSDK C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+C:\Users\Administrator\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+C:\Users\liuxinxing\Desktop\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170323_X86_1.3\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170510_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.csprojResolveAssemblyReference.cache
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+F:\万全智能\VF-747 用户光盘\SDK\VF747_ C#_20170512_X86_1.4\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\bin\Debug\Reader2100Demo.exe.config
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\bin\Debug\Reader2100Demo.exe
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\bin\Debug\Reader2100Demo.pdb
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\obj\Debug\ReaderDemo.MainForm.resources
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\obj\Debug\Reader2100Demo.Properties.Resources.resources
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\obj\Debug\Reader2100Demo.csproj.GenerateResource.Cache
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\obj\Debug\Reader2100Demo.exe
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\obj\Debug\Reader2100Demo.pdb
+C:\Users\liuxinxing\Desktop\VI-IR610_ C#_20170526_X86\Reader2100Demo\obj\Debug\Reader2100Demo.csprojResolveAssemblyReference.cache

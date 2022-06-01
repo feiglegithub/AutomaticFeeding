@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BECA2EB-6323-4B16-9806-93A861A037EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NJIS.FPZWS.LineControl.Cutting.Server.Client</RootNamespace>
+    <AssemblyName>开料管理</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Publish\NJIS.FPZWS.LineControl.Cutting.Server.Client\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>切割机.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EQATEC.Analytics.Monitor, Version=3.2.1.0, Culture=neutral, PublicKeyToken=213c7c68adb58a17, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\EQATEC.Analytics.Monitor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NJIS.FPZWS.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Documents.SpreadsheetStreaming, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Analytics, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.ChartView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.PivotGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.RadChart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDiagram, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.RadDiagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMap, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.RadMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.SpellChecker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2017.2.428.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\TelerikData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.502.40\TelerikExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CuttingSerialPortSetting.cs" />
+    <Compile Include="CuttingServerSettings.cs" />
+    <Compile Include="Helpers\Arithmetics\IPermutationResult.cs" />
+    <Compile Include="Helpers\Arithmetics\PermutationFilterAlgorithm.cs" />
+    <Compile Include="Helpers\Arithmetics\PermutationAlgorithm.cs" />
+    <Compile Include="Helpers\Arithmetics\PermutationMatchAlgorithm.cs" />
+    <Compile Include="Helpers\Arithmetics\VarianceAlgorithm.cs" />
+    <Compile Include="Helpers\CreatedStackArithmeticHelper.cs" />
+    <Compile Include="Helpers\PlcOperatorHelper.cs" />
+    <Compile Include="Helpers\SerialPortHelper.cs" />
+    <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="LocalServices\CurTaskListenService.cs" />
+    <Compile Include="LocalServices\PlcListenService.cs" />
+    <Compile Include="LocalServices\SerialListenService.cs" />
+    <Compile Include="LocalServices\Singleton.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MqttMessage.cs" />
+    <Compile Include="Presenters\ChainBufferControlPresenter.cs" />
+    <Compile Include="Presenters\CheckManageControlPresenter.cs" />
+    <Compile Include="Presenters\CurTaskDetailPresenter.cs" />
+    <Compile Include="Presenters\CuttingAPSControlPresenter.cs" />
+    <Compile Include="Presenters\CuttingStackCreatedControlPresenter.cs" />
+    <Compile Include="Presenters\DeviceManageControlPresenter.cs" />
+    <Compile Include="Presenters\MessageControlPresenter.cs" />
+    <Compile Include="Presenters\NGManageControlPresenter.cs" />
+    <Compile Include="Presenters\PartTraceControlPresenter.cs" />
+    <Compile Include="Presenters\ProductionTaskControlPresenter.cs" />
+    <Compile Include="Presenters\PushTaskControlPresenter.cs" />
+    <Compile Include="Presenters\SpotCheckControlPresenter.cs" />
+    <Compile Include="Presenters\StackDeviceChangeControlPresenter.cs" />
+    <Compile Include="Presenters\TaskLogControlPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\DeviceStackInfo.cs" />
+    <Compile Include="ViewModels\IStack.cs" />
+    <Compile Include="ViewModels\SolutionInfo.cs" />
+    <Compile Include="ViewModels\StackBookInfo.cs" />
+    <Compile Include="ViewModels\StackInfo.cs" />
+    <Compile Include="ViewModels\StackInfoCollectionBase.cs" />
+    <Compile Include="Views\Controls\CheckManageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\CheckManageControl.Designer.cs">
+      <DependentUpon>CheckManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\LabelPrintControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\LabelPrintControl.Designer.cs">
+      <DependentUpon>LabelPrintControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\AlarmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\AlarmControl.Designer.cs">
+      <DependentUpon>AlarmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\AnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\AnalysisControl.Designer.cs">
+      <DependentUpon>AnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\ChainBufferControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\ChainBufferControl.Designer.cs">
+      <DependentUpon>ChainBufferControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CommandControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CommandControl.Designer.cs">
+      <DependentUpon>CommandControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CurTaskDetailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CurTaskDetailControl.Designer.cs">
+      <DependentUpon>CurTaskDetailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CuttingAPSControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CuttingAPSControl.Designer.cs">
+      <DependentUpon>CuttingAPSControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CuttingSimulationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CuttingSimulationControl.Designer.cs">
+      <DependentUpon>CuttingSimulationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CuttingStackCreatedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\CuttingStackCreatedControl.Designer.cs">
+      <DependentUpon>CuttingStackCreatedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\DeviceManageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\DeviceManageControl.Designer.cs">
+      <DependentUpon>DeviceManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\MessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\MessageControl.Designer.cs">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\PartTraceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\PartTraceControl.Designer.cs">
+      <DependentUpon>PartTraceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\ProductionTaskControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\ProductionTaskControl.Designer.cs">
+      <DependentUpon>ProductionTaskControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\PushTaskControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\PushTaskControl.Designer.cs">
+      <DependentUpon>PushTaskControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\SpotCheckControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\SpotCheckControl.Designer.cs">
+      <DependentUpon>SpotCheckControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\StackDeviceChangeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\StackDeviceChangeControl.Designer.cs">
+      <DependentUpon>StackDeviceChangeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\TaskLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\ModuleControl\TaskLogControl.Designer.cs">
+      <DependentUpon>TaskLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\ChainBufferSubControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\ChainBufferSubControl.Designer.cs">
+      <DependentUpon>ChainBufferSubControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\CuttingAPSSubControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\CuttingAPSSubControl.Designer.cs">
+      <DependentUpon>CuttingAPSSubControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\NGManageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\NGManageControl.Designer.cs">
+      <DependentUpon>NGManageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\NgPartSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\NgPartSearchControl.Designer.cs">
+      <DependentUpon>NgPartSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\PartReenterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\SubControls\PartReenterControl.Designer.cs">
+      <DependentUpon>PartReenterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\DetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\DetailForm.Designer.cs">
+      <DependentUpon>DetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\PassWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\PassWordForm.Designer.cs">
+      <DependentUpon>PassWordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\SerialPortSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\SerialPortSettingForm.Designer.cs">
+      <DependentUpon>SerialPortSettingForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Controls\CheckManageControl.resx">
+      <DependentUpon>CheckManageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\LabelPrintControl.resx">
+      <DependentUpon>LabelPrintControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\AlarmControl.resx">
+      <DependentUpon>AlarmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\AnalysisControl.resx">
+      <DependentUpon>AnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\ChainBufferControl.resx">
+      <DependentUpon>ChainBufferControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\CommandControl.resx">
+      <DependentUpon>CommandControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\CurTaskDetailControl.resx">
+      <DependentUpon>CurTaskDetailControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\CuttingAPSControl.resx">
+      <DependentUpon>CuttingAPSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\CuttingSimulationControl.resx">
+      <DependentUpon>CuttingSimulationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\CuttingStackCreatedControl.resx">
+      <DependentUpon>CuttingStackCreatedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\DeviceManageControl.resx">
+      <DependentUpon>DeviceManageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\MessageControl.resx">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\PartTraceControl.resx">
+      <DependentUpon>PartTraceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\ProductionTaskControl.resx">
+      <DependentUpon>ProductionTaskControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\PushTaskControl.resx">
+      <DependentUpon>PushTaskControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\SpotCheckControl.resx">
+      <DependentUpon>SpotCheckControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\StackDeviceChangeControl.resx">
+      <DependentUpon>StackDeviceChangeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\ModuleControl\TaskLogControl.resx">
+      <DependentUpon>TaskLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\SubControls\ChainBufferSubControl.resx">
+      <DependentUpon>ChainBufferSubControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\SubControls\CuttingAPSSubControl.resx">
+      <DependentUpon>CuttingAPSSubControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\SubControls\NGManageControl.resx">
+      <DependentUpon>NGManageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\SubControls\NgPartSearchControl.resx">
+      <DependentUpon>NgPartSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Controls\SubControls\PartReenterControl.resx">
+      <DependentUpon>PartReenterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\DetailForm.resx">
+      <DependentUpon>DetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\PassWordForm.resx">
+      <DependentUpon>PassWordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\SerialPortSettingForm.resx">
+      <DependentUpon>SerialPortSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="configs\client.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="configs\FpzCcSetting.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="configs\RemoteConfigCenterTcpUrl.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CuttingSerialPortSetting.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CuttingServerSettings.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NJIS.Ini.md" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TaskCenterSetting.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置32.png" />
+    <None Include="Resources\设置48.png" />
+    <None Include="Resources\设置16.png" />
+    <None Include="Resources\设置.png" />
+    <None Include="Resources\ok128.png" />
+    <None Include="Resources\ok1281.png" />
+    <None Include="Resources\Ok.png" />
+    <None Include="Resources\Ng.png" />
+    <None Include="Resources\Ng1.png" />
+    <Content Include="切割机.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.MqttClient\NJIS.FPZWS.MqttClient.csproj">
+      <Project>{CEB61362-762F-4186-9A31-D3E01E7068C5}</Project>
+      <Name>NJIS.FPZWS.MqttClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.UI.Common\NJIS.FPZWS.UI.Common.csproj">
+      <Project>{CA276DB5-AA0D-4C88-B986-498D8BBF9AE8}</Project>
+      <Name>NJIS.FPZWS.UI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.FPZWS.Wcf\NJIS.FPZWS.Wcf.csproj">
+      <Project>{54DB5DA6-22DC-42B0-AFDC-644893ACAD4B}</Project>
+      <Name>NJIS.FPZWS.Wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.Ini\NJIS.Ini.csproj">
+      <Project>{81f3fca2-0810-419f-a660-2707c35b3bb6}</Project>
+      <Name>NJIS.Ini</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\NJIS.PLC.Communication\NJIS.PLC.Communication.csproj">
+      <Project>{B6E82191-713C-4668-BABD-1C3A3C437C50}</Project>
+      <Name>NJIS.PLC.Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Contract\NJIS.FPZWS.LineControl.Cutting.Contract.csproj">
+      <Project>{C1031F20-6A47-47A2-B618-B560E08F53AF}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Core\NJIS.FPZWS.LineControl.Cutting.Core.csproj">
+      <Project>{7287C0B9-FC16-4C01-87EE-8D2F1BB4DB5B}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Message\NJIS.FPZWS.LineControl.Cutting.Message.csproj">
+      <Project>{4ca2fd0c-7f3f-47a0-872f-f600529f68a6}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Message</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Model\NJIS.FPZWS.LineControl.Cutting.Model.csproj">
+      <Project>{2FA3ED16-7BE7-4FF8-971C-6810F31F7078}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Repository\NJIS.FPZWS.LineControl.Cutting.Repository.csproj">
+      <Project>{f7e72f74-7649-4a5b-94be-f0fa18a8bff8}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NJIS.FPZWS.LineControl.Cutting.Service\NJIS.FPZWS.LineControl.Cutting.Service.csproj">
+      <Project>{5DC2415A-468C-4528-BCED-798D80BB5D10}</Project>
+      <Name>NJIS.FPZWS.LineControl.Cutting.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49C3DC44-96EC-4134-9131-AC4E11E122AF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlgorithmTest</RootNamespace>
+    <AssemblyName>AlgorithmTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libs\NJIS.Common\NJIS.Common.csproj">
+      <Project>{BB925A8A-29AE-4ABD-8F28-76B977AE36BA}</Project>
+      <Name>NJIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsConfig\WcsConfig.csproj">
+      <Project>{87ede5f3-1e69-400b-853b-a510cf9e1a5c}</Project>
+      <Name>WcsConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsContract\WcsContract.csproj">
+      <Project>{4857047A-10E7-4E27-82B8-7C3BD5B66F1D}</Project>
+      <Name>WcsContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcsSortingAlgorithm\WcsSortingAlgorithm.csproj">
+      <Project>{FDDBAD32-4665-4FD8-8D23-F7F37C7600A1}</Project>
+      <Name>WcsSortingAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCS\WcsModel\WcsModel.csproj">
+      <Project>{e6e2d214-6cc1-4eb8-8860-46704a9323be}</Project>
+      <Name>WcsModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCS\WcsService\WcsService.csproj">
+      <Project>{c60462e5-88b8-42d1-b47d-eccfdea2db57}</Project>
+      <Name>WcsService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

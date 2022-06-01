@@ -1,0 +1,2 @@
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\WindowsApplication1\obj\Release\WindowsApplication1.exe
+D:\workspace\218项目\Reader647Demo\Reader647Demo(C#)\Reader1000SDK(C#)\WindowsApplication1\obj\Release\WindowsApplication1.pdb

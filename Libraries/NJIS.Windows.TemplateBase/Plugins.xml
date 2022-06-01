@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugins>
+  <RibbonTab name="MyFuc"  path ="测试/功能组" assembly="Sample.HomePage" type="Sample.HomePage.MyOperationEntry"></RibbonTab>
+</Plugins>

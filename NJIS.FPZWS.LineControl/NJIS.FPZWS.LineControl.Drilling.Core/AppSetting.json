@@ -1,0 +1,11 @@
+﻿{
+  "App": "NJIS.FPZWS.LineControl.Drilling.Core.DrillingApp,NJIS.FPZWS.LineControl.Drilling.Core",
+  "Service": "NJIS.FPZWS.LineControl.Drilling",
+  "ServiceName": "NJIS.FPZWS.LineControl.Drilling",
+  "InstanceName": "",
+  "Description": "",
+  "DisplayName": "NJIS.FPZWS.LineControl.Drilling",
+  "StartTimeout": 10,
+  "StopTimeout": 10,
+  "HelpTextPrefix": "dg"
+}
